@@ -1,0 +1,6 @@
+framework module Pods_Telda {
+  umbrella header "Pods-Telda-umbrella.h"
+
+  export *
+  module * { export * }
+}
