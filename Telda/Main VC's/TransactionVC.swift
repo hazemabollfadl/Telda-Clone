@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class TransactionVC: UIViewController {
     
@@ -27,7 +28,7 @@ class TransactionVC: UIViewController {
                 
                 if (senderText == "." || senderText == "0") && (NumberLabel.text![NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 4)] == "0"){
                     
-                    print("Enter a valid number")
+                    shake(NumberLabel)
                     
                 }else{
                     
@@ -52,7 +53,7 @@ class TransactionVC: UIViewController {
                             NumberLabel.text?.insert(",", at: NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 6))
                         }
                     }else{
-                        print("Can't Add more")
+                        shake(NumberLabel)
                     }
                 }
             }
@@ -62,7 +63,7 @@ class TransactionVC: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
         DispatchQueue.main.async { [self] in
             if NumberLabel.text?.count==5{
-                print("Can't remove more")
+                shake(NumberLabel)
                 counter=false
                 NumberLabel.alpha=0.3
                 NumberLabel.text = "EGP 0"
@@ -80,12 +81,17 @@ class TransactionVC: UIViewController {
             }
         }
     }
+    
     @IBAction func requestButtonPressed(_ sender: UIButton) {
-        let numberLabelCharacter = String(NumberLabel.text![NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 4)])
+        let numberLabelCharacter = String(NumberLabel.text!.suffix(from: NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 4)))
         
         let num = Int(numberLabelCharacter)
         
-        if NumberLabel.text![NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 4)] == "0" || num! < 5{
+        if NumberLabel.text![NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 4)] == "0"{
+            ValidAmontLabel.text="Enter a valid Amount"
+            ValidAmontLabel.isHidden=false
+        }else if  num! < 5{
+            ValidAmontLabel.text="Minimum amount is EGP 5"
             ValidAmontLabel.isHidden=false
         }else{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
@@ -94,11 +100,16 @@ class TransactionVC: UIViewController {
             self.present(vc, animated: true)
         }
     }
+    
     @IBAction func sendButtonPressed(_ sender: UIButton) {
-        let numberLabelCharacter = String(NumberLabel.text![NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 4)])
+        let numberLabelCharacter = String(NumberLabel.text!.suffix(from: NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 4)))
         let num = Int(numberLabelCharacter)
         
-        if NumberLabel.text![NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 4)] == "0" || num! < 5{
+        if NumberLabel.text![NumberLabel.text!.index(NumberLabel.text!.startIndex, offsetBy: 4)] == "0"{
+            ValidAmontLabel.text="Enter a valid Amount"
+            ValidAmontLabel.isHidden=false
+        }else if  num! < 5{
+            ValidAmontLabel.text="Minimum amount is EGP 5"
             ValidAmontLabel.isHidden=false
         }else{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
@@ -108,4 +119,22 @@ class TransactionVC: UIViewController {
         }
     }
     
+}
+
+//MARK: - Usefull Functions
+extension TransactionVC{
+    func shake(_ label:UILabel){
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.05
+        animation.repeatCount = 2
+        animation.autoreverses = true
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: label.center.x - 7.5, y: label.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: label.center.x + 7.5, y: label.center.y))
+        vibrate()
+        label.layer.add(animation, forKey: "position")
+    }
+    
+    func vibrate(){
+        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(1521)) { }
+    }
 }

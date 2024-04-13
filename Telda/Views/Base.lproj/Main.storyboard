@@ -286,7 +286,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnh-bi-kKG">
                                                 <rect key="frame" x="0.0" y="6.9999999999999982" width="96.333333333333329" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxI-im-4ip">
@@ -318,7 +318,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGP 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bA-eS-kdm">
                                         <rect key="frame" x="120.33333333333334" y="72" width="117.66666666666666" height="48"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a valid Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmQ-rQ-NK1">
@@ -333,9 +333,8 @@
                                     <constraint firstAttribute="bottom" secondItem="KmQ-rQ-NK1" secondAttribute="bottom" constant="46" id="9iW-T8-vdE"/>
                                     <constraint firstItem="0bA-eS-kdm" firstAttribute="centerX" secondItem="iGl-yG-chN" secondAttribute="centerX" id="Iem-OH-wAu"/>
                                     <constraint firstItem="0bA-eS-kdm" firstAttribute="centerY" secondItem="iGl-yG-chN" secondAttribute="centerY" id="Kp3-m5-GV0"/>
-                                    <constraint firstAttribute="trailing" secondItem="KmQ-rQ-NK1" secondAttribute="trailing" constant="108" id="Mqh-wP-s02"/>
-                                    <constraint firstItem="KmQ-rQ-NK1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iGl-yG-chN" secondAttribute="leading" constant="20" symbolic="YES" id="gCa-YF-EE9"/>
                                     <constraint firstItem="KmQ-rQ-NK1" firstAttribute="top" secondItem="0bA-eS-kdm" secondAttribute="bottom" constant="8" id="l3M-NU-7rG"/>
+                                    <constraint firstItem="KmQ-rQ-NK1" firstAttribute="centerX" secondItem="0bA-eS-kdm" secondAttribute="centerX" id="qX3-oW-OQv"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWe-Er-UxI">
@@ -353,6 +352,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="1">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="m2f-Hl-fUs"/>
@@ -364,6 +364,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="4">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="RBU-SE-anJ"/>
@@ -375,6 +376,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="7">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="dAm-jU-RYk"/>
@@ -386,6 +388,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title=".">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="Fd7-Qo-j2d"/>
@@ -406,6 +409,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="2">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="nRt-S7-rDu"/>
@@ -417,6 +421,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="5">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="c7p-Pe-8Z0"/>
@@ -428,6 +433,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="8">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="YYO-vH-4em"/>
@@ -439,6 +445,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="0">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="VHf-ex-A8P"/>
@@ -458,6 +465,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="3">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="8tv-Km-sB9"/>
@@ -469,6 +477,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="6">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="z2l-Me-gg0"/>
@@ -480,6 +489,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="9">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="Eew-rv-P1Q"/>
@@ -491,6 +501,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="delete.left" catalog="system">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="backButtonPressed:" destination="klj-Vr-fYy" eventType="touchUpInside" id="mjC-UI-zCy"/>
