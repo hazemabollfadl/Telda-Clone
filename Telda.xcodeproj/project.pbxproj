@@ -15,6 +15,14 @@
 		6F08A2112BC03D2200CFC08A /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F08A2102BC03D2200CFC08A /* MoreVC.swift */; };
 		6F08A2152BC03F1E00CFC08A /* AddSendInsightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F08A2132BC03F1E00CFC08A /* AddSendInsightCell.swift */; };
 		6F08A2162BC03F1E00CFC08A /* AddSendInsightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F08A2142BC03F1E00CFC08A /* AddSendInsightCell.xib */; };
+		6F13BDCF2BCE8A5800FDB311 /* CardCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F13BDCD2BCE8A5800FDB311 /* CardCells.swift */; };
+		6F13BDD02BCE8A5800FDB311 /* LockCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F13BDCE2BCE8A5800FDB311 /* LockCard.xib */; };
+		6F13BDD22BCE8E8A00FDB311 /* ResetPin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F13BDD12BCE8E8A00FDB311 /* ResetPin.xib */; };
+		6F13BDD42BCE967400FDB311 /* GetNewCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F13BDD32BCE967400FDB311 /* GetNewCard.xib */; };
+		6F13BDD82BCE9CDA00FDB311 /* UpgradeCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F13BDD72BCE9CDA00FDB311 /* UpgradeCardVC.swift */; };
+		6F13BDDA2BCEA04500FDB311 /* ResetPinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F13BDD92BCEA04500FDB311 /* ResetPinVC.swift */; };
+		6F13BDDC2BCEA05800FDB311 /* GetNewCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F13BDDB2BCEA05800FDB311 /* GetNewCardVC.swift */; };
+		6F13BDDE2BCEA0F700FDB311 /* LockCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F13BDDD2BCEA0F700FDB311 /* LockCardVC.swift */; };
 		6F23B2CA2BC444BA00BD3458 /* AddMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F23B2C82BC444BA00BD3458 /* AddMoneyVC.swift */; };
 		6F23B2CF2BC4450900BD3458 /* InsightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F23B2CE2BC4450900BD3458 /* InsightVC.swift */; };
 		6F23B2D12BC4478500BD3458 /* Secondary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F23B2D02BC4478500BD3458 /* Secondary.storyboard */; };
@@ -30,6 +38,8 @@
 		6FABD5C72BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FABD5C62BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift */; };
 		6FCAAE2E2BCB069E00DF1B90 /* RequestMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCAAE2D2BCB069E00DF1B90 /* RequestMoneyVC.swift */; };
 		6FCAAE302BCB06AF00DF1B90 /* SendMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCAAE2F2BCB06AF00DF1B90 /* SendMoneyVC.swift */; };
+		6FCAAE342BCE74EB00DF1B90 /* PremuimCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCAAE322BCE74EB00DF1B90 /* PremuimCardCell.swift */; };
+		6FCAAE352BCE74EB00DF1B90 /* PremuimCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FCAAE332BCE74EB00DF1B90 /* PremuimCardCell.xib */; };
 		6FE1203B2BC022B2009C6EE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1203A2BC022B2009C6EE4 /* AppDelegate.swift */; };
 		6FE1203D2BC022B2009C6EE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1203C2BC022B2009C6EE4 /* SceneDelegate.swift */; };
 		6FE120422BC022B2009C6EE4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6FE120412BC022B2009C6EE4 /* Base */; };
@@ -47,6 +57,14 @@
 		6F08A2102BC03D2200CFC08A /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		6F08A2132BC03F1E00CFC08A /* AddSendInsightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSendInsightCell.swift; sourceTree = "<group>"; };
 		6F08A2142BC03F1E00CFC08A /* AddSendInsightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSendInsightCell.xib; sourceTree = "<group>"; };
+		6F13BDCD2BCE8A5800FDB311 /* CardCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCells.swift; sourceTree = "<group>"; };
+		6F13BDCE2BCE8A5800FDB311 /* LockCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockCard.xib; sourceTree = "<group>"; };
+		6F13BDD12BCE8E8A00FDB311 /* ResetPin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPin.xib; sourceTree = "<group>"; };
+		6F13BDD32BCE967400FDB311 /* GetNewCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetNewCard.xib; sourceTree = "<group>"; };
+		6F13BDD72BCE9CDA00FDB311 /* UpgradeCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeCardVC.swift; sourceTree = "<group>"; };
+		6F13BDD92BCEA04500FDB311 /* ResetPinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPinVC.swift; sourceTree = "<group>"; };
+		6F13BDDB2BCEA05800FDB311 /* GetNewCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewCardVC.swift; sourceTree = "<group>"; };
+		6F13BDDD2BCEA0F700FDB311 /* LockCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockCardVC.swift; sourceTree = "<group>"; };
 		6F23B2C52BC437BC00BD3458 /* Telda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F23B2C82BC444BA00BD3458 /* AddMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyVC.swift; sourceTree = "<group>"; };
 		6F23B2CE2BC4450900BD3458 /* InsightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightVC.swift; sourceTree = "<group>"; };
@@ -63,6 +81,8 @@
 		6FABD5C62BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsYourGoalVC.swift; sourceTree = "<group>"; };
 		6FCAAE2D2BCB069E00DF1B90 /* RequestMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMoneyVC.swift; sourceTree = "<group>"; };
 		6FCAAE2F2BCB06AF00DF1B90 /* SendMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyVC.swift; sourceTree = "<group>"; };
+		6FCAAE322BCE74EB00DF1B90 /* PremuimCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremuimCardCell.swift; sourceTree = "<group>"; };
+		6FCAAE332BCE74EB00DF1B90 /* PremuimCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremuimCardCell.xib; sourceTree = "<group>"; };
 		6FE1203A2BC022B2009C6EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FE1203C2BC022B2009C6EE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6FE120412BC022B2009C6EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,10 +130,23 @@
 			children = (
 				6F23B2D22BC6CDBE00BD3458 /* AddSendInsightCell */,
 				6F23B2D72BC6CDEC00BD3458 /* HomePageCell */,
-				6FABD5C12BC9A1CD0009FB09 /* SpaceCollectionCell */,
 				6FABD5C82BC9AC130009FB09 /* SpaceAddCollectionCell */,
+				6FABD5C12BC9A1CD0009FB09 /* SpaceCollectionCell */,
+				6FCAAE312BCE74A800DF1B90 /* PremuimCardCell */,
+				6F13BDCC2BCE8A1300FDB311 /* CardCells */,
 			);
 			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		6F13BDCC2BCE8A1300FDB311 /* CardCells */ = {
+			isa = PBXGroup;
+			children = (
+				6F13BDCD2BCE8A5800FDB311 /* CardCells.swift */,
+				6F13BDCE2BCE8A5800FDB311 /* LockCard.xib */,
+				6F13BDD12BCE8E8A00FDB311 /* ResetPin.xib */,
+				6F13BDD32BCE967400FDB311 /* GetNewCard.xib */,
+			);
+			path = CardCells;
 			sourceTree = "<group>";
 		};
 		6F23B2C62BC4442A00BD3458 /* Secondary VC's */ = {
@@ -125,6 +158,10 @@
 				6FABD5C62BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift */,
 				6FCAAE2D2BCB069E00DF1B90 /* RequestMoneyVC.swift */,
 				6FCAAE2F2BCB06AF00DF1B90 /* SendMoneyVC.swift */,
+				6F13BDD72BCE9CDA00FDB311 /* UpgradeCardVC.swift */,
+				6F13BDDD2BCEA0F700FDB311 /* LockCardVC.swift */,
+				6F13BDD92BCEA04500FDB311 /* ResetPinVC.swift */,
+				6F13BDDB2BCEA05800FDB311 /* GetNewCardVC.swift */,
 			);
 			path = "Secondary VC's";
 			sourceTree = "<group>";
@@ -179,6 +216,15 @@
 				6F3F06CC2BC83E9B00AAC6C7 /* SpaceAddCollectionCell.xib */,
 			);
 			path = SpaceAddCollectionCell;
+			sourceTree = "<group>";
+		};
+		6FCAAE312BCE74A800DF1B90 /* PremuimCardCell */ = {
+			isa = PBXGroup;
+			children = (
+				6FCAAE322BCE74EB00DF1B90 /* PremuimCardCell.swift */,
+				6FCAAE332BCE74EB00DF1B90 /* PremuimCardCell.xib */,
+			);
+			path = PremuimCardCell;
 			sourceTree = "<group>";
 		};
 		6FE1202E2BC022B2009C6EE4 = {
@@ -286,12 +332,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F3F06CE2BC83E9B00AAC6C7 /* SpaceAddCollectionCell.xib in Resources */,
+				6F13BDD02BCE8A5800FDB311 /* LockCard.xib in Resources */,
 				6F23B2D12BC4478500BD3458 /* Secondary.storyboard in Resources */,
+				6F13BDD42BCE967400FDB311 /* GetNewCard.xib in Resources */,
 				6F08A2162BC03F1E00CFC08A /* AddSendInsightCell.xib in Resources */,
 				6FE120442BC022B4009C6EE4 /* Assets.xcassets in Resources */,
+				6FCAAE352BCE74EB00DF1B90 /* PremuimCardCell.xib in Resources */,
 				6FABD5C52BC9A2130009FB09 /* SpacesCollectionCell.xib in Resources */,
 				6FE120472BC022B4009C6EE4 /* Base in Resources */,
 				6FE120422BC022B2009C6EE4 /* Base in Resources */,
+				6F13BDD22BCE8E8A00FDB311 /* ResetPin.xib in Resources */,
 				6F23B2D62BC6CDD900BD3458 /* HomePageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,15 +380,20 @@
 			files = (
 				6F08A20F2BC03D1400CFC08A /* CardVC.swift in Sources */,
 				6FE1203B2BC022B2009C6EE4 /* AppDelegate.swift in Sources */,
+				6F13BDDA2BCEA04500FDB311 /* ResetPinVC.swift in Sources */,
 				6F08A20B2BC03CF100CFC08A /* SpacesVC.swift in Sources */,
 				6F80E5DC2BC05212006BCD24 /* UserProfileVC.swift in Sources */,
 				6F23B2DA2BC6F9A900BD3458 /* TransactionDetailsVC.swift in Sources */,
+				6FCAAE342BCE74EB00DF1B90 /* PremuimCardCell.swift in Sources */,
 				6F08A2112BC03D2200CFC08A /* MoreVC.swift in Sources */,
 				6F23B2CF2BC4450900BD3458 /* InsightVC.swift in Sources */,
 				6F80E5E72BC431D7006BCD24 /* BlurText.swift in Sources */,
+				6F13BDDC2BCEA05800FDB311 /* GetNewCardVC.swift in Sources */,
 				6FABD5C72BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift in Sources */,
 				6F08A2152BC03F1E00CFC08A /* AddSendInsightCell.swift in Sources */,
 				6FCAAE2E2BCB069E00DF1B90 /* RequestMoneyVC.swift in Sources */,
+				6F13BDCF2BCE8A5800FDB311 /* CardCells.swift in Sources */,
+				6F13BDD82BCE9CDA00FDB311 /* UpgradeCardVC.swift in Sources */,
 				6F3F06CD2BC83E9B00AAC6C7 /* SpacesCollectionCell.swift in Sources */,
 				6FE1203D2BC022B2009C6EE4 /* SceneDelegate.swift in Sources */,
 				6F08A20D2BC03D0700CFC08A /* TransactionVC.swift in Sources */,
@@ -347,6 +402,7 @@
 				6F08A2092BC0348E00CFC08A /* HomePageVC.swift in Sources */,
 				6F23B2CA2BC444BA00BD3458 /* AddMoneyVC.swift in Sources */,
 				6FCAAE302BCB06AF00DF1B90 /* SendMoneyVC.swift in Sources */,
+				6F13BDDE2BCEA0F700FDB311 /* LockCardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -619,24 +619,42 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="iYs-n5-hTZ" firstAttribute="centerY" secondItem="O8r-2M-zDz" secondAttribute="centerY" id="Ghf-xS-psX"/>
-                                    <constraint firstItem="iYs-n5-hTZ" firstAttribute="centerX" secondItem="O8r-2M-zDz" secondAttribute="centerX" id="IAg-rD-n7G"/>
-                                    <constraint firstItem="iYs-n5-hTZ" firstAttribute="leading" secondItem="O8r-2M-zDz" secondAttribute="leading" constant="10" id="Qyf-hy-bNh"/>
-                                    <constraint firstAttribute="trailing" secondItem="iYs-n5-hTZ" secondAttribute="trailing" constant="10" id="bPZ-JU-yIN"/>
-                                    <constraint firstAttribute="height" constant="45" id="rPw-Dc-xad"/>
+                                    <constraint firstItem="iYs-n5-hTZ" firstAttribute="centerY" secondItem="O8r-2M-zDz" secondAttribute="centerY" id="6IC-fW-YsO"/>
+                                    <constraint firstItem="iYs-n5-hTZ" firstAttribute="top" secondItem="O8r-2M-zDz" secondAttribute="top" constant="5.3333333333333357" id="LyH-H5-rgz"/>
+                                    <constraint firstItem="iYs-n5-hTZ" firstAttribute="centerX" secondItem="O8r-2M-zDz" secondAttribute="centerX" id="cWj-tk-fVx"/>
+                                    <constraint firstItem="iYs-n5-hTZ" firstAttribute="leading" secondItem="O8r-2M-zDz" secondAttribute="leading" constant="10" id="iDq-7B-cZg"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xn2-F8-7td">
+                                <rect key="frame" x="16" y="102" width="358" height="196"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="da7-k5-NHy"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SBZ-SB-4rj">
+                                <rect key="frame" x="16" y="308" width="358" height="453"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5xU-lx-oBe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="O8r-2M-zDz" firstAttribute="top" secondItem="5xU-lx-oBe" secondAttribute="top" id="Ovd-kP-baR"/>
-                            <constraint firstItem="O8r-2M-zDz" firstAttribute="leading" secondItem="5xU-lx-oBe" secondAttribute="leading" id="Vam-vA-nPj"/>
-                            <constraint firstItem="O8r-2M-zDz" firstAttribute="width" secondItem="ZnF-zG-yLc" secondAttribute="width" id="gcH-oI-eKS"/>
-                            <constraint firstItem="5xU-lx-oBe" firstAttribute="trailing" secondItem="O8r-2M-zDz" secondAttribute="trailing" id="mOy-3E-wCf"/>
+                            <constraint firstItem="xn2-F8-7td" firstAttribute="trailing" secondItem="ZnF-zG-yLc" secondAttribute="trailingMargin" id="2Ye-qZ-mMI"/>
+                            <constraint firstItem="O8r-2M-zDz" firstAttribute="centerX" secondItem="xn2-F8-7td" secondAttribute="centerX" id="71X-ih-BaV"/>
+                            <constraint firstItem="xn2-F8-7td" firstAttribute="top" secondItem="O8r-2M-zDz" secondAttribute="bottom" constant="8" id="A9u-lV-IGg"/>
+                            <constraint firstItem="SBZ-SB-4rj" firstAttribute="bottom" secondItem="5xU-lx-oBe" secondAttribute="bottom" id="ALC-Bj-x8l"/>
+                            <constraint firstItem="O8r-2M-zDz" firstAttribute="leading" secondItem="5xU-lx-oBe" secondAttribute="leading" id="CLk-iC-Zxv"/>
+                            <constraint firstItem="xn2-F8-7td" firstAttribute="leading" secondItem="SBZ-SB-4rj" secondAttribute="leading" id="K1M-ys-Gh7"/>
+                            <constraint firstItem="xn2-F8-7td" firstAttribute="trailing" secondItem="SBZ-SB-4rj" secondAttribute="trailing" id="X4B-XS-JiQ"/>
+                            <constraint firstItem="O8r-2M-zDz" firstAttribute="top" secondItem="5xU-lx-oBe" secondAttribute="top" id="gtv-3p-MMj"/>
+                            <constraint firstItem="SBZ-SB-4rj" firstAttribute="top" secondItem="xn2-F8-7td" secondAttribute="bottom" constant="8" id="paC-BQ-sxa"/>
+                            <constraint firstItem="xn2-F8-7td" firstAttribute="leading" secondItem="ZnF-zG-yLc" secondAttribute="leadingMargin" id="u8S-wL-UMx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Card" image="creditcard" catalog="system" id="7NP-Q5-icm"/>
+                    <connections>
+                        <outlet property="cardTableview" destination="SBZ-SB-4rj" id="q0j-yU-hbQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juk-Ha-JiT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -750,11 +768,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GZH-oc-YwE"/>
+        <segue reference="XS2-9T-gFb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.arrow.right" catalog="system" width="120" height="128"/>
         <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <image name="delete.left" catalog="system" width="128" height="102"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="eye" catalog="system" width="128" height="79"/>
@@ -765,10 +784,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

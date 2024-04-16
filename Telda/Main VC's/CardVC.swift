@@ -8,22 +8,134 @@
 import UIKit
 
 class CardVC: UIViewController {
-
+    
+    @IBOutlet var cardTableview: UITableView!
+    static var vcSwitch:UISwitch?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        cardTableview.dataSource=self
+        cardTableview.delegate=self
+        
+        let nib = UINib(nibName: "PremuimCardCell", bundle: .main)
+        cardTableview.register(nib, forCellReuseIdentifier: "PremuimCardCell")
+        
+        let nib1 = UINib(nibName: "LockCard", bundle: .main)
+        cardTableview.register(nib1, forCellReuseIdentifier: "LockCard")
+        
+        let nib2 = UINib(nibName: "ResetPin", bundle: .main)
+        cardTableview.register(nib2, forCellReuseIdentifier: "ResetPin")
+        
+        let nib3 = UINib(nibName: "GetNewCard", bundle: .main)
+        cardTableview.register(nib3, forCellReuseIdentifier: "GetNewCard")
+        
+        
+        cardTableview.rowHeight = UITableView.automaticDimension
+        
+        cardTableview.showsVerticalScrollIndicator=false
+        
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//MARK: - UITableViewDataSource
+extension CardVC:UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        4
     }
-    */
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let customCell = tableView.dequeueReusableCell(withIdentifier: "PremuimCardCell", for: indexPath) as! PremuimCardCell
+        customCell.selectionStyle = .none
+        customCell.delegate=self
+        
+        let lockCell=tableView.dequeueReusableCell(withIdentifier: "LockCard", for: indexPath) as! CardCells
+        lockCell.selectionStyle = .none
+        lockCell.delegate=self
+        
+        
+        let resetPinCell=tableView.dequeueReusableCell(withIdentifier: "ResetPin", for: indexPath) as! CardCells
+        resetPinCell.selectionStyle = .none
+        resetPinCell.delegate=self
+        
+        let getNewCardCell=tableView.dequeueReusableCell(withIdentifier: "GetNewCard", for: indexPath) as! CardCells
+        getNewCardCell.selectionStyle = .none
+        getNewCardCell.delegate=self
+        
+        
+        if indexPath.row==0{
+            return customCell
+        }else if indexPath.row==1{
+            return lockCell
+        }else if indexPath.row==2{
+            return resetPinCell
+        }else{
+            return getNewCardCell
+        }
+    }
+}
+//MARK: - UITableViewDelegate
+extension CardVC:UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        if indexPath.row==2{
+            
+            let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
+            let vc  = storyboard.instantiateViewController(withIdentifier: "ResetPinVC") as! ResetPinVC
+            vc.modalPresentationStyle = .popover
+            self.present(vc, animated: true)
+            
+        }
+        
+        if indexPath.row==3{
+            let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
+            let vc  = storyboard.instantiateViewController(withIdentifier: "GetNewCardVC") as! GetNewCardVC
+            vc.modalPresentationStyle = .popover
+            self.present(vc, animated: true)
+            
+        }
+    }
+}
+
+
+//MARK: - Protocols
+extension CardVC:upgradeButtonPressed, CardCellsButtonPressed{
+    
+    func upgradeButtonPressed() {
+        let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
+        let vc  = storyboard.instantiateViewController(withIdentifier: "UpgradeCardVC") as! UpgradeCardVC
+        vc.modalPresentationStyle = .popover
+        self.present(vc, animated: true)
+    }
+    
+    func ResetPinButtonPressed() {
+        let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
+        let vc  = storyboard.instantiateViewController(withIdentifier: "ResetPinVC") as! ResetPinVC
+        vc.modalPresentationStyle = .popover
+        self.present(vc, animated: true)
+    }
+    
+    func GetNewCardButtonPressed() {
+        let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
+        let vc  = storyboard.instantiateViewController(withIdentifier: "GetNewCardVC") as! GetNewCardVC
+        vc.modalPresentationStyle = .popover
+        self.present(vc, animated: true)
+    }
+    
+    func SendSwitch(_ mySwitch: UISwitch) {
+        CardVC.vcSwitch=mySwitch
+        if mySwitch.isOn{
+            let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
+            let vc  = storyboard.instantiateViewController(withIdentifier: "LockCardVC") as! LockCardVC
+            vc.modalPresentationStyle = .popover
+            self.present(vc, animated: true)
+        }
+    }
+    
 }

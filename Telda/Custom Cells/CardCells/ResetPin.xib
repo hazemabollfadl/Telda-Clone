@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResetPin" rowHeight="54" id="6Cr-wH-1kB" customClass="CardCells" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Cr-wH-1kB" id="fSc-lg-UEt">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91W-fP-sZg">
+                        <rect key="frame" x="10" y="10" width="324" height="70"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="r43-os-ROA">
+                                <rect key="frame" x="10" y="20" width="304" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yYB-UM-Ma2">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.66666666666667" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaL-Ho-B1y">
+                                                <rect key="frame" x="0.0" y="0.0" width="34.333333333333336" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="ellipsis" catalog="system" cornerStyle="capsule">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ResetPinButtonPressed:" destination="6Cr-wH-1kB" eventType="touchUpInside" id="yGa-97-7Fi"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Reset PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOU-db-Fdb">
+                                                <rect key="frame" x="44.333333333333336" y="5" width="74.333333333333314" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MH6-7U-s07">
+                                        <rect key="frame" x="269.66666666666669" y="0.0" width="34.333333333333314" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="arrow.right" catalog="system" cornerStyle="capsule">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ResetPinButtonPressed:" destination="6Cr-wH-1kB" eventType="touchUpInside" id="1Eb-jg-TRe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="r43-os-ROA" secondAttribute="bottom" constant="20" id="SoB-53-qfj"/>
+                            <constraint firstItem="r43-os-ROA" firstAttribute="top" secondItem="91W-fP-sZg" secondAttribute="top" constant="20" id="Xi4-0F-FP8"/>
+                            <constraint firstItem="r43-os-ROA" firstAttribute="leading" secondItem="91W-fP-sZg" secondAttribute="leading" constant="10" id="cn1-iE-alS"/>
+                            <constraint firstAttribute="trailing" secondItem="r43-os-ROA" secondAttribute="trailing" constant="10" id="nB7-K8-Gkc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="91W-fP-sZg" secondAttribute="bottom" constant="10" id="IQU-nx-1WR"/>
+                    <constraint firstAttribute="trailing" secondItem="91W-fP-sZg" secondAttribute="trailing" constant="10" id="KpB-AL-7DT"/>
+                    <constraint firstItem="91W-fP-sZg" firstAttribute="top" secondItem="fSc-lg-UEt" secondAttribute="top" constant="10" id="MwH-cq-bYp"/>
+                    <constraint firstItem="91W-fP-sZg" firstAttribute="leading" secondItem="fSc-lg-UEt" secondAttribute="leading" constant="10" id="jbr-im-K9k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-27.480916030534349" y="61.971830985915496"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

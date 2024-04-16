@@ -171,6 +171,114 @@
             </objects>
             <point key="canvasLocation" x="6906" y="500"/>
         </scene>
+        <!--Upgrade CardVC-->
+        <scene sceneID="Uzp-ju-Zkg">
+            <objects>
+                <viewController storyboardIdentifier="UpgradeCardVC" id="ajb-ol-5el" customClass="UpgradeCardVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="de3-ac-OW3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwF-Qj-WsY">
+                                <rect key="frame" x="142.66666666666666" y="411.66666666666669" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cpW-3e-QO9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GwF-Qj-WsY" firstAttribute="centerX" secondItem="de3-ac-OW3" secondAttribute="centerX" id="RPm-cc-9Kf"/>
+                            <constraint firstItem="GwF-Qj-WsY" firstAttribute="centerY" secondItem="de3-ac-OW3" secondAttribute="centerY" id="ncH-wd-mha"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6zx-VF-D98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8980" y="500"/>
+        </scene>
+        <!--Lock CardVC-->
+        <scene sceneID="vr2-ep-5Ds">
+            <objects>
+                <viewController storyboardIdentifier="LockCardVC" id="zot-Z4-VT7" customClass="LockCardVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jj6-2k-7OM">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aP9-PJ-1eF">
+                                <rect key="frame" x="157.66666666666666" y="411.66666666666669" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pJM-CH-QST"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aP9-PJ-1eF" firstAttribute="centerX" secondItem="jj6-2k-7OM" secondAttribute="centerX" id="H6E-hg-d43"/>
+                            <constraint firstItem="aP9-PJ-1eF" firstAttribute="centerY" secondItem="jj6-2k-7OM" secondAttribute="centerY" id="t0q-S5-XJO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tn-30-yZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9738" y="500"/>
+        </scene>
+        <!--Reset PinVC-->
+        <scene sceneID="2Qk-t5-Na8">
+            <objects>
+                <viewController storyboardIdentifier="ResetPinVC" id="48L-Ye-Ayt" customClass="ResetPinVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1iS-Ec-HpX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4z-qI-Dek">
+                                <rect key="frame" x="157.66666666666666" y="411.66666666666669" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sDS-9u-hHb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a4z-qI-Dek" firstAttribute="centerX" secondItem="1iS-Ec-HpX" secondAttribute="centerX" id="1QS-7H-ta0"/>
+                            <constraint firstItem="a4z-qI-Dek" firstAttribute="centerY" secondItem="1iS-Ec-HpX" secondAttribute="centerY" id="RfU-dm-K4x"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbo-Z6-msV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10549" y="500"/>
+        </scene>
+        <!--Get New CardVC-->
+        <scene sceneID="ol3-Pc-5pd">
+            <objects>
+                <viewController storyboardIdentifier="GetNewCardVC" id="YWq-gG-kCU" customClass="GetNewCardVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tl7-pS-Gtk">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get a new card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6z-E5-rho">
+                                <rect key="frame" x="137.66666666666666" y="411.66666666666669" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZrB-D5-kt6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u6z-E5-rho" firstAttribute="centerY" secondItem="Tl7-pS-Gtk" secondAttribute="centerY" id="W3A-pO-E6O"/>
+                            <constraint firstItem="u6z-E5-rho" firstAttribute="centerX" secondItem="Tl7-pS-Gtk" secondAttribute="centerX" id="qon-JE-qnv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D74-Lr-Ips" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11382" y="500"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
