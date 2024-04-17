@@ -14,6 +14,10 @@ class SharedData {
 
 class HomePageVC: UIViewController{
     
+    
+    let refreshControl = UIRefreshControl()
+
+    
     @IBOutlet var transactionTableView: UITableView!
     @IBOutlet var priceLabel: BlurText!
     
@@ -54,6 +58,18 @@ class HomePageVC: UIViewController{
         
         transactionTableView.showsVerticalScrollIndicator=false
         
+        transactionTableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+
+        
+    }
+    @objc func refreshData() {
+        // Perform your refresh operation here
+        
+        // After refreshing is done, end refreshing
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.refreshControl.endRefreshing()
+        }
     }
     
     

@@ -702,21 +702,39 @@
                                     <constraint firstAttribute="trailing" secondItem="3gm-KK-IXR" secondAttribute="trailing" constant="10" id="qW3-5w-UEQ"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5kJ-gQ-2TI">
+                                <rect key="frame" x="16" y="100" width="358" height="661"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qwx-B6-Lac">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YQL-yD-g26"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5kJ-gQ-2TI" firstAttribute="top" secondItem="7Xh-71-omU" secondAttribute="bottom" constant="8" id="4fc-b8-fyi"/>
+                            <constraint firstItem="5kJ-gQ-2TI" firstAttribute="leading" secondItem="YQL-yD-g26" secondAttribute="leading" constant="16" id="9ct-Jq-Yee"/>
                             <constraint firstItem="YQL-yD-g26" firstAttribute="trailing" secondItem="7Xh-71-omU" secondAttribute="trailing" id="Mqn-gg-o7s"/>
+                            <constraint firstItem="YQL-yD-g26" firstAttribute="trailing" secondItem="5kJ-gQ-2TI" secondAttribute="trailing" constant="16" id="NKa-VM-gAP"/>
                             <constraint firstItem="7Xh-71-omU" firstAttribute="leading" secondItem="YQL-yD-g26" secondAttribute="leading" id="WWB-ii-ydj"/>
+                            <constraint firstItem="5kJ-gQ-2TI" firstAttribute="bottom" secondItem="YQL-yD-g26" secondAttribute="bottom" id="Wlc-MV-FDf"/>
                             <constraint firstItem="7Xh-71-omU" firstAttribute="top" secondItem="YQL-yD-g26" secondAttribute="top" id="hk5-Gp-prU"/>
                             <constraint firstItem="7Xh-71-omU" firstAttribute="width" secondItem="bvn-Wd-ozf" secondAttribute="width" id="qEG-vk-7fj"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="ellipsis" catalog="system" id="cLc-aM-olF"/>
+                    <connections>
+                        <outlet property="moreCollectionView" destination="5kJ-gQ-2TI" id="yTj-sc-WIx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1P-u8-luF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229" y="503"/>
+            <point key="canvasLocation" x="2227.6923076923076" y="502.60663507109001"/>
         </scene>
         <!--User ProfileVC-->
         <scene sceneID="70a-dL-vEa">
@@ -768,7 +786,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XS2-9T-gFb"/>
+        <segue reference="rnD-MF-cS3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.arrow.right" catalog="system" width="120" height="128"/>

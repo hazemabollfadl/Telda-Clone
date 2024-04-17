@@ -11,6 +11,7 @@ class CardVC: UIViewController {
     
     @IBOutlet var cardTableview: UITableView!
     static var vcSwitch:UISwitch?
+    let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +34,20 @@ class CardVC: UIViewController {
         
         cardTableview.rowHeight = UITableView.automaticDimension
         
+        cardTableview.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+
+        
         cardTableview.showsVerticalScrollIndicator=false
         
+    }
+    @objc func refreshData() {
+        // Perform your refresh operation here
+        
+        // After refreshing is done, end refreshing
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.refreshControl.endRefreshing()
+        }
     }
     
 }
@@ -76,6 +89,7 @@ extension CardVC:UITableViewDataSource{
             return getNewCardCell
         }
     }
+    
 }
 //MARK: - UITableViewDelegate
 extension CardVC:UITableViewDelegate{

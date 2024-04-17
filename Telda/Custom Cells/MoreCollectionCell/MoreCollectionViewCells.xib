@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoreCollectionViewCells" id="gTV-IL-0wX" customClass="MoreCollectionViewCells" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lC4-Nk-7su">
+                        <rect key="frame" x="0.0" y="12.666666666666671" width="80" height="110"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piu-0y-iYm">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6mT-sx-C5t">
+                                        <rect key="frame" x="16.333333333333332" y="20.666666666666668" width="47.666666666666671" height="46.333333333333314"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="6mT-sx-C5t" firstAttribute="centerY" secondItem="piu-0y-iYm" secondAttribute="centerY" id="e5z-PH-lmR"/>
+                                    <constraint firstItem="6mT-sx-C5t" firstAttribute="centerX" secondItem="piu-0y-iYm" secondAttribute="centerX" id="tGT-IG-8hv"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gifts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugq-HV-OuH">
+                                <rect key="frame" x="23.000000000000004" y="98" width="34.333333333333343" height="12"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ugq-HV-OuH" firstAttribute="centerX" secondItem="lC4-Nk-7su" secondAttribute="centerX" id="3Mb-PT-iKh"/>
+                            <constraint firstAttribute="trailing" secondItem="piu-0y-iYm" secondAttribute="trailing" id="Edn-Uf-FoY"/>
+                            <constraint firstItem="piu-0y-iYm" firstAttribute="top" secondItem="lC4-Nk-7su" secondAttribute="top" id="Fg6-LZ-a5p"/>
+                            <constraint firstAttribute="bottom" secondItem="ugq-HV-OuH" secondAttribute="bottom" id="Fvn-Va-LLB"/>
+                            <constraint firstAttribute="bottom" secondItem="piu-0y-iYm" secondAttribute="bottom" constant="20" id="KpC-vR-3Wo"/>
+                            <constraint firstItem="piu-0y-iYm" firstAttribute="width" secondItem="lC4-Nk-7su" secondAttribute="width" id="aV4-h8-rHV"/>
+                            <constraint firstItem="ugq-HV-OuH" firstAttribute="top" secondItem="piu-0y-iYm" secondAttribute="bottom" constant="8" id="cxF-WD-coH"/>
+                            <constraint firstItem="piu-0y-iYm" firstAttribute="leading" secondItem="lC4-Nk-7su" secondAttribute="leading" id="nUT-8Z-kNt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="lC4-Nk-7su" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="M0J-1F-V04"/>
+                <constraint firstItem="lC4-Nk-7su" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="UL6-V2-7Zz"/>
+                <constraint firstItem="lC4-Nk-7su" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="b8Y-2r-9bb"/>
+                <constraint firstItem="lC4-Nk-7su" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="wlr-as-U4l"/>
+            </constraints>
+            <size key="customSize" width="161" height="586"/>
+            <connections>
+                <outlet property="CellLabel" destination="ugq-HV-OuH" id="v5v-Z9-M4B"/>
+                <outlet property="SmallView" destination="piu-0y-iYm" id="rB8-uq-ouo"/>
+            </connections>
+            <point key="canvasLocation" x="-68.702290076335871" y="135.21126760563382"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gift.fill" catalog="system" width="128" height="125"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

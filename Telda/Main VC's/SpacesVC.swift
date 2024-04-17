@@ -14,6 +14,9 @@ class SpacesVC: UIViewController {
     @IBOutlet var currentBalanceButton: UIButton!
     @IBOutlet var PriceLabel: BlurText!
     
+    let refreshControl = UIRefreshControl()
+
+    
     override func viewWillAppear(_ animated: Bool) {
         
         if SharedData.shared.select==true{
@@ -39,6 +42,17 @@ class SpacesVC: UIViewController {
         let nib1=UINib(nibName: "SpaceAddCollectionCell", bundle: .main)
         SpacesCollectionView.register(nib1, forCellWithReuseIdentifier: "SpaceAddCollectionCell")
         
+        
+        SpacesCollectionView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+    }
+    @objc func refreshData() {
+        // Perform your refresh operation here
+        
+        // After refreshing is done, end refreshing
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.refreshControl.endRefreshing()
+        }
     }
     
     @IBAction func currentBalanceButtonPressed(_ sender: UIButton) {
