@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfilePlanAndEarnCollectionCell" id="gTV-IL-0wX" customClass="ProfilePlanAndEarnCollectionCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnl-bF-310">
+                        <rect key="frame" x="0.0" y="12.666666666666671" width="150" height="120.00000000000001"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QbX-Hs-qnM">
+                                <rect key="frame" x="8" y="6.6666666666666643" width="73" height="106.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="foh-f0-VX1">
+                                        <rect key="frame" x="0.0" y="5.6666666666666643" width="70.333333333333329" height="48.666666666666671"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mf9-hy-Fbt">
+                                        <rect key="frame" x="0.0" y="67.666666666666671" width="73" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your plan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YP6-xr-Vcj">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2s-bm-MMW">
+                                                <rect key="frame" x="0.0" y="18.666666666666671" width="73" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="QbX-Hs-qnM" firstAttribute="leading" secondItem="bnl-bF-310" secondAttribute="leading" constant="8" id="gC2-Zk-041"/>
+                            <constraint firstItem="QbX-Hs-qnM" firstAttribute="centerY" secondItem="bnl-bF-310" secondAttribute="centerY" id="jbe-js-EkR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="bnl-bF-310" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="1YD-t6-si8"/>
+                <constraint firstItem="bnl-bF-310" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="RgP-M4-9dq"/>
+                <constraint firstItem="bnl-bF-310" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="qK4-m7-MTE"/>
+                <constraint firstItem="bnl-bF-310" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="w0O-lZ-jig"/>
+            </constraints>
+            <size key="customSize" width="165" height="159"/>
+            <connections>
+                <outlet property="BigText" destination="H2s-bm-MMW" id="j8I-np-u2F"/>
+                <outlet property="BigView" destination="bnl-bF-310" id="KQ6-ny-cSr"/>
+                <outlet property="Image" destination="foh-f0-VX1" id="0hy-Uf-Xfg"/>
+                <outlet property="SmallText" destination="YP6-xr-Vcj" id="rgj-kU-OCI"/>
+            </connections>
+            <point key="canvasLocation" x="-85.496183206106863" y="22.535211267605636"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

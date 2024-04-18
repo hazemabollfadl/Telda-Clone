@@ -11,7 +11,8 @@ class MoreVC: UIViewController {
     
     @IBOutlet var moreCollectionView: UICollectionView!
     
-    
+    let refreshControl = UIRefreshControl()
+
     
     
     override func viewDidLoad() {
@@ -25,9 +26,19 @@ class MoreVC: UIViewController {
         let nib1=UINib(nibName: "MoreHeader", bundle: nil)
         moreCollectionView.register(nib1, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "MoreHeader")
         
-        
+        moreCollectionView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+
     }
     
+    @objc func refreshData() {
+        // Perform your refresh operation here
+        
+        // After refreshing is done, end refreshing
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.refreshControl.endRefreshing()
+        }
+    }
     
 }
 
@@ -39,7 +50,7 @@ extension MoreVC:UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        6
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

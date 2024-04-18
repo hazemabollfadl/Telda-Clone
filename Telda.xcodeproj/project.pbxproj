@@ -36,6 +36,16 @@
 		6F80E5DC2BC05212006BCD24 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F80E5DB2BC05212006BCD24 /* UserProfileVC.swift */; };
 		6F80E5E72BC431D7006BCD24 /* BlurText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F80E5E62BC431D7006BCD24 /* BlurText.swift */; };
 		6F8EB2AD2BD05005002D108A /* GiftDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EB2AC2BD05005002D108A /* GiftDetailsVC.swift */; };
+		6F8EB2B12BD17FC6002D108A /* ProfileDetailsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EB2AF2BD17FC6002D108A /* ProfileDetailsCollectionCell.swift */; };
+		6F8EB2B22BD17FC6002D108A /* ProfileDetailsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8EB2B02BD17FC6002D108A /* ProfileDetailsCollectionCell.xib */; };
+		6F8EB2B62BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EB2B42BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.swift */; };
+		6F8EB2B72BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8EB2B52BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.xib */; };
+		6F8EB2BA2BD192EA002D108A /* PremuimCardCellForCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EB2B82BD192EA002D108A /* PremuimCardCellForCollection.swift */; };
+		6F8EB2BB2BD192EA002D108A /* PremuimCardCellForCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8EB2B92BD192EA002D108A /* PremuimCardCellForCollection.xib */; };
+		6F8EB2C02BD199F8002D108A /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EB2BE2BD199F8002D108A /* ProfileHeader.swift */; };
+		6F8EB2C12BD199F8002D108A /* ProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8EB2BF2BD199F8002D108A /* ProfileHeader.xib */; };
+		6F8EB2C52BD19E8C002D108A /* ProfileUsageAndManageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EB2C32BD19E8C002D108A /* ProfileUsageAndManageCell.swift */; };
+		6F8EB2C62BD19E8C002D108A /* ProfileUsageAndManageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8EB2C42BD19E8C002D108A /* ProfileUsageAndManageCell.xib */; };
 		6FABD5C42BC9A2130009FB09 /* SpaceAddCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FABD5C22BC9A2130009FB09 /* SpaceAddCollectionCell.swift */; };
 		6FABD5C52BC9A2130009FB09 /* SpacesCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FABD5C32BC9A2130009FB09 /* SpacesCollectionCell.xib */; };
 		6FABD5C72BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FABD5C62BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift */; };
@@ -84,6 +94,16 @@
 		6F80E5DB2BC05212006BCD24 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		6F80E5E62BC431D7006BCD24 /* BlurText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurText.swift; sourceTree = "<group>"; };
 		6F8EB2AC2BD05005002D108A /* GiftDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftDetailsVC.swift; sourceTree = "<group>"; };
+		6F8EB2AF2BD17FC6002D108A /* ProfileDetailsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsCollectionCell.swift; sourceTree = "<group>"; };
+		6F8EB2B02BD17FC6002D108A /* ProfileDetailsCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileDetailsCollectionCell.xib; sourceTree = "<group>"; };
+		6F8EB2B42BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePlanAndEarnCollectionCell.swift; sourceTree = "<group>"; };
+		6F8EB2B52BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePlanAndEarnCollectionCell.xib; sourceTree = "<group>"; };
+		6F8EB2B82BD192EA002D108A /* PremuimCardCellForCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremuimCardCellForCollection.swift; sourceTree = "<group>"; };
+		6F8EB2B92BD192EA002D108A /* PremuimCardCellForCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremuimCardCellForCollection.xib; sourceTree = "<group>"; };
+		6F8EB2BE2BD199F8002D108A /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		6F8EB2BF2BD199F8002D108A /* ProfileHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeader.xib; sourceTree = "<group>"; };
+		6F8EB2C32BD19E8C002D108A /* ProfileUsageAndManageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUsageAndManageCell.swift; sourceTree = "<group>"; };
+		6F8EB2C42BD19E8C002D108A /* ProfileUsageAndManageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileUsageAndManageCell.xib; sourceTree = "<group>"; };
 		6FABD5C22BC9A2130009FB09 /* SpaceAddCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAddCollectionCell.swift; sourceTree = "<group>"; };
 		6FABD5C32BC9A2130009FB09 /* SpacesCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpacesCollectionCell.xib; sourceTree = "<group>"; };
 		6FABD5C62BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsYourGoalVC.swift; sourceTree = "<group>"; };
@@ -135,7 +155,7 @@
 			path = "Main VC's";
 			sourceTree = "<group>";
 		};
-		6F08A2122BC03E3000CFC08A /* Custom Cells */ = {
+		6F08A2122BC03E3000CFC08A /* Custom Main Cells */ = {
 			isa = PBXGroup;
 			children = (
 				6F23B2D22BC6CDBE00BD3458 /* AddSendInsightCell */,
@@ -145,8 +165,12 @@
 				6FCAAE312BCE74A800DF1B90 /* PremuimCardCell */,
 				6F13BDCC2BCE8A1300FDB311 /* CardCells */,
 				6F227C2D2BD04CA400FF6C37 /* MoreCollectionCell */,
+				6F8EB2B32BD1868C002D108A /* ProfileDetailsCollectionCell */,
+				6F8EB2BC2BD19682002D108A /* ProfilePlanAndEarnCollectionCell */,
+				6F8EB2C32BD19E8C002D108A /* ProfileUsageAndManageCell.swift */,
+				6F8EB2C42BD19E8C002D108A /* ProfileUsageAndManageCell.xib */,
 			);
-			path = "Custom Cells";
+			path = "Custom Main Cells";
 			sourceTree = "<group>";
 		};
 		6F13BDCC2BCE8A1300FDB311 /* CardCells */ = {
@@ -217,10 +241,53 @@
 		6F23B2D82BC6F5CE00BD3458 /* Haders&Footers */ = {
 			isa = PBXGroup;
 			children = (
+				6F8EB2BD2BD199D1002D108A /* MoreHeader */,
+				6F8EB2C22BD19E27002D108A /* ProfileHeader */,
+			);
+			path = "Haders&Footers";
+			sourceTree = "<group>";
+		};
+		6F8EB2AE2BD051F9002D108A /* Custom Secondary Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Secondary Cells";
+			sourceTree = "<group>";
+		};
+		6F8EB2B32BD1868C002D108A /* ProfileDetailsCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F8EB2AF2BD17FC6002D108A /* ProfileDetailsCollectionCell.swift */,
+				6F8EB2B02BD17FC6002D108A /* ProfileDetailsCollectionCell.xib */,
+			);
+			path = ProfileDetailsCollectionCell;
+			sourceTree = "<group>";
+		};
+		6F8EB2BC2BD19682002D108A /* ProfilePlanAndEarnCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F8EB2B42BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.swift */,
+				6F8EB2B52BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.xib */,
+			);
+			path = ProfilePlanAndEarnCollectionCell;
+			sourceTree = "<group>";
+		};
+		6F8EB2BD2BD199D1002D108A /* MoreHeader */ = {
+			isa = PBXGroup;
+			children = (
 				6F227C292BD0478500FF6C37 /* MoreHeader.swift */,
 				6F227C2A2BD0478500FF6C37 /* MoreHeader.xib */,
 			);
-			path = "Haders&Footers";
+			path = MoreHeader;
+			sourceTree = "<group>";
+		};
+		6F8EB2C22BD19E27002D108A /* ProfileHeader */ = {
+			isa = PBXGroup;
+			children = (
+				6F8EB2BE2BD199F8002D108A /* ProfileHeader.swift */,
+				6F8EB2BF2BD199F8002D108A /* ProfileHeader.xib */,
+			);
+			path = ProfileHeader;
 			sourceTree = "<group>";
 		};
 		6FABD5C12BC9A1CD0009FB09 /* SpaceCollectionCell */ = {
@@ -246,6 +313,8 @@
 			children = (
 				6FCAAE322BCE74EB00DF1B90 /* PremuimCardCell.swift */,
 				6FCAAE332BCE74EB00DF1B90 /* PremuimCardCell.xib */,
+				6F8EB2B82BD192EA002D108A /* PremuimCardCellForCollection.swift */,
+				6F8EB2B92BD192EA002D108A /* PremuimCardCellForCollection.xib */,
 			);
 			path = PremuimCardCell;
 			sourceTree = "<group>";
@@ -265,7 +334,8 @@
 			children = (
 				6FE1204E2BC0232E009C6EE4 /* Supporting files */,
 				6F23B2D82BC6F5CE00BD3458 /* Haders&Footers */,
-				6F08A2122BC03E3000CFC08A /* Custom Cells */,
+				6F08A2122BC03E3000CFC08A /* Custom Main Cells */,
+				6F8EB2AE2BD051F9002D108A /* Custom Secondary Cells */,
 				6F08A2072BC0346D00CFC08A /* Main VC's */,
 				6F23B2C62BC4442A00BD3458 /* Secondary VC's */,
 				6F23B2C72BC4445F00BD3458 /* Views */,
@@ -354,18 +424,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8EB2B22BD17FC6002D108A /* ProfileDetailsCollectionCell.xib in Resources */,
 				6F3F06CE2BC83E9B00AAC6C7 /* SpaceAddCollectionCell.xib in Resources */,
+				6F8EB2C12BD199F8002D108A /* ProfileHeader.xib in Resources */,
 				6F13BDD02BCE8A5800FDB311 /* LockCard.xib in Resources */,
 				6F23B2D12BC4478500BD3458 /* Secondary.storyboard in Resources */,
 				6F227C2B2BD0478500FF6C37 /* MoreHeader.xib in Resources */,
 				6F13BDD42BCE967400FDB311 /* GetNewCard.xib in Resources */,
+				6F8EB2B72BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.xib in Resources */,
 				6F08A2162BC03F1E00CFC08A /* AddSendInsightCell.xib in Resources */,
 				6FE120442BC022B4009C6EE4 /* Assets.xcassets in Resources */,
 				6FCAAE352BCE74EB00DF1B90 /* PremuimCardCell.xib in Resources */,
 				6FABD5C52BC9A2130009FB09 /* SpacesCollectionCell.xib in Resources */,
 				6FE120472BC022B4009C6EE4 /* Base in Resources */,
 				6FE120422BC022B2009C6EE4 /* Base in Resources */,
+				6F8EB2C62BD19E8C002D108A /* ProfileUsageAndManageCell.xib in Resources */,
 				6FBA02382BD0258200E7409D /* MoreCollectionViewCells.xib in Resources */,
+				6F8EB2BB2BD192EA002D108A /* PremuimCardCellForCollection.xib in Resources */,
 				6F13BDD22BCE8E8A00FDB311 /* ResetPin.xib in Resources */,
 				6F23B2D62BC6CDD900BD3458 /* HomePageCell.xib in Resources */,
 			);
@@ -409,15 +484,20 @@
 				6F08A20B2BC03CF100CFC08A /* SpacesVC.swift in Sources */,
 				6F80E5DC2BC05212006BCD24 /* UserProfileVC.swift in Sources */,
 				6F23B2DA2BC6F9A900BD3458 /* TransactionDetailsVC.swift in Sources */,
+				6F8EB2B62BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.swift in Sources */,
 				6FCAAE342BCE74EB00DF1B90 /* PremuimCardCell.swift in Sources */,
+				6F8EB2C02BD199F8002D108A /* ProfileHeader.swift in Sources */,
 				6F08A2112BC03D2200CFC08A /* MoreVC.swift in Sources */,
+				6F8EB2B12BD17FC6002D108A /* ProfileDetailsCollectionCell.swift in Sources */,
 				6F23B2CF2BC4450900BD3458 /* InsightVC.swift in Sources */,
 				6F80E5E72BC431D7006BCD24 /* BlurText.swift in Sources */,
 				6F13BDDC2BCEA05800FDB311 /* GetNewCardVC.swift in Sources */,
+				6F8EB2BA2BD192EA002D108A /* PremuimCardCellForCollection.swift in Sources */,
 				6F227C2C2BD0478500FF6C37 /* MoreHeader.swift in Sources */,
 				6FBA02392BD0258200E7409D /* MoreCollectionViewCells.swift in Sources */,
 				6FABD5C72BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift in Sources */,
 				6F08A2152BC03F1E00CFC08A /* AddSendInsightCell.swift in Sources */,
+				6F8EB2C52BD19E8C002D108A /* ProfileUsageAndManageCell.swift in Sources */,
 				6FCAAE2E2BCB069E00DF1B90 /* RequestMoneyVC.swift in Sources */,
 				6F13BDCF2BCE8A5800FDB311 /* CardCells.swift in Sources */,
 				6F13BDD82BCE9CDA00FDB311 /* UpgradeCardVC.swift in Sources */,
