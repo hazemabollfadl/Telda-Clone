@@ -102,7 +102,7 @@ extension CardVC:UITableViewDelegate{
             
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "ResetPinVC") as! ResetPinVC
-            vc.modalPresentationStyle = .popover
+            vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
             
         }
@@ -110,7 +110,7 @@ extension CardVC:UITableViewDelegate{
         if indexPath.row==3{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "GetNewCardVC") as! GetNewCardVC
-            vc.modalPresentationStyle = .popover
+            vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
             
         }
@@ -131,14 +131,14 @@ extension CardVC:upgradeButtonPressed, CardCellsButtonPressed{
     func ResetPinButtonPressed() {
         let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
         let vc  = storyboard.instantiateViewController(withIdentifier: "ResetPinVC") as! ResetPinVC
-        vc.modalPresentationStyle = .popover
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }
     
     func GetNewCardButtonPressed() {
         let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
         let vc  = storyboard.instantiateViewController(withIdentifier: "GetNewCardVC") as! GetNewCardVC
-        vc.modalPresentationStyle = .popover
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }
     

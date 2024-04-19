@@ -51,6 +51,9 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                             <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="upgradeButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="nZZ-aG-1aZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

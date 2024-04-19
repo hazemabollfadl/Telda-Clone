@@ -36,11 +36,9 @@ class UserProfileVC: UIViewController {
         
     }
     
-    
-    @IBAction func dismissButtonPressed(_ sender: UIButton) {
+    @IBAction func dismissButtonPressed(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true)
     }
-    
 }
 
 //MARK: - UICollectionViewDiffableDataSource
@@ -64,6 +62,7 @@ extension UserProfileVC:UICollectionViewDataSource{
         let cell2 = UserProfileCollectionView.dequeueReusableCell(withReuseIdentifier: "ProfilePlanAndEarnCollectionCell", for: indexPath) as! ProfilePlanAndEarnCollectionCell
         
         let cell3 = UserProfileCollectionView.dequeueReusableCell(withReuseIdentifier: "PremuimCardCellForCollection", for: indexPath) as! PremuimCardCellForCollection
+        cell3.delegate=self
         
         let cell4 = UserProfileCollectionView.dequeueReusableCell(withReuseIdentifier: "ProfileUsageAndManageCell", for: indexPath) as! ProfileUsageAndManageCell
         
@@ -133,8 +132,48 @@ extension UserProfileVC:UICollectionViewDataSource{
 //MARK: - UICollectionViewDelegate
 extension UserProfileVC:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+        
+        
+        if indexPath.section==0{
+            if indexPath.row==1{
+                DispatchQueue.main.async {
+                    let storyboard = UIStoryboard(name: "Third", bundle: nil)
+                    let vc  = storyboard.instantiateViewController(withIdentifier: "StandardVC") as! StandardVC
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true)
+                }
+            }else if indexPath.row==2{
+                performSegue(withIdentifier: "UserProfileToInviteFriends", sender: self)
+            }
+        }
+        
+        if indexPath.section==1{
+            if indexPath.row==0{
+                performSegue(withIdentifier: "UserProfileToLimits", sender: self)
+            }
+            else{
+                performSegue(withIdentifier: "UserProfileToFees", sender: self)
+            }
+        }
+        
+        if indexPath.section==2{
+            if indexPath.row==0{
+                performSegue(withIdentifier: "UserProfileToAppAppearance", sender: self)
+            }else if indexPath.row==1{
+                performSegue(withIdentifier: "UserProfileToSettings", sender: self)
+            }else{
+                DispatchQueue.main.async {
+                    let storyboard = UIStoryboard(name: "Third", bundle: nil)
+                    let vc  = storyboard.instantiateViewController(withIdentifier: "ChatWithUsVC") as! ChatWithUsVC
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true)
+                }
+            }
+        }
+        
     }
+    
+    
 }
 
 extension UserProfileVC:UICollectionViewDelegateFlowLayout{
@@ -147,9 +186,8 @@ extension UserProfileVC:UICollectionViewDelegateFlowLayout{
         flowLayout.minimumLineSpacing=20
         flowLayout.minimumInteritemSpacing=10
         
-        //                flowLayout.sectionInset=UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        flowLayout.sectionInset=UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
         
-        //                return CGSize(width: (collectionView.bounds.width/4)-30, height: (collectionView.bounds.width/4)-10)
         
         if indexPath.section==0{
             if indexPath.row == 0{
@@ -174,4 +212,18 @@ extension UserProfileVC:UICollectionViewDelegateFlowLayout{
             return CGSize(width: collectionView.frame.width, height: 50) // Adjust the height as needed
         }
     }
+}
+
+//MARK: - upgradeButtonPressed1
+extension UserProfileVC:upgradeButtonPressed1{
+    func upgradeButtonPressed() {
+        DispatchQueue.main.async {
+            let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
+            let vc  = storyboard.instantiateViewController(withIdentifier: "UpgradeCardVC") as! UpgradeCardVC
+            vc.modalPresentationStyle = .popover
+            self.present(vc, animated: true)
+        }
+    }
+    
+    
 }

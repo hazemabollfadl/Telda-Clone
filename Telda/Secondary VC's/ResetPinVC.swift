@@ -15,7 +15,10 @@ class ResetPinVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func dismissButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

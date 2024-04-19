@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--StandardVC-->
+        <scene sceneID="ZR9-sd-vJw">
+            <objects>
+                <viewController storyboardIdentifier="StandardVC" id="ksg-fE-2g3" customClass="StandardVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Yc-12-Cl6">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCz-lg-iKP">
+                                <rect key="frame" x="160" y="411.66666666666669" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJv-aw-nFV">
+                                <rect key="frame" x="6" y="47" width="41.333333333333336" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="ksg-fE-2g3" eventType="touchUpInside" id="hkE-ul-V4w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uZi-VW-YDJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XJv-aw-nFV" firstAttribute="top" secondItem="uZi-VW-YDJ" secondAttribute="top" id="61L-wv-bYF"/>
+                            <constraint firstItem="XJv-aw-nFV" firstAttribute="leading" secondItem="uZi-VW-YDJ" secondAttribute="leading" constant="6" id="Jpy-3t-Yi2"/>
+                            <constraint firstItem="oCz-lg-iKP" firstAttribute="centerX" secondItem="0Yc-12-Cl6" secondAttribute="centerX" id="hS4-wN-muH"/>
+                            <constraint firstItem="oCz-lg-iKP" firstAttribute="centerY" secondItem="0Yc-12-Cl6" secondAttribute="centerY" id="qy9-ky-XNJ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Qg-c4-CBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2963" y="4"/>
+        </scene>
+        <!--Invite FriendsVC-->
+        <scene sceneID="hUm-GK-NkK">
+            <objects>
+                <viewController storyboardIdentifier="InviteFriendsVC" id="kSn-3X-hjG" customClass="InviteFriendsVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hon-ha-s2c">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3d-aP-eUm">
+                                <rect key="frame" x="148.66666666666666" y="411.66666666666669" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Klq-Oj-Ygd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X3d-aP-eUm" firstAttribute="centerX" secondItem="hon-ha-s2c" secondAttribute="centerX" id="FFy-y5-7uy"/>
+                            <constraint firstItem="X3d-aP-eUm" firstAttribute="centerY" secondItem="hon-ha-s2c" secondAttribute="centerY" id="KTf-Hs-lap"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYk-h8-7jv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2218.4615384615386" y="3.5545023696682461"/>
+        </scene>
+        <!--LimitsVC-->
+        <scene sceneID="lw3-Wp-Bnc">
+            <objects>
+                <viewController storyboardIdentifier="LimitsVC" id="n1u-bP-kKk" customClass="LimitsVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJt-tL-Nhf">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE4-Kh-gke">
+                                <rect key="frame" x="172" y="411.66666666666669" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="760-O0-Mgr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pE4-Kh-gke" firstAttribute="centerX" secondItem="wJt-tL-Nhf" secondAttribute="centerX" id="Jg3-gi-2kS"/>
+                            <constraint firstItem="pE4-Kh-gke" firstAttribute="centerY" secondItem="wJt-tL-Nhf" secondAttribute="centerY" id="xo2-ra-P4c"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nKz-hy-XeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1445" y="4"/>
+        </scene>
+        <!--FeesVC-->
+        <scene sceneID="VxP-db-CAm">
+            <objects>
+                <viewController storyboardIdentifier="FeesVC" id="In8-BD-d2S" customClass="FeesVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KN8-7I-8lB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylw-WP-6Ul">
+                                <rect key="frame" x="176.66666666666666" y="411.66666666666669" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kcp-56-6YV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ylw-WP-6Ul" firstAttribute="centerY" secondItem="KN8-7I-8lB" secondAttribute="centerY" id="Ira-lW-oC3"/>
+                            <constraint firstItem="ylw-WP-6Ul" firstAttribute="centerX" secondItem="KN8-7I-8lB" secondAttribute="centerX" id="RzA-Yx-ZyF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHN-dp-GO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-717" y="4"/>
+        </scene>
+        <!--App AppearanceVC-->
+        <scene sceneID="eSK-aI-ryE">
+            <objects>
+                <viewController storyboardIdentifier="AppAppearanceVC" id="Zyb-zs-dIK" customClass="AppAppearanceVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oVl-qw-Tmu">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App appearance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPw-Qs-BcN">
+                                <rect key="frame" x="132" y="411.66666666666669" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cT6-Qt-lOg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iPw-Qs-BcN" firstAttribute="centerY" secondItem="oVl-qw-Tmu" secondAttribute="centerY" id="HVG-mi-wXq"/>
+                            <constraint firstItem="iPw-Qs-BcN" firstAttribute="centerX" secondItem="oVl-qw-Tmu" secondAttribute="centerX" id="LD9-Uj-Cco"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yu-ne-UFz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="4"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SettingsVC" id="Y6W-OH-hqX" customClass="SettingsVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtV-N8-5GZ">
+                                <rect key="frame" x="163.66666666666666" y="411.66666666666669" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dtV-N8-5GZ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="365-Ox-62t"/>
+                            <constraint firstItem="dtV-N8-5GZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nOo-hM-0JA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6pG-pG-ROe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="4"/>
+        </scene>
+        <!--Chat With UsVC-->
+        <scene sceneID="xDc-4m-kPz">
+            <objects>
+                <viewController storyboardIdentifier="ChatWithUsVC" id="D46-eP-Pxc" customClass="ChatWithUsVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZXB-NX-42D">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat with us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFv-Mf-YXW">
+                                <rect key="frame" x="147.66666666666666" y="411.66666666666669" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zat-L7-L6p">
+                                <rect key="frame" x="10" y="47" width="67" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Close"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="D46-eP-Pxc" eventType="touchUpInside" id="zpw-3d-4LX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MKz-mo-aUh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zat-L7-L6p" firstAttribute="leading" secondItem="MKz-mo-aUh" secondAttribute="leading" constant="10" id="6dA-oS-yNt"/>
+                            <constraint firstItem="zat-L7-L6p" firstAttribute="top" secondItem="MKz-mo-aUh" secondAttribute="top" id="Wdd-Xz-Njx"/>
+                            <constraint firstItem="LFv-Mf-YXW" firstAttribute="centerY" secondItem="ZXB-NX-42D" secondAttribute="centerY" id="kIV-2q-TIn"/>
+                            <constraint firstItem="LFv-Mf-YXW" firstAttribute="centerX" secondItem="ZXB-NX-42D" secondAttribute="centerX" id="sPZ-23-1Ne"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wo0-0H-Ix9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1536.9230769230769" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
