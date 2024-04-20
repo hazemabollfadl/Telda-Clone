@@ -33,6 +33,7 @@
 		6F23B2DA2BC6F9A900BD3458 /* TransactionDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F23B2D92BC6F9A900BD3458 /* TransactionDetailsVC.swift */; };
 		6F3F06CD2BC83E9B00AAC6C7 /* SpacesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F06CB2BC83E9B00AAC6C7 /* SpacesCollectionCell.swift */; };
 		6F3F06CE2BC83E9B00AAC6C7 /* SpaceAddCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F3F06CC2BC83E9B00AAC6C7 /* SpaceAddCollectionCell.xib */; };
+		6F53CE542BD3379200951B23 /* CreditCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F53CE532BD3379200951B23 /* CreditCardCell.xib */; };
 		6F80E5DC2BC05212006BCD24 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F80E5DB2BC05212006BCD24 /* UserProfileVC.swift */; };
 		6F80E5E72BC431D7006BCD24 /* BlurText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F80E5E62BC431D7006BCD24 /* BlurText.swift */; };
 		6F8EB2AD2BD05005002D108A /* GiftDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EB2AC2BD05005002D108A /* GiftDetailsVC.swift */; };
@@ -63,6 +64,12 @@
 		6FD1C64C2BD233E1009B9FED /* ChatWithUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1C64B2BD233E1009B9FED /* ChatWithUsVC.swift */; };
 		6FD1C64E2BD23502009B9FED /* StandardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1C64D2BD23502009B9FED /* StandardVC.swift */; };
 		6FD1C6502BD23510009B9FED /* InviteFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1C64F2BD23510009B9FED /* InviteFriendsVC.swift */; };
+		6FD5833A2BD37D8300ECFEFF /* RecieveTransfersCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD583392BD37D8300ECFEFF /* RecieveTransfersCollectionCell.xib */; };
+		6FD5833B2BD37D8300ECFEFF /* RecieveTransfersCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD583382BD37D8300ECFEFF /* RecieveTransfersCollectionCell.swift */; };
+		6FD5833D2BD394DB00ECFEFF /* InstapayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5833C2BD394DB00ECFEFF /* InstapayVC.swift */; };
+		6FD5833F2BD394F400ECFEFF /* BankTransfersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5833E2BD394F400ECFEFF /* BankTransfersVC.swift */; };
+		6FD583412BD3950900ECFEFF /* CashThroughAtmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD583402BD3950900ECFEFF /* CashThroughAtmVC.swift */; };
+		6FD583432BD3952400ECFEFF /* FawryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD583422BD3952400ECFEFF /* FawryVC.swift */; };
 		6FE1203B2BC022B2009C6EE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1203A2BC022B2009C6EE4 /* AppDelegate.swift */; };
 		6FE1203D2BC022B2009C6EE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1203C2BC022B2009C6EE4 /* SceneDelegate.swift */; };
 		6FE120422BC022B2009C6EE4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6FE120412BC022B2009C6EE4 /* Base */; };
@@ -99,6 +106,7 @@
 		6F23B2D92BC6F9A900BD3458 /* TransactionDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsVC.swift; sourceTree = "<group>"; };
 		6F3F06CB2BC83E9B00AAC6C7 /* SpacesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesCollectionCell.swift; sourceTree = "<group>"; };
 		6F3F06CC2BC83E9B00AAC6C7 /* SpaceAddCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceAddCollectionCell.xib; sourceTree = "<group>"; };
+		6F53CE532BD3379200951B23 /* CreditCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardCell.xib; sourceTree = "<group>"; };
 		6F80E5DB2BC05212006BCD24 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		6F80E5E62BC431D7006BCD24 /* BlurText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurText.swift; sourceTree = "<group>"; };
 		6F8EB2AC2BD05005002D108A /* GiftDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftDetailsVC.swift; sourceTree = "<group>"; };
@@ -129,6 +137,12 @@
 		6FD1C64B2BD233E1009B9FED /* ChatWithUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWithUsVC.swift; sourceTree = "<group>"; };
 		6FD1C64D2BD23502009B9FED /* StandardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardVC.swift; sourceTree = "<group>"; };
 		6FD1C64F2BD23510009B9FED /* InviteFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsVC.swift; sourceTree = "<group>"; };
+		6FD583382BD37D8300ECFEFF /* RecieveTransfersCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveTransfersCollectionCell.swift; sourceTree = "<group>"; };
+		6FD583392BD37D8300ECFEFF /* RecieveTransfersCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecieveTransfersCollectionCell.xib; sourceTree = "<group>"; };
+		6FD5833C2BD394DB00ECFEFF /* InstapayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstapayVC.swift; sourceTree = "<group>"; };
+		6FD5833E2BD394F400ECFEFF /* BankTransfersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTransfersVC.swift; sourceTree = "<group>"; };
+		6FD583402BD3950900ECFEFF /* CashThroughAtmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashThroughAtmVC.swift; sourceTree = "<group>"; };
+		6FD583422BD3952400ECFEFF /* FawryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FawryVC.swift; sourceTree = "<group>"; };
 		6FE1203A2BC022B2009C6EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FE1203C2BC022B2009C6EE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6FE120412BC022B2009C6EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				6F13BDCD2BCE8A5800FDB311 /* CardCells.swift */,
+				6F53CE532BD3379200951B23 /* CreditCardCell.xib */,
 				6F13BDCE2BCE8A5800FDB311 /* LockCard.xib */,
 				6F13BDD12BCE8E8A00FDB311 /* ResetPin.xib */,
 				6F13BDD32BCE967400FDB311 /* GetNewCard.xib */,
@@ -266,6 +281,8 @@
 		6F8EB2AE2BD051F9002D108A /* Custom Secondary Cells */ = {
 			isa = PBXGroup;
 			children = (
+				6FD583382BD37D8300ECFEFF /* RecieveTransfersCollectionCell.swift */,
+				6FD583392BD37D8300ECFEFF /* RecieveTransfersCollectionCell.xib */,
 			);
 			path = "Custom Secondary Cells";
 			sourceTree = "<group>";
@@ -354,6 +371,10 @@
 				6FD1C6472BD22E7D009B9FED /* AppAppearanceVC.swift */,
 				6FD1C6412BD224EC009B9FED /* SettingsVC.swift */,
 				6FD1C64B2BD233E1009B9FED /* ChatWithUsVC.swift */,
+				6FD5833C2BD394DB00ECFEFF /* InstapayVC.swift */,
+				6FD5833E2BD394F400ECFEFF /* BankTransfersVC.swift */,
+				6FD583402BD3950900ECFEFF /* CashThroughAtmVC.swift */,
+				6FD583422BD3952400ECFEFF /* FawryVC.swift */,
 			);
 			path = "Third VC's";
 			sourceTree = "<group>";
@@ -468,11 +489,13 @@
 				6F3F06CE2BC83E9B00AAC6C7 /* SpaceAddCollectionCell.xib in Resources */,
 				6F8EB2C12BD199F8002D108A /* ProfileHeader.xib in Resources */,
 				6F13BDD02BCE8A5800FDB311 /* LockCard.xib in Resources */,
+				6F53CE542BD3379200951B23 /* CreditCardCell.xib in Resources */,
 				6F23B2D12BC4478500BD3458 /* Secondary.storyboard in Resources */,
 				6F227C2B2BD0478500FF6C37 /* MoreHeader.xib in Resources */,
 				6F13BDD42BCE967400FDB311 /* GetNewCard.xib in Resources */,
 				6F8EB2B72BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.xib in Resources */,
 				6F08A2162BC03F1E00CFC08A /* AddSendInsightCell.xib in Resources */,
+				6FD5833A2BD37D8300ECFEFF /* RecieveTransfersCollectionCell.xib in Resources */,
 				6FE120442BC022B4009C6EE4 /* Assets.xcassets in Resources */,
 				6FD1C6402BD2249A009B9FED /* Third.storyboard in Resources */,
 				6FCAAE352BCE74EB00DF1B90 /* PremuimCardCell.xib in Resources */,
@@ -523,6 +546,7 @@
 				6FE1203B2BC022B2009C6EE4 /* AppDelegate.swift in Sources */,
 				6F13BDDA2BCEA04500FDB311 /* ResetPinVC.swift in Sources */,
 				6F08A20B2BC03CF100CFC08A /* SpacesVC.swift in Sources */,
+				6FD583412BD3950900ECFEFF /* CashThroughAtmVC.swift in Sources */,
 				6F80E5DC2BC05212006BCD24 /* UserProfileVC.swift in Sources */,
 				6F23B2DA2BC6F9A900BD3458 /* TransactionDetailsVC.swift in Sources */,
 				6F8EB2B62BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.swift in Sources */,
@@ -535,6 +559,7 @@
 				6FD1C6482BD22E7D009B9FED /* AppAppearanceVC.swift in Sources */,
 				6F80E5E72BC431D7006BCD24 /* BlurText.swift in Sources */,
 				6F13BDDC2BCEA05800FDB311 /* GetNewCardVC.swift in Sources */,
+				6FD583432BD3952400ECFEFF /* FawryVC.swift in Sources */,
 				6F8EB2BA2BD192EA002D108A /* PremuimCardCellForCollection.swift in Sources */,
 				6F227C2C2BD0478500FF6C37 /* MoreHeader.swift in Sources */,
 				6FBA02392BD0258200E7409D /* MoreCollectionViewCells.swift in Sources */,
@@ -550,9 +575,12 @@
 				6F13BDD82BCE9CDA00FDB311 /* UpgradeCardVC.swift in Sources */,
 				6F3F06CD2BC83E9B00AAC6C7 /* SpacesCollectionCell.swift in Sources */,
 				6FD1C64C2BD233E1009B9FED /* ChatWithUsVC.swift in Sources */,
+				6FD5833D2BD394DB00ECFEFF /* InstapayVC.swift in Sources */,
 				6FE1203D2BC022B2009C6EE4 /* SceneDelegate.swift in Sources */,
 				6F08A20D2BC03D0700CFC08A /* TransactionVC.swift in Sources */,
+				6FD5833B2BD37D8300ECFEFF /* RecieveTransfersCollectionCell.swift in Sources */,
 				6FABD5C42BC9A2130009FB09 /* SpaceAddCollectionCell.swift in Sources */,
+				6FD5833F2BD394F400ECFEFF /* BankTransfersVC.swift in Sources */,
 				6F23B2D52BC6CDD900BD3458 /* HomePageCell.swift in Sources */,
 				6F08A2092BC0348E00CFC08A /* HomePageVC.swift in Sources */,
 				6F23B2CA2BC444BA00BD3458 /* AddMoneyVC.swift in Sources */,

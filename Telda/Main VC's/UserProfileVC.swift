@@ -114,12 +114,14 @@ extension UserProfileVC:UICollectionViewDataSource{
         
         if kind == UICollectionView.elementKindSectionHeader {
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ProfileHeader", for: indexPath) as! ProfileHeader
-            if indexPath.section==0{
-                headerView.SectionLabel.text=""
-            }else if indexPath.section==1{
-                headerView.SectionLabel.text="Usage"
-            }else if indexPath.section==2{
-                headerView.SectionLabel.text="Manage"
+            DispatchQueue.main.async {
+                if indexPath.section==0{
+                    headerView.SectionLabel.text=""
+                }else if indexPath.section==1{
+                    headerView.SectionLabel.text="Usage"
+                }else if indexPath.section==2{
+                    headerView.SectionLabel.text="Manage"
+                }
             }
             return headerView
         }

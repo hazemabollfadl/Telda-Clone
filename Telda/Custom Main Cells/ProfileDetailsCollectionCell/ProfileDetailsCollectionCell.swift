@@ -12,7 +12,10 @@ class ProfileDetailsCollectionCell: UICollectionViewCell {
     @IBOutlet var BigView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        BigView.layer.cornerRadius=15
+        DispatchQueue.main.async {
+            self.BigView.layer.cornerRadius=15
+
+        }
     }
 
 }

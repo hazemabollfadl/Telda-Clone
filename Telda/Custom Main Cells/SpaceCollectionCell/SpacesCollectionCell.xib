@@ -43,7 +43,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="EGP 999.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBC-NV-1Uz">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="EGP 999.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBC-NV-1Uz" customClass="BlurText" customModule="Telda" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20.333333333333343" width="92" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -67,6 +67,7 @@
             <connections>
                 <outlet property="bigView" destination="e2c-M4-n1Y" id="7bc-u2-Pfh"/>
                 <outlet property="smallView" destination="J6h-4Y-jl9" id="SmM-V9-yfe"/>
+                <outlet property="spacesPriceLabel" destination="iBC-NV-1Uz" id="06Q-4t-Uk6"/>
             </connections>
             <point key="canvasLocation" x="-0.76335877862595414" y="50"/>
         </collectionViewCell>

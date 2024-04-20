@@ -48,6 +48,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="tZc-ia-z30" secondAttribute="trailing" constant="10" id="8e6-ST-sJ0"/>
                     <constraint firstAttribute="bottom" secondItem="tZc-ia-z30" secondAttribute="bottom" constant="9" id="GKI-Ir-1gu"/>

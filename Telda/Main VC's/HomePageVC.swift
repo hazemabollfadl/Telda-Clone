@@ -7,7 +7,8 @@ import UIKit
 class SharedData {
     static let shared = SharedData() // Singleton instance
     
-    dynamic var select: Bool=false
+     var select: Bool=false
+     let overlayView = UIView(frame: UIScreen.main.bounds)
     
     private init() {} // Private initializer to prevent external instantiation
 }
@@ -16,7 +17,10 @@ class HomePageVC: UIViewController{
     
     
     let refreshControl = UIRefreshControl()
-
+    
+    
+    
+    @IBOutlet var BigView: UIView!
     
     @IBOutlet var transactionTableView: UITableView!
     @IBOutlet var priceLabel: BlurText!
@@ -24,7 +28,6 @@ class HomePageVC: UIViewController{
     @IBOutlet var currentBalanceButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
-        
         DispatchQueue.main.async {
             if SharedData.shared.select==true{
                 self.priceLabel.unblur()
@@ -37,7 +40,6 @@ class HomePageVC: UIViewController{
                 self.currentBalanceButton.tintColor = UIColor(named: "AccentColor")
             }
         }
-        
     }
     
     override func viewDidLoad() {
@@ -53,15 +55,13 @@ class HomePageVC: UIViewController{
         let nib1=UINib(nibName: "HomePageCell", bundle: .main)
         transactionTableView.register(nib1, forCellReuseIdentifier: "HomePageCell")
         
-        //        transactionTableView.estimatedRowHeight = 68.0
+        //transactionTableView.estimatedRowHeight = 68.0
         transactionTableView.rowHeight = UITableView.automaticDimension
         
         transactionTableView.showsVerticalScrollIndicator=false
         
         transactionTableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
-
-        
     }
     @objc func refreshData() {
         // Perform your refresh operation here
@@ -152,7 +152,14 @@ extension HomePageVC:CustomTableViewCellDelegate{
         DispatchQueue.main.async {
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "AddMoneyVC") as! AddMoneyVC
-            vc.modalPresentationStyle = .popover
+            
+            if let presentationController = vc.presentationController as? UISheetPresentationController {
+                presentationController.detents = [.medium()]
+            }
+            
+            SharedData.shared.overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.65)
+            self.view.addSubview(SharedData.shared.overlayView)
+            
             self.present(vc, animated: true)
         }
     }
@@ -175,3 +182,4 @@ extension HomePageVC:CustomTableViewCellDelegate{
         }
     }
 }
+

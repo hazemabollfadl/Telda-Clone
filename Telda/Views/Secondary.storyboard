@@ -18,24 +18,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-cg-zTY">
-                                <rect key="frame" x="151.66666666666666" y="411.66666666666669" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQy-WK-dEK">
+                                <rect key="frame" x="165.33333333333334" y="37" width="59.666666666666657" height="43.666666666666657"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.compact.down" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25" weight="regular"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select how to add money to your Telda account" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ru-3d-7Sh">
+                                <rect key="frame" x="16" y="89" width="358" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FKI-0K-bi6">
+                                <rect key="frame" x="16" y="154" width="358" height="656"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bxX-SA-APs">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J3r-3t-uAu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sOc-cg-zTY" firstAttribute="centerY" secondItem="udv-bY-hm2" secondAttribute="centerY" id="73G-Rm-Ypu"/>
-                            <constraint firstItem="sOc-cg-zTY" firstAttribute="centerX" secondItem="udv-bY-hm2" secondAttribute="centerX" id="ZCG-Gc-xDY"/>
+                            <constraint firstItem="8Ru-3d-7Sh" firstAttribute="top" secondItem="xQy-WK-dEK" secondAttribute="bottom" constant="8.3300000000000001" id="2zN-ln-57D"/>
+                            <constraint firstItem="FKI-0K-bi6" firstAttribute="bottom" secondItem="J3r-3t-uAu" secondAttribute="bottom" id="3AC-wk-7xH"/>
+                            <constraint firstItem="xQy-WK-dEK" firstAttribute="top" secondItem="J3r-3t-uAu" secondAttribute="top" constant="-10" id="5ju-C4-Q5d"/>
+                            <constraint firstItem="J3r-3t-uAu" firstAttribute="trailing" secondItem="FKI-0K-bi6" secondAttribute="trailing" constant="16" id="EsK-7a-7ol"/>
+                            <constraint firstItem="8Ru-3d-7Sh" firstAttribute="leading" secondItem="J3r-3t-uAu" secondAttribute="leading" constant="16" id="NbF-kd-EVG"/>
+                            <constraint firstItem="J3r-3t-uAu" firstAttribute="trailing" secondItem="8Ru-3d-7Sh" secondAttribute="trailing" constant="16" id="QKn-MN-fWr"/>
+                            <constraint firstItem="xQy-WK-dEK" firstAttribute="centerX" secondItem="udv-bY-hm2" secondAttribute="centerX" id="ZOW-aW-6OH"/>
+                            <constraint firstItem="FKI-0K-bi6" firstAttribute="leading" secondItem="J3r-3t-uAu" secondAttribute="leading" constant="16" id="p1h-0g-NAH"/>
+                            <constraint firstItem="FKI-0K-bi6" firstAttribute="top" secondItem="8Ru-3d-7Sh" secondAttribute="bottom" constant="7.6699999999999999" id="qYX-Ar-tgw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4fT-wH-35Y"/>
+                    <connections>
+                        <outlet property="AddMoneyCollectionView" destination="FKI-0K-bi6" id="ZSO-Hx-9Ke"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mf4-Wy-Els" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3580" y="501"/>
+            <point key="canvasLocation" x="4509.2307692307695" y="500.47393364928905"/>
         </scene>
         <!--Send MoneyVC-->
         <scene sceneID="inL-aI-uSJ">
@@ -62,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQ2-Lx-nBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7714" y="500"/>
+            <point key="canvasLocation" x="8643.076923076922" y="499.76303317535542"/>
         </scene>
         <!--InsightVC-->
         <scene sceneID="B5U-27-zgl">
@@ -103,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0t1-HX-Od0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4422" y="500"/>
+            <point key="canvasLocation" x="5350.7692307692305" y="499.76303317535542"/>
         </scene>
         <!--What Is Your GoalVC-->
         <scene sceneID="xbo-Zz-UZz">
@@ -142,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsr-Uu-Hf2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5625" y="500"/>
+            <point key="canvasLocation" x="6553.8461538461534" y="499.76303317535542"/>
         </scene>
         <!--Transaction DetailsVC-->
         <scene sceneID="sn4-sY-Svb">
@@ -181,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjH-us-R3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4028" y="1192"/>
+            <point key="canvasLocation" x="4932" y="1181"/>
         </scene>
         <!--Request MoneyVC-->
         <scene sceneID="GKM-Cw-6gd">
@@ -208,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fy9-xn-G5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6906" y="500"/>
+            <point key="canvasLocation" x="7833.8461538461534" y="499.76303317535542"/>
         </scene>
         <!--Upgrade CardVC-->
         <scene sceneID="Uzp-ju-Zkg">
@@ -248,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zx-VF-D98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8980" y="500"/>
+            <point key="canvasLocation" x="9909.2307692307695" y="499.76303317535542"/>
         </scene>
         <!--Lock CardVC-->
         <scene sceneID="vr2-ep-5Ds">
@@ -275,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tn-30-yZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9738" y="500"/>
+            <point key="canvasLocation" x="10666.153846153846" y="499.76303317535542"/>
         </scene>
         <!--Reset PinVC-->
         <scene sceneID="2Qk-t5-Na8">
@@ -314,7 +343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbo-Z6-msV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10549" y="500"/>
+            <point key="canvasLocation" x="11476.923076923076" y="499.76303317535542"/>
         </scene>
         <!--Get New CardVC-->
         <scene sceneID="ol3-Pc-5pd">
@@ -354,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D74-Lr-Ips" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11382" y="500"/>
+            <point key="canvasLocation" x="12310.76923076923" y="499.76303317535542"/>
         </scene>
         <!--Gift DetailsVC-->
         <scene sceneID="akP-tV-dOB">
@@ -381,10 +410,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GTV-VD-ZBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12565" y="500"/>
+            <point key="canvasLocation" x="13493.846153846154" y="499.76303317535542"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.compact.down" catalog="system" width="128" height="42"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -31,6 +31,11 @@ class CardVC: UIViewController {
         let nib3 = UINib(nibName: "GetNewCard", bundle: .main)
         cardTableview.register(nib3, forCellReuseIdentifier: "GetNewCard")
         
+        let nib4 = UINib(nibName: "CreditCardCell", bundle: .main)
+        cardTableview.register(nib4, forCellReuseIdentifier: "CreditCardCell")
+        
+    
+        
         
         cardTableview.rowHeight = UITableView.automaticDimension
         
@@ -55,7 +60,7 @@ class CardVC: UIViewController {
 //MARK: - UITableViewDataSource
 extension CardVC:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        4
+        5
     }
     
     
@@ -78,12 +83,17 @@ extension CardVC:UITableViewDataSource{
         getNewCardCell.selectionStyle = .none
         getNewCardCell.delegate=self
         
+          let creditCardCell=tableView.dequeueReusableCell(withIdentifier: "CreditCardCell", for: indexPath) as! CardCells
+        creditCardCell.selectionStyle = .none
+        
         
         if indexPath.row==0{
-            return customCell
+            return creditCardCell
         }else if indexPath.row==1{
-            return lockCell
+            return customCell
         }else if indexPath.row==2{
+            return lockCell
+        }else if indexPath.row==3{
             return resetPinCell
         }else{
             return getNewCardCell

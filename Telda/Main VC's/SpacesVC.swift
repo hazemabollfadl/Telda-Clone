@@ -8,11 +8,14 @@
 import UIKit
 
 class SpacesVC: UIViewController {
-    
+
     @IBOutlet var SpacesCollectionView: UICollectionView!
     
     @IBOutlet var currentBalanceButton: UIButton!
     @IBOutlet var PriceLabel: BlurText!
+    
+    var spacesPriceLabel:BlurText?
+    
     
     let refreshControl = UIRefreshControl()
 
@@ -20,13 +23,22 @@ class SpacesVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         if SharedData.shared.select==true{
+            
             PriceLabel.unblur()
+//            spacesPriceLabel?.unblur()
             currentBalanceButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+            
+//            spacesPriceLabel?.blur(2)
+            
             PriceLabel.blur(5)
+            
             currentBalanceButton.tintColor = .red
         }else{
             currentBalanceButton.setImage(UIImage(systemName: "eye"), for: .normal)
+            
             PriceLabel.unblur()
+//            spacesPriceLabel?.unblur()
+            
             currentBalanceButton.tintColor = UIColor(named: "AccentColor")
         }
     }
@@ -45,9 +57,12 @@ class SpacesVC: UIViewController {
         
         SpacesCollectionView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        
+        
     }
     @objc func refreshData() {
-        // Perform your refresh operation here
+        
+        SpacesCollectionView.reloadData()
         
         // After refreshing is done, end refreshing
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -59,13 +74,20 @@ class SpacesVC: UIViewController {
         
         if SharedData.shared.select==false{
             currentBalanceButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+            
+//            spacesPriceLabel?.blur(5)
+            
             PriceLabel.blur(5)
+            
             currentBalanceButton.tintColor = .red
             
             SharedData.shared.select=true
         }else{
             currentBalanceButton.setImage(UIImage(systemName: "eye"), for: .normal)
+            
+//            spacesPriceLabel?.unblur()
             PriceLabel.unblur()
+            
             currentBalanceButton.tintColor = UIColor(named: "AccentColor")
             
             SharedData.shared.select=false
@@ -81,11 +103,12 @@ extension SpacesVC:UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell=SpacesCollectionView.dequeueReusableCell(withReuseIdentifier: "SpacesCollectionCell", for: indexPath) as! SpacesCollectionCell
-        
+        cell.delegate=self
+        cell.sendDelegate()
         
         let addCell=SpacesCollectionView.dequeueReusableCell(withReuseIdentifier: "SpaceAddCollectionCell", for: indexPath) as! SpaceAddCollectionCell
-        
         addCell.delegate=self
+        
         
         if indexPath.row == (collectionView.numberOfItems(inSection: 0))-1{
             return addCell
@@ -136,6 +159,11 @@ extension SpacesVC:CustomCollectionCellDelegate{
         vc.modalPresentationStyle = .popover
         self.present(vc, animated: true)
     }
-    
-    
+}
+
+//MARK: - sendPriceLabel
+extension SpacesVC:sendPriceLabel{
+    func sendPriceLabel(_ label: BlurText) {
+        spacesPriceLabel=label
+    }
 }
