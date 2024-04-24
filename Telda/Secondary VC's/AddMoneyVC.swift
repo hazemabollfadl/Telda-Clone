@@ -12,6 +12,7 @@ class AddMoneyVC: UIViewController {
     
     @IBOutlet var AddMoneyCollectionView: UICollectionView!
     
+    static var isDisimmed:Bool=true
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -30,9 +31,9 @@ class AddMoneyVC: UIViewController {
         
         let nib=UINib(nibName: "RecieveTransfersCollectionCell", bundle: .main)
         AddMoneyCollectionView.register(nib, forCellWithReuseIdentifier: "RecieveTransfersCollectionCell")
-
+        
     }
-
+    
 }
 
 //MARK: - UITableViewDataSource
@@ -44,6 +45,8 @@ extension AddMoneyVC:UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = AddMoneyCollectionView.dequeueReusableCell(withReuseIdentifier: "RecieveTransfersCollectionCell", for: indexPath) as! RecieveTransfersCollectionCell
+        cell.delegate=self
+        
         if indexPath.row==0{
             cell.BigLabel.text="Recieve Instapay transfers"
             cell.CellImage.setImage(UIImage(systemName: "iphone.gen2.radiowaves.left.and.right"), for: .normal)
@@ -51,7 +54,7 @@ extension AddMoneyVC:UICollectionViewDataSource{
         }else if indexPath.row==1{
             cell.BigLabel.text="Recieve bank transfers"
             cell.SmallLabelButton.setTitle("From any local bank", for: .normal)
-
+            
             let myAttribute = [ NSAttributedString.Key.font: UIFont(name: "Helvetica Neue", size: 13.0)! ]
             let myAttrString = NSAttributedString(string: cell.SmallLabelButton.currentTitle!, attributes: myAttribute)
             cell.SmallLabelButton.setAttributedTitle(myAttrString, for: .normal)
@@ -65,7 +68,7 @@ extension AddMoneyVC:UICollectionViewDataSource{
             cell.BigLabel.text="Add cash through ATM"
             cell.CellImage.setImage(UIImage(systemName: "archivebox.fill"), for: .normal)
             
-
+            
         }else if indexPath.row==3{
             cell.BigLabel.text="Add cash through Fawry"
             cell.CellImage.setImage(UIImage(systemName: "bolt.horizontal.icloud.fill"), for: .normal)
@@ -117,6 +120,7 @@ extension AddMoneyVC:UICollectionViewDelegate{
             
         }else{
             DispatchQueue.main.async {
+                self.dismiss(animated: true)
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc  = storyboard.instantiateViewController(withIdentifier: "TransactionVC") as! TransactionVC
                 vc.modalPresentationStyle = .popover
@@ -124,9 +128,9 @@ extension AddMoneyVC:UICollectionViewDelegate{
             }
             
         }
-            
+        
     }
-
+    
 }
 
 //MARK: - UICollectionViewDelegateFlowLayout
@@ -142,4 +146,13 @@ extension AddMoneyVC:UICollectionViewDelegateFlowLayout{
         
         return CGSize(width: (collectionView.bounds.width), height: (collectionView.bounds.width)/4-10)
     }
+}
+
+//MARK: - sendButtonPressed2
+extension AddMoneyVC:instantButtonPressed{
+    
+    func instantButtonPressed() {
+        
+    }
+    
 }

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesCollectionCell" id="gTV-IL-0wX" customClass="CategoriesCollectionCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtC-YW-ios">
+                        <rect key="frame" x="-0.66666666666665719" y="12.666666666666664" width="345.33333333333326" height="90"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-m4-ha8">
+                                <rect key="frame" x="10" y="25.666666666666675" width="124" height="38.333333333333357"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfH-4p-il4">
+                                        <rect key="frame" x="0.0" y="0.0" width="37.666666666666664" height="37.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="paperplane.fill" catalog="system" cornerStyle="capsule">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                                            <color key="baseForegroundColor" systemColor="linkColor"/>
+                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cX2-GC-vvy">
+                                        <rect key="frame" x="48.666666666666664" y="0.0" width="75.333333333333343" height="38.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Transfers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xH5-ue-r8A">
+                                                <rect key="frame" x="0.0" y="0.0" width="75.333333333333329" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXQ-OZ-TQu">
+                                                <rect key="frame" x="0.0" y="20.333333333333329" width="39" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-of-vfk">
+                                <rect key="frame" x="301" y="27.666666666666675" width="34.333333333333314" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system" cornerStyle="capsule">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGP 999.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWi-8R-lVk">
+                                <rect key="frame" x="209" y="34.666666666666671" width="92" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.14903249172185432" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tR8-of-vfk" secondAttribute="trailing" constant="10" id="3Or-Fy-X82"/>
+                            <constraint firstItem="GVe-m4-ha8" firstAttribute="centerY" secondItem="AtC-YW-ios" secondAttribute="centerY" id="OIh-z1-VrV"/>
+                            <constraint firstItem="tR8-of-vfk" firstAttribute="centerY" secondItem="AtC-YW-ios" secondAttribute="centerY" id="Ul9-rZ-xac"/>
+                            <constraint firstItem="GVe-m4-ha8" firstAttribute="leading" secondItem="AtC-YW-ios" secondAttribute="leading" constant="10" id="cyB-ro-l5J"/>
+                            <constraint firstItem="tR8-of-vfk" firstAttribute="leading" secondItem="PWi-8R-lVk" secondAttribute="trailing" id="fkA-it-PaA"/>
+                            <constraint firstItem="PWi-8R-lVk" firstAttribute="centerY" secondItem="AtC-YW-ios" secondAttribute="centerY" id="nOK-Zq-PmO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="AtC-YW-ios" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1.00388" id="Ga1-kC-Hn2"/>
+                <constraint firstItem="AtC-YW-ios" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Qv0-Ng-ouQ"/>
+                <constraint firstItem="AtC-YW-ios" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="aO3-9b-EsD"/>
+                <constraint firstItem="AtC-YW-ios" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="hxq-Bb-7Tt"/>
+            </constraints>
+            <connections>
+                <outlet property="BigView" destination="AtC-YW-ios" id="0R6-MK-OYS"/>
+                <outlet property="CellLabel" destination="xH5-ue-r8A" id="nR6-B9-HYk"/>
+                <outlet property="LeftButton" destination="tfH-4p-il4" id="kxB-OV-Vbg"/>
+                <outlet property="RightButton" destination="tR8-of-vfk" id="IUR-nk-VDF"/>
+            </connections>
+            <point key="canvasLocation" x="12" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

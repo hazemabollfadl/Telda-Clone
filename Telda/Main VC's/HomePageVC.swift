@@ -7,8 +7,8 @@ import UIKit
 class SharedData {
     static let shared = SharedData() // Singleton instance
     
-     var select: Bool=false
-     let overlayView = UIView(frame: UIScreen.main.bounds)
+    var select: Bool=false
+    let overlayView = UIView(frame: UIScreen.main.bounds)
     
     private init() {} // Private initializer to prevent external instantiation
 }
@@ -28,6 +28,7 @@ class HomePageVC: UIViewController{
     @IBOutlet var currentBalanceButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
+        
         DispatchQueue.main.async {
             if SharedData.shared.select==true{
                 self.priceLabel.unblur()
@@ -44,6 +45,8 @@ class HomePageVC: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
         
         transactionTableView.delegate=self
         transactionTableView.dataSource=self
@@ -62,14 +65,7 @@ class HomePageVC: UIViewController{
         
         transactionTableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
-    }
-    @objc func refreshData() {
-        // Perform your refresh operation here
         
-        // After refreshing is done, end refreshing
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.refreshControl.endRefreshing()
-        }
     }
     
     
@@ -166,10 +162,7 @@ extension HomePageVC:CustomTableViewCellDelegate{
     
     func sendMoneyButtonPressed() {
         DispatchQueue.main.async {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc  = storyboard.instantiateViewController(withIdentifier: "TransactionVC") as! TransactionVC
-            vc.modalPresentationStyle = .popover
-            self.present(vc, animated: true)
+            self.navigateToTab(index: 2)
         }
     }
     
@@ -183,3 +176,24 @@ extension HomePageVC:CustomTableViewCellDelegate{
     }
 }
 
+
+//================================================================================================================================
+//MARK: - usefull functions
+extension HomePageVC{
+    
+    @objc func refreshData() {
+        // Perform your refresh operation here
+        transactionTableView.reloadData()
+        // After refreshing is done, end refreshing
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.refreshControl.endRefreshing()
+        }
+    }
+    
+    func navigateToTab(index: Int) {
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = index
+        }
+    }
+    
+}

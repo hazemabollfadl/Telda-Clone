@@ -33,6 +33,9 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                             <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cellButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wLj-9I-ELA"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="H7v-2g-Dj1">
                                         <rect key="frame" x="48.666666666666657" y="0.0" width="200" height="45"/>
@@ -51,6 +54,9 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="11"/>
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="cellButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ERR-7P-VfA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -87,7 +93,7 @@
             <size key="customSize" width="221" height="50"/>
             <connections>
                 <outlet property="BigLabel" destination="Dvb-kN-VmI" id="P8A-wV-jjc"/>
-                <outlet property="BigView" destination="jhZ-Nk-V9B" id="b73-dM-uZC"/>
+                <outlet property="BigView" destination="jhZ-Nk-V9B" id="5Ep-S8-FNh"/>
                 <outlet property="CellImage" destination="GZt-uc-vgn" id="wPU-zd-ChL"/>
                 <outlet property="SmallLabelButton" destination="LjD-yq-GGw" id="k9H-cA-12Y"/>
             </connections>
@@ -102,7 +108,7 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

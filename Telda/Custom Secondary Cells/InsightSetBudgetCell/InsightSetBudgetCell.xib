@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InsightSetBudgetCell" id="gTV-IL-0wX" customClass="InsightSetBudgetCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BL-jR-Xv3">
+                        <rect key="frame" x="-0.66666666666665719" y="12.666666666666664" width="345.33333333333326" height="90"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="NR3-6w-whI">
+                                <rect key="frame" x="10" y="25.666666666666675" width="205" height="38.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYs-r6-d5Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="34.333333333333336" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="pencil.line" catalog="system" cornerStyle="capsule">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="TvH-hQ-pk3">
+                                        <rect key="frame" x="45.333333333333329" y="0.0" width="159.66666666666669" height="38.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Set a budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UA-58-djB">
+                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Control your spendings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxX-T3-8TA">
+                                                <rect key="frame" x="0.0" y="20.333333333333329" width="159.66666666666666" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IX0-zs-12W">
+                                <rect key="frame" x="285.66666666666669" y="25.666666666666675" width="49.666666666666686" height="38.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Set" cornerStyle="capsule">
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="NR3-6w-whI" firstAttribute="centerY" secondItem="7BL-jR-Xv3" secondAttribute="centerY" id="30k-a0-umI"/>
+                            <constraint firstAttribute="trailing" secondItem="IX0-zs-12W" secondAttribute="trailing" constant="10" id="8R7-QN-8zg"/>
+                            <constraint firstItem="NR3-6w-whI" firstAttribute="leading" secondItem="7BL-jR-Xv3" secondAttribute="leading" constant="10" id="NMC-LE-8XU"/>
+                            <constraint firstItem="IX0-zs-12W" firstAttribute="centerY" secondItem="7BL-jR-Xv3" secondAttribute="centerY" id="rWd-Ol-haZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="7BL-jR-Xv3" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="8EY-IZ-uVU"/>
+                <constraint firstItem="7BL-jR-Xv3" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="G2m-Dd-8uv"/>
+                <constraint firstItem="7BL-jR-Xv3" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1.00388" id="GVU-zS-Lie"/>
+                <constraint firstItem="7BL-jR-Xv3" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="NnX-gW-R5h"/>
+            </constraints>
+            <connections>
+                <outlet property="BigLabel" destination="5UA-58-djB" id="Bad-2k-kaL"/>
+                <outlet property="BigView" destination="7BL-jR-Xv3" id="vzj-La-Dsr"/>
+                <outlet property="LeftButton" destination="FYs-r6-d5Z" id="dVr-kW-ga9"/>
+                <outlet property="RightButton" destination="IX0-zs-12W" id="Lt5-er-C3X"/>
+                <outlet property="SmallLabel" destination="vxX-T3-8TA" id="w7v-CB-4hL"/>
+            </connections>
+            <point key="canvasLocation" x="36.641221374045799" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pencil.line" catalog="system" width="128" height="117"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

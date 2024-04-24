@@ -48,7 +48,7 @@ class CardVC: UIViewController {
     }
     @objc func refreshData() {
         // Perform your refresh operation here
-        
+        cardTableview.reloadData()
         // After refreshing is done, end refreshing
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.refreshControl.endRefreshing()
@@ -108,7 +108,7 @@ extension CardVC:UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        if indexPath.row==2{
+        if indexPath.row==3{
             
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "ResetPinVC") as! ResetPinVC
@@ -117,7 +117,7 @@ extension CardVC:UITableViewDelegate{
             
         }
         
-        if indexPath.row==3{
+        if indexPath.row==4{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "GetNewCardVC") as! GetNewCardVC
             vc.modalPresentationStyle = .fullScreen

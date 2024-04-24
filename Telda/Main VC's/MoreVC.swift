@@ -33,7 +33,7 @@ class MoreVC: UIViewController {
     
     @objc func refreshData() {
         // Perform your refresh operation here
-        
+        moreCollectionView.reloadData()
         // After refreshing is done, end refreshing
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.refreshControl.endRefreshing()
