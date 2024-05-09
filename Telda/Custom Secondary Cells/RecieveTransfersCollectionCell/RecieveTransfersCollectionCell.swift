@@ -7,14 +7,7 @@
 
 import UIKit
 
-protocol instantButtonPressed{
-
-    func instantButtonPressed()
-}
-
 class RecieveTransfersCollectionCell: UICollectionViewCell {
-
-    var delegate:instantButtonPressed?
     
     @IBOutlet var BigView: UIView!
     
@@ -29,17 +22,8 @@ class RecieveTransfersCollectionCell: UICollectionViewCell {
         super.awakeFromNib()
         BigView.layer.cornerRadius=15
         
-        CellImage.alpha=1
-        SmallLabelButton.alpha=1
-        
-//        SmallLabelButton.imageDimsWhenDisabled=fals
-        
-        
-        
+        CellImage.isUserInteractionEnabled=false
+        SmallLabelButton.isUserInteractionEnabled=false
         
     }
-    @IBAction func cellButtonPressed(_ sender: UIButton) {
-        delegate?.instantButtonPressed()
-    }
-    
 }

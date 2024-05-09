@@ -24,6 +24,9 @@ class InsightSetBudgetCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         BigView.layer.cornerRadius=15
+        
+        RightButton.isUserInteractionEnabled=false
+        LeftButton.isUserInteractionEnabled=false
     }
 
 }

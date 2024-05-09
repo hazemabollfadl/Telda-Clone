@@ -76,6 +76,7 @@
                 <outlet property="BigView" destination="aJG-fL-6ht" id="c1j-4h-bor"/>
                 <outlet property="CellLabel" destination="CVR-8s-Fpg" id="f9r-kF-ZgB"/>
                 <outlet property="LeftButton" destination="fFk-HN-Bvb" id="jtn-yA-FRm"/>
+                <outlet property="RightButton" destination="qSl-v9-PRd" id="l9u-tW-Rfs"/>
             </connections>
             <point key="canvasLocation" x="6" y="20"/>
         </collectionViewCell>

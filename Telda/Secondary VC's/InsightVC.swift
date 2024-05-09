@@ -64,6 +64,11 @@ class InsightVC: UIViewController,UIPageViewControllerDelegate {
         self.dismiss(animated: true)
     }
     
+    @IBAction func manageCategoriesButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "InsightToManageCategories", sender: self)
+    }
+    
+    
     @IBAction func segmentedControlValueChanged(_ sender: UISegmentedControl) {
         SelectedSegmentIndex=SegmentedControl.selectedSegmentIndex
         
@@ -126,6 +131,7 @@ extension InsightVC:UICollectionViewDataSource{
             if indexPath.row==0{
                 if Dots.currentPage==0{
                     insightDataCell.CellSmallLabel.text="Expenses in April"
+                    insightDataCell.CellBigLabel.text="EGP 999.99"
                 }else if Dots.currentPage==1{
                     insightDataCell.CellSmallLabel.text="Expenses in March"
                     insightDataCell.CellBigLabel.text="EGP 0"
@@ -243,7 +249,27 @@ extension InsightVC:UICollectionViewDataSource{
 //MARK: - UICollectionViewDelegate
 extension InsightVC:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+        
+        if collectionView == InsightCollectionView{
+            if indexPath.row==1 && Dots.currentPage==0{
+                performSegue(withIdentifier: "InsightToSetBudget", sender: self)
+            }else{
+                print(indexPath)
+            }
+        }else{
+            if Dots.currentPage != 0{
+                if SelectedSegmentIndex==0{
+                    performSegue(withIdentifier: "InsightToCategories", sender: self)
+                }else{
+                    performSegue(withIdentifier: "InsightToMerchants", sender: self)
+                }
+                
+            }else{
+                performSegue(withIdentifier: "InsightToTransfers", sender: self)
+            }
+            
+        }
+        
     }
 }
 

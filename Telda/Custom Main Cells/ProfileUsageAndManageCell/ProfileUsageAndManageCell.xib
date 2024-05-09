@@ -86,6 +86,7 @@
             <connections>
                 <outlet property="BigLabel" destination="BNN-yu-HE8" id="2j4-m2-pHy"/>
                 <outlet property="BigView" destination="tI4-zW-0hV" id="VTx-Zq-3vv"/>
+                <outlet property="CellArrowButton" destination="xwD-EC-s8w" id="qRs-pi-MA8"/>
                 <outlet property="CellButton" destination="eaL-R7-QpN" id="GWj-uo-WjE"/>
                 <outlet property="SmallLabel" destination="63T-3q-5z2" id="O4T-9w-FdP"/>
             </connections>
@@ -99,7 +100,7 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -45,7 +45,6 @@ extension AddMoneyVC:UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = AddMoneyCollectionView.dequeueReusableCell(withReuseIdentifier: "RecieveTransfersCollectionCell", for: indexPath) as! RecieveTransfersCollectionCell
-        cell.delegate=self
         
         if indexPath.row==0{
             cell.BigLabel.text="Recieve Instapay transfers"
@@ -120,7 +119,6 @@ extension AddMoneyVC:UICollectionViewDelegate{
             
         }else{
             DispatchQueue.main.async {
-                self.dismiss(animated: true)
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc  = storyboard.instantiateViewController(withIdentifier: "TransactionVC") as! TransactionVC
                 vc.modalPresentationStyle = .popover
@@ -148,11 +146,3 @@ extension AddMoneyVC:UICollectionViewDelegateFlowLayout{
     }
 }
 
-//MARK: - sendButtonPressed2
-extension AddMoneyVC:instantButtonPressed{
-    
-    func instantButtonPressed() {
-        
-    }
-    
-}

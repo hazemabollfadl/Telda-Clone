@@ -13,17 +13,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecieveTransfersCollectionCell" id="gTV-IL-0wX" customClass="RecieveTransfersCollectionCell" customModule="Telda" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+            <rect key="frame" x="0.0" y="0.0" width="344" height="91"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="344" height="90"/>
+                <rect key="frame" x="0.0" y="0.0" width="344" height="91"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhZ-Nk-V9B">
-                        <rect key="frame" x="0.0" y="12.666666666666664" width="344" height="90"/>
+                        <rect key="frame" x="0.0" y="12.666666666666664" width="344" height="91"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="V5U-vM-8NA">
-                                <rect key="frame" x="9.9999999999999858" y="22.333333333333336" width="248.66666666666663" height="45.000000000000007"/>
+                                <rect key="frame" x="9.9999999999999858" y="23" width="248.66666666666663" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZt-uc-vgn">
                                         <rect key="frame" x="0.0" y="0.0" width="37.666666666666664" height="37.666666666666664"/>
@@ -63,7 +63,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPT-ye-zw1">
-                                <rect key="frame" x="301" y="27.666666666666675" width="33" height="34.333333333333343"/>
+                                <rect key="frame" x="301" y="28.333333333333332" width="33" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system" cornerStyle="capsule">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
@@ -90,14 +90,14 @@
                 <constraint firstItem="jhZ-Nk-V9B" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="fYS-E0-Cmh"/>
                 <constraint firstItem="jhZ-Nk-V9B" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="qWQ-UQ-s62"/>
             </constraints>
-            <size key="customSize" width="221" height="50"/>
+            <size key="customSize" width="221" height="51"/>
             <connections>
                 <outlet property="BigLabel" destination="Dvb-kN-VmI" id="P8A-wV-jjc"/>
                 <outlet property="BigView" destination="jhZ-Nk-V9B" id="5Ep-S8-FNh"/>
                 <outlet property="CellImage" destination="GZt-uc-vgn" id="wPU-zd-ChL"/>
                 <outlet property="SmallLabelButton" destination="LjD-yq-GGw" id="k9H-cA-12Y"/>
             </connections>
-            <point key="canvasLocation" x="28.244274809160306" y="19.718309859154932"/>
+            <point key="canvasLocation" x="27.480916030534349" y="19.366197183098592"/>
         </collectionViewCell>
     </objects>
     <resources>
@@ -108,7 +108,7 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategorieAndExecludeCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ai5-X5-yU4">
+                        <rect key="frame" x="0.0" y="12.666666666666671" width="389" height="113"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="tXA-Rw-4UO">
+                                <rect key="frame" x="8" y="22" width="172" height="68.666666666666671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZ6-qs-oPC">
+                                        <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Execlude from insights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h37-1p-Yyl">
+                                        <rect key="frame" x="0.0" y="48.333333333333336" width="172" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="1PV-Nd-h7Z">
+                                <rect key="frame" x="275" y="16.666666666666664" width="106" height="79.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1f-84-RWM">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="bag" catalog="system" title="Services" imagePadding="5" cornerStyle="capsule">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.15286113409999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="categoriesButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="u8S-Io-Kix"/>
+                                        </connections>
+                                    </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q0I-5p-PVK">
+                                        <rect key="frame" x="57" y="48.333333333333343" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="execludeSwitchPressed:" destination="gTV-IL-0wX" eventType="valueChanged" id="M3J-cS-A5W"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="1PV-Nd-h7Z" firstAttribute="centerY" secondItem="ai5-X5-yU4" secondAttribute="centerY" id="2bf-Vo-Lh1"/>
+                            <constraint firstItem="tXA-Rw-4UO" firstAttribute="leading" secondItem="ai5-X5-yU4" secondAttribute="leading" constant="8" id="Mxg-0d-OqG"/>
+                            <constraint firstAttribute="trailing" secondItem="1PV-Nd-h7Z" secondAttribute="trailing" constant="8" id="cGL-fX-SiE"/>
+                            <constraint firstItem="tXA-Rw-4UO" firstAttribute="centerY" secondItem="ai5-X5-yU4" secondAttribute="centerY" id="vU9-vN-eej"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ai5-X5-yU4" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="IDu-xL-N5T"/>
+                <constraint firstItem="ai5-X5-yU4" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="SZR-pf-uRp"/>
+                <constraint firstItem="ai5-X5-yU4" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="UzP-OC-vqM"/>
+                <constraint firstItem="ai5-X5-yU4" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="hWy-9R-PA2"/>
+            </constraints>
+            <size key="customSize" width="389" height="113"/>
+            <connections>
+                <outlet property="ExecludeSwitch" destination="Q0I-5p-PVK" id="nKc-7N-mn0"/>
+                <outlet property="SmallView" destination="ai5-X5-yU4" id="7NR-Yi-xUw"/>
+            </connections>
+            <point key="canvasLocation" x="295.41984732824426" y="41.901408450704224"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -90,6 +90,235 @@
             </objects>
             <point key="canvasLocation" x="-2963" y="699"/>
         </scene>
+        <!--Set BugetVC-->
+        <scene sceneID="aFY-5X-5qW">
+            <objects>
+                <viewController storyboardIdentifier="SetBugetVC" id="ZaL-6c-wuS" customClass="SetBugetVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W0q-dL-aPj">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set a budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ad3-cN-PnN">
+                                <rect key="frame" x="146.33333333333334" y="411.66666666666669" width="97.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L2Z-Br-if1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ad3-cN-PnN" firstAttribute="centerY" secondItem="W0q-dL-aPj" secondAttribute="centerY" id="J83-qE-fy8"/>
+                            <constraint firstItem="ad3-cN-PnN" firstAttribute="centerX" secondItem="W0q-dL-aPj" secondAttribute="centerX" id="a6G-85-VaU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3D-o5-fvv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2963" y="1408"/>
+        </scene>
+        <!--Split With OthersVC-->
+        <scene sceneID="ZfL-6o-8Kg">
+            <objects>
+                <viewController storyboardIdentifier="SplitWithOthersVC" id="UF6-S2-4h2" customClass="SplitWithOthersVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RTV-ML-hYy">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split with others" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lx-6w-L4i">
+                                <rect key="frame" x="133.66666666666666" y="411.66666666666669" width="122.99999999999997" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Yy-j1-MjU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Lx-6w-L4i" firstAttribute="centerX" secondItem="RTV-ML-hYy" secondAttribute="centerX" id="mPy-CO-1WS"/>
+                            <constraint firstItem="3Lx-6w-L4i" firstAttribute="centerY" secondItem="RTV-ML-hYy" secondAttribute="centerY" id="u4c-LQ-lTg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6sP-KP-xwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2963" y="2093"/>
+        </scene>
+        <!--Pay LaterVC-->
+        <scene sceneID="aCY-Mn-BwK">
+            <objects>
+                <viewController storyboardIdentifier="PayLaterVC" id="JAz-Mp-UIm" customClass="PayLaterVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8BP-AJ-hz2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay later" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCa-B7-OnH">
+                                <rect key="frame" x="162" y="411.66666666666669" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4b-gs-Ysn">
+                                <rect key="frame" x="6" y="59" width="41.333333333333343" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismissButtonPressed:" destination="JAz-Mp-UIm" eventType="touchUpInside" id="YdZ-2s-qCi"/>
+                                    <action selector="dismissButtonPressed:" destination="Gml-FD-1r2" eventType="touchUpInside" id="pMk-gK-exZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OJX-Wt-Mhx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x4b-gs-Ysn" firstAttribute="top" secondItem="OJX-Wt-Mhx" secondAttribute="top" constant="12" id="U7D-ia-moA"/>
+                            <constraint firstItem="qCa-B7-OnH" firstAttribute="centerX" secondItem="8BP-AJ-hz2" secondAttribute="centerX" id="bqd-2t-LKq"/>
+                            <constraint firstItem="qCa-B7-OnH" firstAttribute="centerY" secondItem="8BP-AJ-hz2" secondAttribute="centerY" id="cKR-ET-PxU"/>
+                            <constraint firstItem="x4b-gs-Ysn" firstAttribute="leading" secondItem="OJX-Wt-Mhx" secondAttribute="leading" constant="6" id="gGd-nV-Qy7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ueK-Fo-Wob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2220" y="2093"/>
+        </scene>
+        <!--ServicesVC-->
+        <scene sceneID="4Sc-zl-Uf4">
+            <objects>
+                <viewController storyboardIdentifier="ServicesVC" id="6R1-0i-N1Y" customClass="ServicesVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmB-qz-MRu">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFG-NK-lHg">
+                                <rect key="frame" x="162" y="411.66666666666669" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BdM-Du-Ff8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IFG-NK-lHg" firstAttribute="centerX" secondItem="kmB-qz-MRu" secondAttribute="centerX" id="4pt-mh-j0F"/>
+                            <constraint firstItem="IFG-NK-lHg" firstAttribute="centerY" secondItem="kmB-qz-MRu" secondAttribute="centerY" id="xNC-AZ-jy4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZD-n4-ACy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1446.1538461538462" y="2092.1800947867296"/>
+        </scene>
+        <!--TransfersVC-->
+        <scene sceneID="hlG-KL-5Ja">
+            <objects>
+                <viewController storyboardIdentifier="TransfersVC" id="Hvm-sv-4aJ" customClass="TransfersVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ofi-Ri-fnD">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p39-JL-3sA">
+                                <rect key="frame" x="159" y="411.66666666666669" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7To-do-MWV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p39-JL-3sA" firstAttribute="centerY" secondItem="Ofi-Ri-fnD" secondAttribute="centerY" id="Nvt-Q0-Ars"/>
+                            <constraint firstItem="p39-JL-3sA" firstAttribute="centerX" secondItem="Ofi-Ri-fnD" secondAttribute="centerX" id="aJ2-Z0-MNA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKX-Av-p12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2220" y="1407.5829383886255"/>
+        </scene>
+        <!--CategoriesVC-->
+        <scene sceneID="JQp-dL-VNI">
+            <objects>
+                <viewController storyboardIdentifier="CategoriesVC" id="PmG-Lk-1MG" customClass="CategoriesVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="23E-09-m8s">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnN-6y-AGQ">
+                                <rect key="frame" x="153.66666666666666" y="411.66666666666669" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YF3-HF-Dg4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mnN-6y-AGQ" firstAttribute="centerX" secondItem="23E-09-m8s" secondAttribute="centerX" id="rtx-KW-QWU"/>
+                            <constraint firstItem="mnN-6y-AGQ" firstAttribute="centerY" secondItem="23E-09-m8s" secondAttribute="centerY" id="sQX-vN-cY6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nvr-hz-wY1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1412.3076923076922" y="1407.5829383886255"/>
+        </scene>
+        <!--MerchantsVC-->
+        <scene sceneID="fko-dw-V9B">
+            <objects>
+                <viewController storyboardIdentifier="MerchantsVC" id="dVy-vy-P3G" customClass="MerchantsVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dG2-bN-g00">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merchants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3o-yT-3wb">
+                                <rect key="frame" x="154.66666666666666" y="411.66666666666669" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J3U-yW-OnB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F3o-yT-3wb" firstAttribute="centerX" secondItem="dG2-bN-g00" secondAttribute="centerX" id="4iX-wP-wMT"/>
+                            <constraint firstItem="F3o-yT-3wb" firstAttribute="centerY" secondItem="dG2-bN-g00" secondAttribute="centerY" id="NcB-eE-bul"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QjY-82-uW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-592" y="1408"/>
+        </scene>
+        <!--Manage CategoriesVC-->
+        <scene sceneID="Qop-kL-KPQ">
+            <objects>
+                <viewController storyboardIdentifier="ManageCategoriesVC" id="hze-Mn-4tr" customClass="ManageCategoriesVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PMZ-Pg-lMh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmV-dW-EQf">
+                                <rect key="frame" x="122" y="411.66666666666669" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qJy-1j-Nk3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OmV-dW-EQf" firstAttribute="centerX" secondItem="PMZ-Pg-lMh" secondAttribute="centerX" id="H4e-V2-0cz"/>
+                            <constraint firstItem="OmV-dW-EQf" firstAttribute="centerY" secondItem="PMZ-Pg-lMh" secondAttribute="centerY" id="ugY-Es-xb5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZM-tT-8bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204.61538461538461" y="1407.5829383886255"/>
+        </scene>
         <!--Invite FriendsVC-->
         <scene sceneID="hUm-GK-NkK">
             <objects>

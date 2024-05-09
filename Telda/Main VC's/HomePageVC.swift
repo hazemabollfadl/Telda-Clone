@@ -131,7 +131,7 @@ extension HomePageVC:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row != 0{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
-            let vc  = storyboard.instantiateViewController(withIdentifier: "TransactionDetailsVC") as! TransactionDetailsVC
+            let vc  = storyboard.instantiateViewController(withIdentifier: "TransactionDetailsNavBar") as! UINavigationController
             vc.modalPresentationStyle = .popover
             self.present(vc, animated: true)
         }
@@ -169,9 +169,12 @@ extension HomePageVC:CustomTableViewCellDelegate{
     func insightButtonPressed() {
         DispatchQueue.main.async {
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
-            let vc  = storyboard.instantiateViewController(withIdentifier: "InsightVC") as! InsightVC
-            vc.modalPresentationStyle = .popover
-            self.present(vc, animated: true)
+//            let vc  = storyboard.instantiateViewController(withIdentifier: "InsightVC") as! InsightVC
+//            vc.modalPresentationStyle = .popover
+//            self.present(vc, animated: true)
+            let navController = storyboard.instantiateViewController(withIdentifier: "InsightNavController") as! UINavigationController
+            navController.modalPresentationStyle = .popover
+            self.present(navController, animated: true)
         }
     }
 }

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TransactionDetailsTopCell" id="gTV-IL-0wX" customClass="TransactionDetailsTopCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZE-X7-PT1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="155"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="BeD-bq-gqd">
+                                <rect key="frame" x="0.0" y="32.666666666666664" width="209" height="89.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGP 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70M-2a-iDe">
+                                        <rect key="frame" x="0.0" y="0.0" width="123.33333333333333" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To Hazem el-Gendy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-b2-oAR">
+                                        <rect key="frame" x="0.0" y="43.000000000000007" width="156" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feburary 20, 2024, 11:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzH-TF-Psw">
+                                        <rect key="frame" x="0.0" y="70.333333333333343" width="209" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uoq-U8-kUe">
+                                <rect key="frame" x="325.66666666666669" y="46.666666666666679" width="64.333333333333314" height="62.333333333333321"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="55"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfv-Qz-alf">
+                                <rect key="frame" x="-12" y="117.99999999999999" width="261" height="34.333333333333329"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="The user is not in your contacts" imagePadding="5">
+                                    <imageReference key="image" image="exclamationmark.triangle.fill" catalog="system" symbolScale="small"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BeD-bq-gqd" firstAttribute="centerY" secondItem="9ZE-X7-PT1" secondAttribute="centerY" id="3eO-tw-ZZd"/>
+                            <constraint firstAttribute="trailing" secondItem="uoq-U8-kUe" secondAttribute="trailing" id="R0N-Ve-Ajc"/>
+                            <constraint firstItem="BeD-bq-gqd" firstAttribute="leading" secondItem="9ZE-X7-PT1" secondAttribute="leading" id="Xuc-Gc-kkl"/>
+                            <constraint firstItem="uoq-U8-kUe" firstAttribute="centerY" secondItem="9ZE-X7-PT1" secondAttribute="centerY" id="fBc-Nm-QZY"/>
+                            <constraint firstItem="Wfv-Qz-alf" firstAttribute="top" secondItem="9ZE-X7-PT1" secondAttribute="top" constant="118" id="tnY-Yx-vOM"/>
+                            <constraint firstItem="Wfv-Qz-alf" firstAttribute="leading" secondItem="9ZE-X7-PT1" secondAttribute="leading" constant="-12" id="xgV-Hq-hOE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="9ZE-X7-PT1" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-12.5" id="MOE-di-DMz"/>
+                <constraint firstItem="9ZE-X7-PT1" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="h6u-XG-T5C"/>
+                <constraint firstItem="9ZE-X7-PT1" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="ozI-p6-oja"/>
+                <constraint firstItem="9ZE-X7-PT1" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="r8X-Uf-nyd"/>
+            </constraints>
+            <size key="customSize" width="390" height="155"/>
+            <point key="canvasLocation" x="30.534351145038165" y="51.056338028169016"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="109"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

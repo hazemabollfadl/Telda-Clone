@@ -8,10 +8,12 @@
 import UIKit
 
 class SecondCategoriesCollectionCell: UICollectionViewCell {
-
+    
     @IBOutlet var BigView: UIView!
     
     @IBOutlet var LeftButton: UIButton!
+    
+    @IBOutlet var RightButton: UIButton!
     
     @IBOutlet var CellLabel: UILabel!
     
@@ -22,6 +24,10 @@ class SecondCategoriesCollectionCell: UICollectionViewCell {
         super.awakeFromNib()
         
         BigView.layer.cornerRadius=15
+        LeftButton.isUserInteractionEnabled=false
+        
+        RightButton.isUserInteractionEnabled=false
+        
     }
-
+    
 }

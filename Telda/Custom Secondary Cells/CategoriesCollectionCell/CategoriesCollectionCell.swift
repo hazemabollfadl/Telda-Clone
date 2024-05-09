@@ -20,6 +20,8 @@ class CategoriesCollectionCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         BigView.layer.cornerRadius=15
+        LeftButton.isUserInteractionEnabled=false
+        RightButton.isUserInteractionEnabled=false
     }
 
 }

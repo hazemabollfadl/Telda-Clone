@@ -31,6 +31,26 @@
 		6F23B2D52BC6CDD900BD3458 /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F23B2D32BC6CDD900BD3458 /* HomePageCell.swift */; };
 		6F23B2D62BC6CDD900BD3458 /* HomePageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F23B2D42BC6CDD900BD3458 /* HomePageCell.xib */; };
 		6F23B2DA2BC6F9A900BD3458 /* TransactionDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F23B2D92BC6F9A900BD3458 /* TransactionDetailsVC.swift */; };
+		6F2AD0F32BECFCFD006D0DF9 /* SplitWithOthersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2AD0F22BECFCFD006D0DF9 /* SplitWithOthersVC.swift */; };
+		6F2AD0F52BECFD14006D0DF9 /* PayLaterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2AD0F42BECFD14006D0DF9 /* PayLaterVC.swift */; };
+		6F2AD0F72BED01C4006D0DF9 /* ServicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2AD0F62BED01C4006D0DF9 /* ServicesVC.swift */; };
+		6F2BB6462BECB088004BDB81 /* SetBugetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB6452BECB088004BDB81 /* SetBugetVC.swift */; };
+		6F2BB6482BECBD46004BDB81 /* TransfersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB6472BECBD46004BDB81 /* TransfersVC.swift */; };
+		6F2BB64A2BECBE81004BDB81 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB6492BECBE81004BDB81 /* CategoriesVC.swift */; };
+		6F2BB64C2BECBE8F004BDB81 /* MerchantsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB64B2BECBE8F004BDB81 /* MerchantsVC.swift */; };
+		6F2BB64E2BECC437004BDB81 /* ManageCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB64D2BECC437004BDB81 /* ManageCategoriesVC.swift */; };
+		6F2BB6512BECC998004BDB81 /* TransactionDetailsTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2BB6502BECC998004BDB81 /* TransactionDetailsTopCell.xib */; };
+		6F2BB6522BECC998004BDB81 /* TransactionDetailsTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB64F2BECC998004BDB81 /* TransactionDetailsTopCell.swift */; };
+		6F2BB6552BECD251004BDB81 /* TransactionDetailsButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2BB6542BECD251004BDB81 /* TransactionDetailsButtonCell.xib */; };
+		6F2BB6572BECE49B004BDB81 /* TransactionDetailsStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2BB6562BECE49B004BDB81 /* TransactionDetailsStatusCell.xib */; };
+		6F2BB6592BECE94C004BDB81 /* TransactionDetailsButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB6582BECE94C004BDB81 /* TransactionDetailsButtonCell.swift */; };
+		6F2BB65B2BECE988004BDB81 /* TransactionDetailsStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB65A2BECE988004BDB81 /* TransactionDetailsStatusCell.swift */; };
+		6F2BB6622BECECB0004BDB81 /* CategorieAndExecludeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2BB6612BECECB0004BDB81 /* CategorieAndExecludeCell.xib */; };
+		6F2BB6632BECECB0004BDB81 /* CategorieAndExecludeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB6602BECECB0004BDB81 /* CategorieAndExecludeCell.swift */; };
+		6F2BB6682BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2BB6672BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.xib */; };
+		6F2BB6692BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB6662BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.swift */; };
+		6F2BB66D2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2BB66C2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.xib */; };
+		6F2BB66E2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BB66B2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.swift */; };
 		6F32E8862BD58FB800768D76 /* InsightDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F32E8842BD58FB800768D76 /* InsightDataCell.swift */; };
 		6F32E8872BD58FB800768D76 /* InsightDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F32E8852BD58FB800768D76 /* InsightDataCell.xib */; };
 		6F3E32062BD5A0C50008C159 /* InsightSetBudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E32042BD5A0C50008C159 /* InsightSetBudgetCell.swift */; };
@@ -112,6 +132,26 @@
 		6F23B2D32BC6CDD900BD3458 /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 		6F23B2D42BC6CDD900BD3458 /* HomePageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCell.xib; sourceTree = "<group>"; };
 		6F23B2D92BC6F9A900BD3458 /* TransactionDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsVC.swift; sourceTree = "<group>"; };
+		6F2AD0F22BECFCFD006D0DF9 /* SplitWithOthersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitWithOthersVC.swift; sourceTree = "<group>"; };
+		6F2AD0F42BECFD14006D0DF9 /* PayLaterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayLaterVC.swift; sourceTree = "<group>"; };
+		6F2AD0F62BED01C4006D0DF9 /* ServicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesVC.swift; sourceTree = "<group>"; };
+		6F2BB6452BECB088004BDB81 /* SetBugetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBugetVC.swift; sourceTree = "<group>"; };
+		6F2BB6472BECBD46004BDB81 /* TransfersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersVC.swift; sourceTree = "<group>"; };
+		6F2BB6492BECBE81004BDB81 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		6F2BB64B2BECBE8F004BDB81 /* MerchantsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantsVC.swift; sourceTree = "<group>"; };
+		6F2BB64D2BECC437004BDB81 /* ManageCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCategoriesVC.swift; sourceTree = "<group>"; };
+		6F2BB64F2BECC998004BDB81 /* TransactionDetailsTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsTopCell.swift; sourceTree = "<group>"; };
+		6F2BB6502BECC998004BDB81 /* TransactionDetailsTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailsTopCell.xib; sourceTree = "<group>"; };
+		6F2BB6542BECD251004BDB81 /* TransactionDetailsButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailsButtonCell.xib; sourceTree = "<group>"; };
+		6F2BB6562BECE49B004BDB81 /* TransactionDetailsStatusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailsStatusCell.xib; sourceTree = "<group>"; };
+		6F2BB6582BECE94C004BDB81 /* TransactionDetailsButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsButtonCell.swift; sourceTree = "<group>"; };
+		6F2BB65A2BECE988004BDB81 /* TransactionDetailsStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsStatusCell.swift; sourceTree = "<group>"; };
+		6F2BB6602BECECB0004BDB81 /* CategorieAndExecludeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieAndExecludeCell.swift; sourceTree = "<group>"; };
+		6F2BB6612BECECB0004BDB81 /* CategorieAndExecludeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategorieAndExecludeCell.xib; sourceTree = "<group>"; };
+		6F2BB6662BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentToAndPhoneNumberCell.swift; sourceTree = "<group>"; };
+		6F2BB6672BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentToAndPhoneNumberCell.xib; sourceTree = "<group>"; };
+		6F2BB66B2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsReportIssueCell.swift; sourceTree = "<group>"; };
+		6F2BB66C2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailsReportIssueCell.xib; sourceTree = "<group>"; };
 		6F32E8842BD58FB800768D76 /* InsightDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightDataCell.swift; sourceTree = "<group>"; };
 		6F32E8852BD58FB800768D76 /* InsightDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsightDataCell.xib; sourceTree = "<group>"; };
 		6F3E32042BD5A0C50008C159 /* InsightSetBudgetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightSetBudgetCell.swift; sourceTree = "<group>"; };
@@ -294,6 +334,73 @@
 			path = "Haders&Footers";
 			sourceTree = "<group>";
 		};
+		6F2AD0F12BECFB79006D0DF9 /* TransactionDetailsReportIssueCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F2BB66B2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.swift */,
+				6F2BB66C2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.xib */,
+			);
+			path = TransactionDetailsReportIssueCell;
+			sourceTree = "<group>";
+		};
+		6F2BB6532BECC9A2004BDB81 /* TransactionDetailsCells */ = {
+			isa = PBXGroup;
+			children = (
+				6F2BB65C2BECE999004BDB81 /* TransactionDetailsTopCell */,
+				6F2BB65F2BECEAE0004BDB81 /* TransactionDetailsButtonCell */,
+				6F2BB65E2BECE9EA004BDB81 /* TransactionDetailsStatusCell */,
+				6F2BB6652BECF082004BDB81 /* CategorieAndExecludeCell */,
+				6F2BB66A2BECF5A4004BDB81 /* PaymentToAndPhoneNumberCell */,
+				6F2AD0F12BECFB79006D0DF9 /* TransactionDetailsReportIssueCell */,
+			);
+			path = TransactionDetailsCells;
+			sourceTree = "<group>";
+		};
+		6F2BB65C2BECE999004BDB81 /* TransactionDetailsTopCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F2BB64F2BECC998004BDB81 /* TransactionDetailsTopCell.swift */,
+				6F2BB6502BECC998004BDB81 /* TransactionDetailsTopCell.xib */,
+			);
+			path = TransactionDetailsTopCell;
+			sourceTree = "<group>";
+		};
+		6F2BB65E2BECE9EA004BDB81 /* TransactionDetailsStatusCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F2BB65A2BECE988004BDB81 /* TransactionDetailsStatusCell.swift */,
+				6F2BB6562BECE49B004BDB81 /* TransactionDetailsStatusCell.xib */,
+			);
+			path = TransactionDetailsStatusCell;
+			sourceTree = "<group>";
+		};
+		6F2BB65F2BECEAE0004BDB81 /* TransactionDetailsButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F2BB6582BECE94C004BDB81 /* TransactionDetailsButtonCell.swift */,
+				6F2BB6542BECD251004BDB81 /* TransactionDetailsButtonCell.xib */,
+			);
+			path = TransactionDetailsButtonCell;
+			sourceTree = "<group>";
+		};
+		6F2BB6652BECF082004BDB81 /* CategorieAndExecludeCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F2BB6612BECECB0004BDB81 /* CategorieAndExecludeCell.xib */,
+				6F2BB6602BECECB0004BDB81 /* CategorieAndExecludeCell.swift */,
+			);
+			path = CategorieAndExecludeCell;
+			sourceTree = "<group>";
+		};
+		6F2BB66A2BECF5A4004BDB81 /* PaymentToAndPhoneNumberCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F2BB6662BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.swift */,
+				6F2BB6672BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.xib */,
+			);
+			path = PaymentToAndPhoneNumberCell;
+			sourceTree = "<group>";
+		};
 		6F3E32032BD5A0A30008C159 /* InsightDataCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +445,7 @@
 				6F5589152BD92527003BB660 /* InsightSetBudgetCell */,
 				6F55891A2BD941A5003BB660 /* CategoriesCollectionCell */,
 				6F6F22212BD95B450077D067 /* SecondCategoriesCollectionCell */,
+				6F2BB6532BECC9A2004BDB81 /* TransactionDetailsCells */,
 			);
 			path = "Custom Secondary Cells";
 			sourceTree = "<group>";
@@ -430,6 +538,14 @@
 				6FD5833E2BD394F400ECFEFF /* BankTransfersVC.swift */,
 				6FD583402BD3950900ECFEFF /* CashThroughAtmVC.swift */,
 				6FD583422BD3952400ECFEFF /* FawryVC.swift */,
+				6F2BB6452BECB088004BDB81 /* SetBugetVC.swift */,
+				6F2BB6472BECBD46004BDB81 /* TransfersVC.swift */,
+				6F2BB6492BECBE81004BDB81 /* CategoriesVC.swift */,
+				6F2BB64B2BECBE8F004BDB81 /* MerchantsVC.swift */,
+				6F2BB64D2BECC437004BDB81 /* ManageCategoriesVC.swift */,
+				6F2AD0F22BECFCFD006D0DF9 /* SplitWithOthersVC.swift */,
+				6F2AD0F42BECFD14006D0DF9 /* PayLaterVC.swift */,
+				6F2AD0F62BED01C4006D0DF9 /* ServicesVC.swift */,
 			);
 			path = "Third VC's";
 			sourceTree = "<group>";
@@ -549,11 +665,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2BB6622BECECB0004BDB81 /* CategorieAndExecludeCell.xib in Resources */,
+				6F2BB6682BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.xib in Resources */,
 				6F8EB2B22BD17FC6002D108A /* ProfileDetailsCollectionCell.xib in Resources */,
 				6F3F06CE2BC83E9B00AAC6C7 /* SpaceAddCollectionCell.xib in Resources */,
 				6F8EB2C12BD199F8002D108A /* ProfileHeader.xib in Resources */,
 				6F13BDD02BCE8A5800FDB311 /* LockCard.xib in Resources */,
 				6F53CE542BD3379200951B23 /* CreditCardCell.xib in Resources */,
+				6F2BB66D2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.xib in Resources */,
 				6F23B2D12BC4478500BD3458 /* Secondary.storyboard in Resources */,
 				6F227C2B2BD0478500FF6C37 /* MoreHeader.xib in Resources */,
 				6F13BDD42BCE967400FDB311 /* GetNewCard.xib in Resources */,
@@ -567,14 +686,17 @@
 				6F5589182BD92557003BB660 /* CategoriesCollectionCell.xib in Resources */,
 				6F3E32072BD5A0C50008C159 /* InsightSetBudgetCell.xib in Resources */,
 				6FABD5C52BC9A2130009FB09 /* SpacesCollectionCell.xib in Resources */,
+				6F2BB6572BECE49B004BDB81 /* TransactionDetailsStatusCell.xib in Resources */,
 				6FE120472BC022B4009C6EE4 /* Base in Resources */,
 				6FE120422BC022B2009C6EE4 /* Base in Resources */,
 				6F8EB2C62BD19E8C002D108A /* ProfileUsageAndManageCell.xib in Resources */,
 				6FBA02382BD0258200E7409D /* MoreCollectionViewCells.xib in Resources */,
+				6F2BB6552BECD251004BDB81 /* TransactionDetailsButtonCell.xib in Resources */,
 				6F8EB2BB2BD192EA002D108A /* PremuimCardCellForCollection.xib in Resources */,
 				6F32E8872BD58FB800768D76 /* InsightDataCell.xib in Resources */,
 				6F13BDD22BCE8E8A00FDB311 /* ResetPin.xib in Resources */,
 				6F23B2D62BC6CDD900BD3458 /* HomePageCell.xib in Resources */,
+				6F2BB6512BECC998004BDB81 /* TransactionDetailsTopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,8 +733,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F08A20F2BC03D1400CFC08A /* CardVC.swift in Sources */,
+				6F2AD0F72BED01C4006D0DF9 /* ServicesVC.swift in Sources */,
+				6F2BB6592BECE94C004BDB81 /* TransactionDetailsButtonCell.swift in Sources */,
 				6F55891E2BD941BD003BB660 /* SecondCategoriesCollectionCell.swift in Sources */,
 				6FE1203B2BC022B2009C6EE4 /* AppDelegate.swift in Sources */,
+				6F2BB64C2BECBE8F004BDB81 /* MerchantsVC.swift in Sources */,
+				6F2BB6462BECB088004BDB81 /* SetBugetVC.swift in Sources */,
 				6F13BDDA2BCEA04500FDB311 /* ResetPinVC.swift in Sources */,
 				6F08A20B2BC03CF100CFC08A /* SpacesVC.swift in Sources */,
 				6FD583412BD3950900ECFEFF /* CashThroughAtmVC.swift in Sources */,
@@ -629,32 +755,42 @@
 				6FD1C6482BD22E7D009B9FED /* AppAppearanceVC.swift in Sources */,
 				6F80E5E72BC431D7006BCD24 /* BlurText.swift in Sources */,
 				6F3E32062BD5A0C50008C159 /* InsightSetBudgetCell.swift in Sources */,
+				6F2BB6632BECECB0004BDB81 /* CategorieAndExecludeCell.swift in Sources */,
 				6F13BDDC2BCEA05800FDB311 /* GetNewCardVC.swift in Sources */,
 				6FD583432BD3952400ECFEFF /* FawryVC.swift in Sources */,
 				6F8EB2BA2BD192EA002D108A /* PremuimCardCellForCollection.swift in Sources */,
+				6F2AD0F32BECFCFD006D0DF9 /* SplitWithOthersVC.swift in Sources */,
 				6F227C2C2BD0478500FF6C37 /* MoreHeader.swift in Sources */,
 				6FBA02392BD0258200E7409D /* MoreCollectionViewCells.swift in Sources */,
+				6F2BB65B2BECE988004BDB81 /* TransactionDetailsStatusCell.swift in Sources */,
 				6FD1C6502BD23510009B9FED /* InviteFriendsVC.swift in Sources */,
 				6FD1C6422BD224EC009B9FED /* SettingsVC.swift in Sources */,
+				6F2AD0F52BECFD14006D0DF9 /* PayLaterVC.swift in Sources */,
 				6FABD5C72BC9AA8A0009FB09 /* WhatIsYourGoalVC.swift in Sources */,
+				6F2BB64A2BECBE81004BDB81 /* CategoriesVC.swift in Sources */,
 				6F08A2152BC03F1E00CFC08A /* AddSendInsightCell.swift in Sources */,
 				6F5589192BD92557003BB660 /* CategoriesCollectionCell.swift in Sources */,
+				6F2BB66E2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.swift in Sources */,
 				6FD1C64E2BD23502009B9FED /* StandardVC.swift in Sources */,
 				6F8EB2C52BD19E8C002D108A /* ProfileUsageAndManageCell.swift in Sources */,
 				6FCAAE2E2BCB069E00DF1B90 /* RequestMoneyVC.swift in Sources */,
 				6FD1C6462BD22E6C009B9FED /* FeesVC.swift in Sources */,
 				6F13BDCF2BCE8A5800FDB311 /* CardCells.swift in Sources */,
+				6F2BB6522BECC998004BDB81 /* TransactionDetailsTopCell.swift in Sources */,
 				6F13BDD82BCE9CDA00FDB311 /* UpgradeCardVC.swift in Sources */,
 				6F3F06CD2BC83E9B00AAC6C7 /* SpacesCollectionCell.swift in Sources */,
+				6F2BB6482BECBD46004BDB81 /* TransfersVC.swift in Sources */,
 				6FD1C64C2BD233E1009B9FED /* ChatWithUsVC.swift in Sources */,
 				6FD5833D2BD394DB00ECFEFF /* InstapayVC.swift in Sources */,
 				6FE1203D2BC022B2009C6EE4 /* SceneDelegate.swift in Sources */,
 				6F08A20D2BC03D0700CFC08A /* TransactionVC.swift in Sources */,
 				6FD5833B2BD37D8300ECFEFF /* RecieveTransfersCollectionCell.swift in Sources */,
+				6F2BB6692BECF3CF004BDB81 /* PaymentToAndPhoneNumberCell.swift in Sources */,
 				6FABD5C42BC9A2130009FB09 /* SpaceAddCollectionCell.swift in Sources */,
 				6FD5833F2BD394F400ECFEFF /* BankTransfersVC.swift in Sources */,
 				6F23B2D52BC6CDD900BD3458 /* HomePageCell.swift in Sources */,
 				6F08A2092BC0348E00CFC08A /* HomePageVC.swift in Sources */,
+				6F2BB64E2BECC437004BDB81 /* ManageCategoriesVC.swift in Sources */,
 				6F23B2CA2BC444BA00BD3458 /* AddMoneyVC.swift in Sources */,
 				6FCAAE302BCB06AF00DF1B90 /* SendMoneyVC.swift in Sources */,
 				6F13BDDE2BCEA0F700FDB311 /* LockCardVC.swift in Sources */,

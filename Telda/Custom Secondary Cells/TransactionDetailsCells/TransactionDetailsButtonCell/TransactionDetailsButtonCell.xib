@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TransactionDetailsButtonCell" id="567-k5-Cc8" customClass="TransactionDetailsButtonCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yCi-kk-WKp">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5a-zw-ZtT">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="65"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iEB-1Y-Tgw">
+                                <rect key="frame" x="0.0" y="15.333333333333332" width="303.33333333333331" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyq-Tm-lOk">
+                                        <rect key="frame" x="0.0" y="0.0" width="170.33333333333334" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Split with others" imagePadding="10" cornerStyle="capsule">
+                                            <imageReference key="image" image="arrow.triangle.branch" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.15286113409999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="splitWithOtherButtonPressed:" destination="567-k5-Cc8" eventType="touchUpInside" id="rLO-np-B9M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sae-Zm-5C9">
+                                        <rect key="frame" x="185.33333333333334" y="0.0" width="118.00000000000003" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Pay later" imagePadding="10" cornerStyle="capsule">
+                                            <imageReference key="image" image="clock.arrow.circlepath" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.15286113409999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="payLaterButtonPressed:" destination="567-k5-Cc8" eventType="touchUpInside" id="Ifi-8I-ngE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iEB-1Y-Tgw" firstAttribute="centerY" secondItem="g5a-zw-ZtT" secondAttribute="centerY" id="kJW-Nl-Epy"/>
+                            <constraint firstItem="iEB-1Y-Tgw" firstAttribute="leading" secondItem="g5a-zw-ZtT" secondAttribute="leading" id="nPU-nM-3Zs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g5a-zw-ZtT" firstAttribute="centerY" secondItem="yCi-kk-WKp" secondAttribute="centerY" id="7q2-Mg-xwd"/>
+                    <constraint firstItem="g5a-zw-ZtT" firstAttribute="width" secondItem="yCi-kk-WKp" secondAttribute="width" id="E8I-ow-m6Q"/>
+                    <constraint firstItem="g5a-zw-ZtT" firstAttribute="centerX" secondItem="yCi-kk-WKp" secondAttribute="centerX" id="Ncp-P3-PIs"/>
+                    <constraint firstItem="g5a-zw-ZtT" firstAttribute="height" secondItem="yCi-kk-WKp" secondAttribute="height" id="quc-Ew-dKo"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <point key="canvasLocation" x="233.58778625954199" y="-2.4647887323943665"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.triangle.branch" catalog="system" width="128" height="110"/>
+        <image name="clock.arrow.circlepath" catalog="system" width="128" height="112"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
