@@ -30,14 +30,14 @@
                                     <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
                                     <color key="baseForegroundColor" name="AccentColor"/>
-                                    <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="addButtonPressed:" destination="0SY-I3-3Ll" eventType="touchUpInside" id="SXI-OQ-V1T"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.10086403145099336" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="g2O-ur-zNB" firstAttribute="centerX" secondItem="WXo-fM-rLm" secondAttribute="centerX" id="N2c-ho-5Jp"/>
                             <constraint firstItem="g2O-ur-zNB" firstAttribute="centerY" secondItem="WXo-fM-rLm" secondAttribute="centerY" id="mxe-7L-8Wa"/>
@@ -72,9 +72,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

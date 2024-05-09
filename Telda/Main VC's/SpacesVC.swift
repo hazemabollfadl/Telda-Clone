@@ -98,7 +98,7 @@ class SpacesVC: UIViewController {
 //MARK: - UICollectionViewDataSource
 extension SpacesVC:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        3
+        2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -125,7 +125,7 @@ extension SpacesVC:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == (collectionView.numberOfItems(inSection: 0))-1{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
-            let vc  = storyboard.instantiateViewController(withIdentifier: "WhatIsYourGoalVC") as! WhatIsYourGoalVC
+            let vc  = storyboard.instantiateViewController(withIdentifier: "SpacesNavController") as! UINavigationController
             vc.modalPresentationStyle = .popover
             self.present(vc, animated: true)
         }else{

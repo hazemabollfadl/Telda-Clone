@@ -95,7 +95,7 @@ class TransactionVC: UIViewController {
             ValidAmontLabel.isHidden=false
         }else{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
-            let vc  = storyboard.instantiateViewController(withIdentifier: "TransactionDetailsVC") as! TransactionDetailsVC
+            let vc  = storyboard.instantiateViewController(withIdentifier: "RequestMoneyVC") as! RequestMoneyVC
             vc.modalPresentationStyle = .popover
             self.present(vc, animated: true)
         }
