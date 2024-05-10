@@ -96,7 +96,7 @@ class TransactionVC: UIViewController {
         }else{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "RequestMoneyVC") as! RequestMoneyVC
-            vc.modalPresentationStyle = .popover
+            vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
         }
     }
@@ -114,7 +114,7 @@ class TransactionVC: UIViewController {
         }else{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "SendMoneyVC") as! SendMoneyVC
-            vc.modalPresentationStyle = .popover
+            vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
         }
     }

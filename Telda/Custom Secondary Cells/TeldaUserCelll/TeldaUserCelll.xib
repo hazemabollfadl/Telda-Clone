@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TeldaUserCelll" id="gTV-IL-0wX" customClass="TeldaUserCelll" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mB-m7-Gyx">
+                        <rect key="frame" x="0.0" y="12.666666666666664" width="390" height="90"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="GPq-Ub-028">
+                                <rect key="frame" x="13" y="24.666666666666675" width="176" height="40.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zj-H7-wuP">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.333333333333336" height="40.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="person.fill" catalog="system" cornerStyle="capsule">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="nmL-Vr-1Ng">
+                                        <rect key="frame" x="51.333333333333321" y="0.0" width="124.66666666666669" height="36.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Hazem el-Gendy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulj-3M-Wsz">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@hazemaboulfadl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-qB-hat">
+                                                <rect key="frame" x="0.0" y="19.333333333333329" width="115.33333333333333" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IDP-0H-6yn">
+                                <rect key="frame" x="344.33333333333331" y="30.666666666666668" width="29.666666666666686" height="28.333333333333332"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GPq-Ub-028" firstAttribute="centerY" secondItem="0mB-m7-Gyx" secondAttribute="centerY" id="263-Ia-IcJ"/>
+                            <constraint firstAttribute="trailing" secondItem="IDP-0H-6yn" secondAttribute="trailing" constant="16" id="9Hv-LX-lcA"/>
+                            <constraint firstItem="GPq-Ub-028" firstAttribute="leading" secondItem="0mB-m7-Gyx" secondAttribute="leading" constant="13" id="GgP-f9-K1p"/>
+                            <constraint firstItem="IDP-0H-6yn" firstAttribute="centerY" secondItem="0mB-m7-Gyx" secondAttribute="centerY" id="SEg-sw-FWo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0mB-m7-Gyx" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="63O-hB-BYt"/>
+                <constraint firstItem="0mB-m7-Gyx" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="cNu-3M-fq3"/>
+                <constraint firstItem="0mB-m7-Gyx" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="eRH-Zf-f5e"/>
+                <constraint firstItem="0mB-m7-Gyx" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="wlB-SK-ore"/>
+            </constraints>
+            <size key="customSize" width="390" height="90"/>
+            <connections>
+                <outlet property="CheckMark" destination="IDP-0H-6yn" id="FK5-k8-kkc"/>
+                <outlet property="UserName" destination="ulj-3M-Wsz" id="fbX-ze-o7W"/>
+            </connections>
+            <point key="canvasLocation" x="-44.274809160305338" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
