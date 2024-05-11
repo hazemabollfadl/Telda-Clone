@@ -37,8 +37,8 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gifts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugq-HV-OuH">
-                                <rect key="frame" x="23.000000000000004" y="98" width="34.333333333333343" height="12"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <rect key="frame" x="25" y="98" width="30.333333333333329" height="12"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -65,6 +65,7 @@
             </constraints>
             <size key="customSize" width="161" height="586"/>
             <connections>
+                <outlet property="CellImage" destination="6mT-sx-C5t" id="cE2-5p-NQT"/>
                 <outlet property="CellLabel" destination="ugq-HV-OuH" id="v5v-Z9-M4B"/>
                 <outlet property="SmallView" destination="piu-0y-iYm" id="rB8-uq-ouo"/>
             </connections>

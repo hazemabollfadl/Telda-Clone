@@ -198,6 +198,84 @@
             </objects>
             <point key="canvasLocation" x="-2963" y="3481"/>
         </scene>
+        <!--SetA New PinVC-->
+        <scene sceneID="ZzV-CQ-xoU">
+            <objects>
+                <viewController storyboardIdentifier="SetANewPinVC" id="ebi-wj-aaz" customClass="SetANewPinVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KGV-Fz-bzp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set a new pin for your card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cn2-zP-gil">
+                                <rect key="frame" x="16" y="63" width="276" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EP7-EI-XDY" customClass="AEOTPTextField" customModule="AEOTPTextField">
+                                <rect key="frame" x="60" y="111.00000000000001" width="270" height="57.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PxC-Y2-nWI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PxC-Y2-nWI" firstAttribute="trailing" secondItem="EP7-EI-XDY" secondAttribute="trailing" constant="60" id="7uI-UE-BNb"/>
+                            <constraint firstItem="Cn2-zP-gil" firstAttribute="leading" secondItem="PxC-Y2-nWI" secondAttribute="leading" constant="16" id="8Ms-X4-AcY"/>
+                            <constraint firstItem="EP7-EI-XDY" firstAttribute="leading" secondItem="PxC-Y2-nWI" secondAttribute="leading" constant="60" id="FQF-7a-Nfb"/>
+                            <constraint firstItem="Cn2-zP-gil" firstAttribute="top" secondItem="PxC-Y2-nWI" secondAttribute="top" constant="16" id="TDA-qD-pVF"/>
+                            <constraint firstItem="EP7-EI-XDY" firstAttribute="top" secondItem="Cn2-zP-gil" secondAttribute="bottom" constant="20" id="UId-2R-nD4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SetAPinTextField" destination="EP7-EI-XDY" id="Ai6-J6-HWi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wc2-3T-lt0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2963.0769230769229" y="4159.4786729857815"/>
+        </scene>
+        <!--Choose Your PlanVC-->
+        <scene sceneID="fct-kb-cIh">
+            <objects>
+                <viewController storyboardIdentifier="ChooseYourPlanVC" id="YaH-YS-psS" customClass="ChooseYourPlanVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="72S-d8-u8R">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your plan " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frP-V9-lkB">
+                                <rect key="frame" x="126" y="411.66666666666669" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-Sq-S6T">
+                                <rect key="frame" x="6" y="59" width="41.333333333333336" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismissButtonPressed:" destination="Gml-FD-1r2" eventType="touchUpInside" id="MFp-kz-oGr"/>
+                                    <action selector="dismissButtonPressed:" destination="JAz-Mp-UIm" eventType="touchUpInside" id="PHc-jN-EyC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="crJ-kQ-lbh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="frP-V9-lkB" firstAttribute="centerY" secondItem="72S-d8-u8R" secondAttribute="centerY" id="IIf-cL-chX"/>
+                            <constraint firstItem="2Pq-Sq-S6T" firstAttribute="leading" secondItem="crJ-kQ-lbh" secondAttribute="leading" constant="6" id="bOg-Db-D0T"/>
+                            <constraint firstItem="frP-V9-lkB" firstAttribute="centerX" secondItem="72S-d8-u8R" secondAttribute="centerX" id="ocw-nQ-Z9K"/>
+                            <constraint firstItem="2Pq-Sq-S6T" firstAttribute="top" secondItem="crJ-kQ-lbh" secondAttribute="top" constant="12" id="tGZ-hi-SV6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZM-yl-WSg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2191" y="4159"/>
+        </scene>
         <!--ConfirmVC-->
         <scene sceneID="j7h-2f-q8G">
             <objects>

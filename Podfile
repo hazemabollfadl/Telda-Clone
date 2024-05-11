@@ -6,5 +6,6 @@ target 'Telda' do
   use_frameworks!
 
   # Pods for Telda
+pod 'AEOTPTextField'
 
 end

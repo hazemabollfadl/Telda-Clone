@@ -12,6 +12,7 @@ class MoreCollectionViewCells: UICollectionViewCell {
     @IBOutlet var CellImage: UIImageView!
     @IBOutlet var CellLabel: UILabel!
     @IBOutlet var SmallView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         SmallView.layer.cornerRadius=20

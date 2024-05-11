@@ -111,7 +111,7 @@ extension CardVC:UITableViewDelegate{
         if indexPath.row==3{
             
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
-            let vc  = storyboard.instantiateViewController(withIdentifier: "ResetPinVC") as! ResetPinVC
+            let vc  = storyboard.instantiateViewController(withIdentifier: "ResetPinNavController") as! UINavigationController
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
             
@@ -140,7 +140,7 @@ extension CardVC:upgradeButtonPressed, CardCellsButtonPressed{
     
     func ResetPinButtonPressed() {
         let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
-        let vc  = storyboard.instantiateViewController(withIdentifier: "ResetPinVC") as! ResetPinVC
+        let vc  = storyboard.instantiateViewController(withIdentifier: "ResetPinNavController") as! UINavigationController
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }
@@ -157,8 +157,21 @@ extension CardVC:upgradeButtonPressed, CardCellsButtonPressed{
         if mySwitch.isOn{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "LockCardVC") as! LockCardVC
-            vc.modalPresentationStyle = .popover
+            
+            if let presentationController = vc.presentationController as?
+                UISheetPresentationController {
+                presentationController.detents = [.medium()]
+            }
+            
+            SharedData.shared.overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.65)
+            self.view.addSubview(SharedData.shared.overlayView)
+            
             self.present(vc, animated: true)
+        }else{
+            let alert = UIAlertController(title: "Warning", message: "Card is unlocked", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "okay", style: .default))
+            
+            self.present(alert, animated: true, completion: nil)
         }
     }
     

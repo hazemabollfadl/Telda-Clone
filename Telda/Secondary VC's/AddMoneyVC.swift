@@ -12,8 +12,6 @@ class AddMoneyVC: UIViewController {
     
     @IBOutlet var AddMoneyCollectionView: UICollectionView!
     
-    static var isDisimmed:Bool=true
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         

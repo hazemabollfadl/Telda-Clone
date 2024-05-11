@@ -15,6 +15,8 @@ class TransactionVC: UIViewController {
     @IBOutlet var ValidAmontLabel: UILabel!
     @IBOutlet var NumberLabel: UILabel!
     
+    static var MoneyAmountLabel:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ValidAmontLabel.isHidden=true
@@ -94,6 +96,7 @@ class TransactionVC: UIViewController {
             ValidAmontLabel.text="Minimum amount is EGP 5"
             ValidAmontLabel.isHidden=false
         }else{
+            TransactionVC.MoneyAmountLabel=NumberLabel.text
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "RequestNavController") as! UINavigationController
             vc.modalPresentationStyle = .fullScreen
@@ -112,6 +115,7 @@ class TransactionVC: UIViewController {
             ValidAmontLabel.text="Minimum amount is EGP 5"
             ValidAmontLabel.isHidden=false
         }else{
+            TransactionVC.MoneyAmountLabel=NumberLabel.text
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "SendMoneyNavController") as! UINavigationController
             vc.modalPresentationStyle = .fullScreen

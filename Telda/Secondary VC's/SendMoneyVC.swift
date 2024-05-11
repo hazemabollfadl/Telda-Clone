@@ -9,6 +9,8 @@ import UIKit
 
 class SendMoneyVC: UIViewController {
 
+    @IBOutlet var MoneyAmountLabel: UILabel!
+    
     @IBOutlet var SendMoneyTableView: UITableView!
     @IBOutlet var SendMoneyCollectionView: UICollectionView!
     
@@ -56,6 +58,8 @@ class SendMoneyVC: UIViewController {
         
         makingAButton()
         floatingButton.isHidden=true
+
+        MoneyAmountLabel.text = "Send " + (TransactionVC.MoneyAmountLabel ?? "EGP 0")
 
         
     }

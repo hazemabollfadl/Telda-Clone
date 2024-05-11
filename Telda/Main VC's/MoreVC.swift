@@ -50,7 +50,11 @@ extension MoreVC:UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        if section==0{
+            return 5
+        }else{
+            return 3
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -70,7 +74,47 @@ extension MoreVC:UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = moreCollectionView.dequeueReusableCell(withReuseIdentifier: "MoreCollectionViewCells", for: indexPath) as! MoreCollectionViewCells
+        
+        if indexPath.section==0{
+            if indexPath.row==0{
+                cell.SmallView.backgroundColor = .myColor1
+                cell.CellImage.image=UIImage(systemName: "dollarsign")
+                cell.CellLabel.text="Get Cash"
+            }else if indexPath.row==1{
+                cell.SmallView.backgroundColor = .myColor5
+                cell.CellImage.image=UIImage(systemName: "person.2.fill")
+                cell.CellLabel.text="Referals"
+            }else if indexPath.row==2{
+                cell.SmallView.backgroundColor = .myColor6
+                cell.CellImage.image=UIImage(systemName: "app.gift.fill")
+                cell.CellLabel.text="Rewards"
+            }else if indexPath.row==3{
+                cell.SmallView.backgroundColor = .myColor2
+                cell.CellImage.image=UIImage(systemName: "clock.arrow.circlepath")
+                cell.CellLabel.text="Pay Later"
+            }else{
+                cell.SmallView.backgroundColor = .myColor3
+                cell.CellImage.image=UIImage(systemName: "target")
+                cell.CellLabel.text="Points"
+            }
+        }else{
+            if indexPath.row==0{
+                cell.SmallView.backgroundColor = .myColor6
+                cell.CellImage.image=UIImage(systemName: "bag.fill")
+                cell.CellLabel.text="Shops"
+            }else if indexPath.row==1{
+                cell.SmallView.backgroundColor = .myColor4
+                cell.CellImage.image=UIImage(systemName: "gift.fill")
+                cell.CellLabel.text="Gifts"
+            }else{
+                cell.SmallView.backgroundColor = .myColor5
+                cell.CellImage.image=UIImage(systemName: "ticket.fill")
+                cell.CellLabel.text="Vouchers"
+            }
+        }
+        
         return cell
     }
     

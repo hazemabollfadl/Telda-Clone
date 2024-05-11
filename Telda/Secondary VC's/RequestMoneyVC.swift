@@ -9,6 +9,8 @@ import UIKit
 
 class RequestMoneyVC: UIViewController {
     
+    @IBOutlet var MoneyAmountLabel: UILabel!
+    
     @IBOutlet var RequestMoneyTableView: UITableView!
     
     @IBOutlet var RequestMoneyCollectionView: UICollectionView!
@@ -55,6 +57,8 @@ class RequestMoneyVC: UIViewController {
         
         makingAButton()
         floatingButton.isHidden=true
+        
+        MoneyAmountLabel.text = "Request " + (TransactionVC.MoneyAmountLabel ?? "EGP 0")
         
         
     }

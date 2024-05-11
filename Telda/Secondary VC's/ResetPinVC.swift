@@ -6,27 +6,34 @@
 //
 
 import UIKit
+import AEOTPTextField
 
 class ResetPinVC: UIViewController {
 
+    @IBOutlet var PinTextField: AEOTPTextField!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        PinTextField.becomeFirstResponder()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        PinTextField.otpDelegate=self
+        PinTextField.configure(with: 8)
     }
     
     @IBAction func dismissButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+//MARK: - AEOTPTextFieldDelegate
+extension ResetPinVC:AEOTPTextFieldDelegate{
+    func didUserFinishEnter(the code: String) {
+        
+        performSegue(withIdentifier: "PinToSetANewPin", sender: self)
     }
-    */
-
+    
+    
 }
