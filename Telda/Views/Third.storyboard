@@ -171,6 +171,87 @@
             </objects>
             <point key="canvasLocation" x="-2963" y="2786"/>
         </scene>
+        <!--ShareQR CodeVC-->
+        <scene sceneID="dv7-aI-szw">
+            <objects>
+                <viewController storyboardIdentifier="ShareQRCodeVC" id="B8Y-uc-GiH" customClass="ShareQRCodeVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hny-mb-w2y">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share QR code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwI-wP-IPk">
+                                <rect key="frame" x="137.66666666666666" y="411.66666666666669" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iuB-oH-SMu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XwI-wP-IPk" firstAttribute="centerY" secondItem="hny-mb-w2y" secondAttribute="centerY" id="Fy0-xO-5Vg"/>
+                            <constraint firstItem="XwI-wP-IPk" firstAttribute="centerX" secondItem="hny-mb-w2y" secondAttribute="centerX" id="L2E-ta-6xZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDl-HH-N0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2963" y="3481"/>
+        </scene>
+        <!--ConfirmVC-->
+        <scene sceneID="j7h-2f-q8G">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmVC" id="IDj-RS-AJ3" customClass="ConfirmVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tNo-Sp-e4L">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkt-Ww-Hjl">
+                                <rect key="frame" x="164.66666666666666" y="411.66666666666669" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zq9-wx-HG7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lkt-Ww-Hjl" firstAttribute="centerX" secondItem="tNo-Sp-e4L" secondAttribute="centerX" id="8QZ-T9-oCQ"/>
+                            <constraint firstItem="Lkt-Ww-Hjl" firstAttribute="centerY" secondItem="tNo-Sp-e4L" secondAttribute="centerY" id="nGB-vo-4oF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emZ-NM-Gx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2140" y="3480.5687203791467"/>
+        </scene>
+        <!--ScanQR CodeVC-->
+        <scene sceneID="HFB-Eg-5fW">
+            <objects>
+                <viewController storyboardIdentifier="ScanQRCodeVC" id="OAc-no-I0G" customClass="ScanQRCodeVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="077-1s-U59">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Qr code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZK-n1-NIi">
+                                <rect key="frame" x="143" y="411.66666666666669" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qes-ap-S3c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lZK-n1-NIi" firstAttribute="centerX" secondItem="077-1s-U59" secondAttribute="centerX" id="R4p-e0-UYC"/>
+                            <constraint firstItem="lZK-n1-NIi" firstAttribute="centerY" secondItem="077-1s-U59" secondAttribute="centerY" id="zi2-b7-Uyv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBs-4m-FTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1295.3846153846152" y="3480.5687203791467"/>
+        </scene>
         <!--Pay LaterVC-->
         <scene sceneID="aCY-Mn-BwK">
             <objects>

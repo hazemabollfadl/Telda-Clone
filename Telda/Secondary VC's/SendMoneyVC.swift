@@ -16,6 +16,11 @@ class SendMoneyVC: UIViewController {
     
     var MyTextField = UITextField()
     
+    var Selected:Bool=false
+    
+    var floatingButton: UIButton!
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         MyTextField.becomeFirstResponder()
     }
@@ -49,6 +54,10 @@ class SendMoneyVC: UIViewController {
         SendMoneyCollectionView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         
+        makingAButton()
+        floatingButton.isHidden=true
+
+        
     }
     
     @IBAction func dismissButtonPressed(_ sender: UIButton) {
@@ -68,7 +77,6 @@ extension SendMoneyVC:UITableViewDelegate, UITableViewDataSource{
         cell.selectionStyle = .none
         
         if indexPath.row==0{
-            cell.BigLabel.text="To"
             MyTextField = cell.TextField
         }
         
@@ -114,8 +122,45 @@ extension SendMoneyVC:UICollectionViewDelegate, UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+        
+        
+        if indexPath.row==0{
+            performSegue(withIdentifier: "SendMoneyToScan", sender: self)
+            
+        }else if indexPath.row==1{
+            print(indexPath)
+        }else{
+            
+            let TextFieldTableViewCell = SendMoneyTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! TransactionTextFieldTableViewCell
+            
+            let SelectedCell = collectionView.cellForItem(at: indexPath) as! TeldaUserCelll
+            
+            if Selected == false || SelectedCell.CheckMark.isHidden == false{
+                if SelectedCell.CheckMark.isHidden == true{
+                    view.endEditing(true)
+                    SelectedCell.CheckMark.isHidden=false
+                    floatingButton.isHidden=false
+                    Selected=true
+                    TextFieldTableViewCell.TextField.text! =  SelectedCell.UserName.text!
+                    
+                }else{
+                    SelectedCell.CheckMark.isHidden=true
+                    floatingButton.isHidden=true
+                    Selected=false
+                    TextFieldTableViewCell.TextField.text=""
+                }
+            }else{
+                
+                let alert = UIAlertController(title: "Error", message: "There is a user already selected", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: .default))
+                
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+            
+        
     }
+    
     
 }
 
@@ -124,7 +169,7 @@ extension SendMoneyVC:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let flowLayout=collectionViewLayout as! UICollectionViewFlowLayout
-        flowLayout.minimumLineSpacing=10
+        flowLayout.minimumLineSpacing=20
         flowLayout.sectionInset=UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         if indexPath.row==0{
@@ -148,4 +193,54 @@ extension SendMoneyVC{
         }
     }
     
+    func makingAButton(){
+        floatingButton = UIButton(type: .system)
+        let myAttribute = [ NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .semibold) ]
+        
+        let myAttrString = NSAttributedString(string: "Send", attributes: myAttribute)
+        floatingButton.setAttributedTitle(myAttrString, for: .normal)
+        
+        floatingButton.backgroundColor = .link
+        floatingButton.tintColor = .white
+        floatingButton.layer.cornerRadius=15
+        floatingButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        floatingButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(floatingButton)
+        
+        // Add constraints for the floating button
+        NSLayoutConstraint.activate([
+            floatingButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            floatingButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+//            floatingButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            floatingButton.widthAnchor.constraint(equalToConstant: SendMoneyCollectionView.bounds.width-40),
+            floatingButton.heightAnchor.constraint(equalToConstant: SendMoneyCollectionView.bounds.width/6-16)
+        ])
+        
+        // Register for keyboard notifications
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func buttonTapped() {
+        performSegue(withIdentifier: "SendToConfirm", sender: self)
+
+    }
+    
+    @objc func keyboardWillShow(_ notification: Notification) {
+        guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
+        let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0.2
+        
+        UIView.animate(withDuration: duration) {
+            self.floatingButton.frame.origin.y = keyboardFrame.minY - self.floatingButton.frame.height - 10
+        }
+    }
+    
+    
+    @objc func keyboardWillHide(_ notification: Notification) {
+        let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0.2
+        
+        UIView.animate(withDuration: duration) {
+            self.floatingButton.frame.origin.y = self.view.bounds.height - self.floatingButton.frame.height - 30
+        }
+    }
 }

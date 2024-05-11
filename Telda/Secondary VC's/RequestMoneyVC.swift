@@ -53,6 +53,10 @@ class RequestMoneyVC: UIViewController {
         RequestMoneyCollectionView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         
+        makingAButton()
+        floatingButton.isHidden=true
+        
+        
     }
     
     @IBAction func dismissButtonPressed(_ sender: UIButton) {
@@ -121,31 +125,40 @@ extension RequestMoneyVC:UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let TextFieldTableViewCell = RequestMoneyTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! TransactionTextFieldTableViewCell
         
-        let SelectedCell = collectionView.cellForItem(at: indexPath) as! TeldaUserCelll
-        
-        
-        if Selected == false || SelectedCell.CheckMark.isHidden == false{
-            if SelectedCell.CheckMark.isHidden == true{
-                makingAButton()
-                SelectedCell.CheckMark.isHidden=false
-                Selected=true
-                TextFieldTableViewCell.TextField.text! =  SelectedCell.UserName.text!
-                
-            }else{
-                SelectedCell.CheckMark.isHidden=true
-                Selected=false
-                TextFieldTableViewCell.TextField.text=""
-            }
+        if indexPath.row==0{
+            performSegue(withIdentifier: "RequestToShareQRCode", sender: self)
+        }else if indexPath.row==1{
+            print(indexPath)
         }else{
             
-            let alert = UIAlertController(title: "Error", message: "There is a user already selected", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Okay", style: .default))
+            let TextFieldTableViewCell = RequestMoneyTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! TransactionTextFieldTableViewCell
             
-            self.present(alert, animated: true, completion: nil)
+            let SelectedCell = collectionView.cellForItem(at: indexPath) as! TeldaUserCelll
+            
+            if Selected == false || SelectedCell.CheckMark.isHidden == false{
+                if SelectedCell.CheckMark.isHidden == true{
+                    view.endEditing(true)
+                    SelectedCell.CheckMark.isHidden=false
+                    floatingButton.isHidden=false
+                    Selected=true
+                    TextFieldTableViewCell.TextField.text! =  SelectedCell.UserName.text!
+                    
+                }else{
+                    SelectedCell.CheckMark.isHidden=true
+                    floatingButton.isHidden=true
+                    Selected=false
+                    TextFieldTableViewCell.TextField.text=""
+                }
+            }else{
+                
+                let alert = UIAlertController(title: "Error", message: "There is a user already selected", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: .default))
+                
+                self.present(alert, animated: true, completion: nil)
+            }
         }
-        
+            
         
     }
     
@@ -157,7 +170,7 @@ extension RequestMoneyVC:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let flowLayout=collectionViewLayout as! UICollectionViewFlowLayout
-        flowLayout.minimumLineSpacing=10
+        flowLayout.minimumLineSpacing=20
         flowLayout.sectionInset=UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         if indexPath.row==0{
@@ -183,9 +196,13 @@ extension RequestMoneyVC{
     
     func makingAButton(){
         floatingButton = UIButton(type: .system)
-        floatingButton.setTitle("Request", for: .normal)
-        floatingButton.backgroundColor = .systemGray5
-        floatingButton.tintColor = .label
+        let myAttribute = [ NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .semibold) ]
+        
+        let myAttrString = NSAttributedString(string: "Request", attributes: myAttribute)
+        floatingButton.setAttributedTitle(myAttrString, for: .normal)
+        
+        floatingButton.backgroundColor = .link
+        floatingButton.tintColor = .white
         floatingButton.layer.cornerRadius=15
         floatingButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         floatingButton.translatesAutoresizingMaskIntoConstraints = false
@@ -193,8 +210,11 @@ extension RequestMoneyVC{
         
         // Add constraints for the floating button
         NSLayoutConstraint.activate([
-            floatingButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            floatingButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16),
+            floatingButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            floatingButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+            //            floatingButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            floatingButton.widthAnchor.constraint(equalToConstant: RequestMoneyCollectionView.bounds.width-40),
+            floatingButton.heightAnchor.constraint(equalToConstant: RequestMoneyCollectionView.bounds.width/6-16)
         ])
         
         // Register for keyboard notifications
@@ -203,24 +223,24 @@ extension RequestMoneyVC{
     }
     
     @objc func buttonTapped() {
-        
+        performSegue(withIdentifier: "RequestToConfirm", sender: self)
     }
     
     @objc func keyboardWillShow(_ notification: Notification) {
         guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
-        let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0.25
+        let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0.2
         
         UIView.animate(withDuration: duration) {
-            self.floatingButton.frame.origin.y = keyboardFrame.minY - self.floatingButton.frame.height - 16
+            self.floatingButton.frame.origin.y = keyboardFrame.minY - self.floatingButton.frame.height - 10
         }
     }
     
     
     @objc func keyboardWillHide(_ notification: Notification) {
-        let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0.25
+        let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0.2
         
         UIView.animate(withDuration: duration) {
-            self.floatingButton.frame.origin.y = self.view.bounds.height - self.floatingButton.frame.height - 16
+            self.floatingButton.frame.origin.y = self.view.bounds.height - self.floatingButton.frame.height - 30
         }
     }
 }

@@ -118,22 +118,45 @@
                             <constraint firstItem="gAV-5t-Ng0" firstAttribute="trailing" secondItem="dQZ-Hi-x4X" secondAttribute="trailing" id="BEp-mO-61c"/>
                             <constraint firstItem="gAV-5t-Ng0" firstAttribute="leading" secondItem="dQZ-Hi-x4X" secondAttribute="leading" id="DeM-m8-QGj"/>
                             <constraint firstItem="CNc-GP-VsE" firstAttribute="leading" secondItem="dQZ-Hi-x4X" secondAttribute="leading" id="Gnz-wk-Bz7"/>
+                            <constraint firstAttribute="bottom" secondItem="gAV-5t-Ng0" secondAttribute="bottom" id="Ibd-hz-m8I"/>
                             <constraint firstItem="MLa-kS-B3K" firstAttribute="leading" secondItem="dQZ-Hi-x4X" secondAttribute="leading" constant="6" id="L3x-BV-8LS"/>
-                            <constraint firstAttribute="bottom" secondItem="gAV-5t-Ng0" secondAttribute="bottom" id="MUe-NQ-3fg"/>
                             <constraint firstItem="jUW-II-ETt" firstAttribute="top" secondItem="dQZ-Hi-x4X" secondAttribute="top" constant="18" id="T1f-AR-qXq"/>
                             <constraint firstItem="CNc-GP-VsE" firstAttribute="trailing" secondItem="dQZ-Hi-x4X" secondAttribute="trailing" id="UsX-i2-hGh"/>
                             <constraint firstItem="MLa-kS-B3K" firstAttribute="top" secondItem="dQZ-Hi-x4X" secondAttribute="top" constant="12" id="veN-rg-Ugk"/>
                             <constraint firstItem="CNc-GP-VsE" firstAttribute="top" secondItem="jUW-II-ETt" secondAttribute="bottom" constant="7.6699999999999999" id="w0r-5f-Qjd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vyv-ae-AMM"/>
                     <connections>
                         <outlet property="SendMoneyCollectionView" destination="gAV-5t-Ng0" id="4Hc-Fr-YvK"/>
                         <outlet property="SendMoneyTableView" destination="CNc-GP-VsE" id="p6c-3L-5Zd"/>
+                        <segue destination="MGq-dI-S2L" kind="show" identifier="SendMoneyToScan" id="5AZ-cj-dNp"/>
+                        <segue destination="bnU-2z-Vpp" kind="show" identifier="SendToConfirm" id="KAi-yE-BfW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQ2-Lx-nBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11429.23076923077" y="499.76303317535542"/>
+            <point key="canvasLocation" x="13246.153846153846" y="499.76303317535542"/>
+        </scene>
+        <!--ScanQRCodeVC-->
+        <scene sceneID="q8n-2o-Xsv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" referencedIdentifier="ScanQRCodeVC" id="MGq-dI-S2L" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NGd-br-s5U"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y9g-Bf-waF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13062" y="926"/>
+        </scene>
+        <!--ConfirmVC-->
+        <scene sceneID="0wp-DM-Cwx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" referencedIdentifier="ConfirmVC" id="bnU-2z-Vpp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="f8K-6y-69W"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbE-oo-A3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13421" y="926"/>
         </scene>
         <!--InsightVC-->
         <scene sceneID="B5U-27-zgl">
@@ -438,7 +461,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAs-mY-yxD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9952" y="500"/>
+            <point key="canvasLocation" x="9342" y="938"/>
         </scene>
         <!--Transaction DetailsVC-->
         <scene sceneID="sn4-sY-Svb">
@@ -563,8 +586,8 @@
                             <constraint firstItem="uIf-FL-fZ2" firstAttribute="centerX" secondItem="OZK-3A-uKm" secondAttribute="centerX" id="3wy-bT-m0e"/>
                             <constraint firstItem="uIf-FL-fZ2" firstAttribute="top" secondItem="LEP-h3-e55" secondAttribute="top" constant="18" id="95v-qC-2NM"/>
                             <constraint firstItem="LEP-h3-e55" firstAttribute="trailing" secondItem="oQh-mn-Wb7" secondAttribute="trailing" id="DhU-wu-nNE"/>
+                            <constraint firstAttribute="bottom" secondItem="Yxd-sS-LIv" secondAttribute="bottom" id="GBJ-P7-xyH"/>
                             <constraint firstItem="oQh-mn-Wb7" firstAttribute="leading" secondItem="LEP-h3-e55" secondAttribute="leading" id="X3a-dU-qQ5"/>
-                            <constraint firstAttribute="bottom" secondItem="Yxd-sS-LIv" secondAttribute="bottom" id="aZN-IW-cb4"/>
                             <constraint firstItem="BXc-je-OCS" firstAttribute="top" secondItem="LEP-h3-e55" secondAttribute="top" constant="12" id="duO-47-8jA"/>
                             <constraint firstItem="BXc-je-OCS" firstAttribute="leading" secondItem="LEP-h3-e55" secondAttribute="leading" constant="6" id="fIt-t7-ao7"/>
                             <constraint firstItem="Yxd-sS-LIv" firstAttribute="leading" secondItem="LEP-h3-e55" secondAttribute="leading" id="jXI-RD-hCd"/>
@@ -572,14 +595,37 @@
                             <constraint firstItem="oQh-mn-Wb7" firstAttribute="top" secondItem="uIf-FL-fZ2" secondAttribute="bottom" constant="7.6699999999999999" id="vC3-D3-Bv6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UZp-Lh-GaX"/>
                     <connections>
                         <outlet property="RequestMoneyCollectionView" destination="Yxd-sS-LIv" id="WOI-yL-r4a"/>
                         <outlet property="RequestMoneyTableView" destination="oQh-mn-Wb7" id="ke8-Ws-Swy"/>
+                        <segue destination="y7l-6Z-K9j" kind="show" identifier="RequestToShareQRCode" id="Jv6-ea-ynM"/>
+                        <segue destination="ZHf-Fa-oxf" kind="show" identifier="RequestToConfirm" id="hXq-e9-UtC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fy9-xn-G5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10620" y="499.76303317535542"/>
+            <point key="canvasLocation" x="11506" y="500"/>
+        </scene>
+        <!--ShareQRCodeVC-->
+        <scene sceneID="U05-4b-utZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" referencedIdentifier="ShareQRCodeVC" id="y7l-6Z-K9j" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="N02-hQ-M9q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBN-CO-qKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11356" y="926"/>
+        </scene>
+        <!--ConfirmVC-->
+        <scene sceneID="Qe6-k7-ArG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" referencedIdentifier="ConfirmVC" id="ZHf-Fa-oxf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gMf-qy-7Jn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVu-dj-V3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11658" y="926"/>
         </scene>
         <!--Upgrade CardVC-->
         <scene sceneID="Uzp-ju-Zkg">
@@ -619,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zx-VF-D98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12695.384615384615" y="499.76303317535542"/>
+            <point key="canvasLocation" x="14553.846153846152" y="499.76303317535542"/>
         </scene>
         <!--Lock CardVC-->
         <scene sceneID="vr2-ep-5Ds">
@@ -646,7 +692,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tn-30-yZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13453.846153846154" y="499.76303317535542"/>
+            <point key="canvasLocation" x="15312.307692307691" y="499.76303317535542"/>
         </scene>
         <!--Reset PinVC-->
         <scene sceneID="2Qk-t5-Na8">
@@ -685,7 +731,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbo-Z6-msV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14264.615384615385" y="499.76303317535542"/>
+            <point key="canvasLocation" x="16123.076923076922" y="499.76303317535542"/>
         </scene>
         <!--Get New CardVC-->
         <scene sceneID="ol3-Pc-5pd">
@@ -725,7 +771,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D74-Lr-Ips" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15098.461538461537" y="499.76303317535542"/>
+            <point key="canvasLocation" x="16956.923076923078" y="499.76303317535542"/>
         </scene>
         <!--Gift DetailsVC-->
         <scene sceneID="akP-tV-dOB">
@@ -752,7 +798,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GTV-VD-ZBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16281.538461538461" y="499.76303317535542"/>
+            <point key="canvasLocation" x="18140" y="499.76303317535542"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xFG-Go-hBA">
@@ -811,6 +857,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ej-9b-m57" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8412.3076923076915" y="499.76303317535542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zyC-BJ-Ymr">
+            <objects>
+                <navigationController storyboardIdentifier="RequestNavController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fR1-6j-AmH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wIs-TO-Fr5">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ifv-RW-6zz" kind="relationship" relationship="rootViewController" id="9fy-C4-E6i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmh-vi-Xyj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10577" y="500"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cpc-Ke-ae9">
+            <objects>
+                <navigationController storyboardIdentifier="SendMoneyNavController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="eYt-n5-yHd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hHI-6b-aQH">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oeJ-H5-ELn" kind="relationship" relationship="rootViewController" id="Zje-2j-zML"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tx9-mf-IlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12316.923076923076" y="499.76303317535542"/>
         </scene>
     </scenes>
     <resources>

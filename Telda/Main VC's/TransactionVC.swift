@@ -95,7 +95,7 @@ class TransactionVC: UIViewController {
             ValidAmontLabel.isHidden=false
         }else{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
-            let vc  = storyboard.instantiateViewController(withIdentifier: "RequestMoneyVC") as! RequestMoneyVC
+            let vc  = storyboard.instantiateViewController(withIdentifier: "RequestNavController") as! UINavigationController
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
         }
@@ -113,7 +113,7 @@ class TransactionVC: UIViewController {
             ValidAmontLabel.isHidden=false
         }else{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
-            let vc  = storyboard.instantiateViewController(withIdentifier: "SendMoneyVC") as! SendMoneyVC
+            let vc  = storyboard.instantiateViewController(withIdentifier: "SendMoneyNavController") as! UINavigationController
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
         }
