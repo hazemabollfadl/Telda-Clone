@@ -10,8 +10,32 @@ import UIKit
 class CardVC: UIViewController {
     
     @IBOutlet var cardTableview: UITableView!
+    
     static var vcSwitch:UISwitch?
+    static var AutomatedNavigation:Bool=false
+    
     let refreshControl = UIRefreshControl()
+    
+    override func viewIsAppearing(_ animated: Bool) {
+        
+        if UpgradeCardVC.isPressedInUpgrade==true{
+            
+//            GetNewCardVC.NewCardCurrentPage=1
+            
+            GetNewCardVC.NonAutomatedRouteDismiss=false
+            
+            UpgradeCardVC.isPressedInUpgrade=false
+            
+            let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
+            let vc  = storyboard.instantiateViewController(withIdentifier: "ChooseCardNavController") as! UINavigationController
+            vc.modalPresentationStyle = .fullScreen
+            
+            CardVC.AutomatedNavigation=true
+            
+            self.present(vc, animated: true)
+        }
+    }
+       
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +58,14 @@ class CardVC: UIViewController {
         let nib4 = UINib(nibName: "CreditCardCell", bundle: .main)
         cardTableview.register(nib4, forCellReuseIdentifier: "CreditCardCell")
         
-    
+        
         
         
         cardTableview.rowHeight = UITableView.automaticDimension
         
         cardTableview.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
-
+        
         
         cardTableview.showsVerticalScrollIndicator=false
         
@@ -83,7 +107,7 @@ extension CardVC:UITableViewDataSource{
         getNewCardCell.selectionStyle = .none
         getNewCardCell.delegate=self
         
-          let creditCardCell=tableView.dequeueReusableCell(withIdentifier: "CreditCardCell", for: indexPath) as! CardCells
+        let creditCardCell=tableView.dequeueReusableCell(withIdentifier: "CreditCardCell", for: indexPath) as! CardCells
         creditCardCell.selectionStyle = .none
         
         
@@ -107,7 +131,7 @@ extension CardVC:UITableViewDelegate{
         return UITableView.automaticDimension
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
         if indexPath.row==3{
             
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
@@ -119,8 +143,11 @@ extension CardVC:UITableViewDelegate{
         
         if indexPath.row==4{
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
-            let vc  = storyboard.instantiateViewController(withIdentifier: "GetNewCardVC") as! GetNewCardVC
+            let vc  = storyboard.instantiateViewController(withIdentifier: "ChooseCardNavController") as! UINavigationController
             vc.modalPresentationStyle = .fullScreen
+            
+            CardVC.AutomatedNavigation=false
+            
             self.present(vc, animated: true)
             
         }
@@ -134,7 +161,7 @@ extension CardVC:upgradeButtonPressed, CardCellsButtonPressed{
     func upgradeButtonPressed() {
         let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
         let vc  = storyboard.instantiateViewController(withIdentifier: "UpgradeCardVC") as! UpgradeCardVC
-        vc.modalPresentationStyle = .popover
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }
     
@@ -148,6 +175,9 @@ extension CardVC:upgradeButtonPressed, CardCellsButtonPressed{
     func GetNewCardButtonPressed() {
         let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
         let vc  = storyboard.instantiateViewController(withIdentifier: "GetNewCardVC") as! GetNewCardVC
+        
+        CardVC.AutomatedNavigation=false
+        
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }

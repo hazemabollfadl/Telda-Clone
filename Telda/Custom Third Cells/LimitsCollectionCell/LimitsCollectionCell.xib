@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3du-Yl-93A">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="179"/>
+                        <rect key="frame" x="0.0" y="12.666666666666671" width="390" height="179"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Transactions Limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACE-hF-I6D">
                                 <rect key="frame" x="0.0" y="8" width="190" height="21"/>
@@ -32,13 +32,13 @@
                                 <rect key="frame" x="0.0" y="45" width="390" height="134"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGP 60,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdv-tM-haE">
-                                        <rect key="frame" x="8" y="8" width="172" height="36"/>
+                                        <rect key="frame" x="8" y="8.0000000000000071" width="172" height="36"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left to spend, send and withdraw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3f-Ko-Nvy">
-                                        <rect key="frame" x="8" y="52" width="228.33333333333334" height="18"/>
+                                        <rect key="frame" x="8" y="52.000000000000007" width="228.33333333333334" height="17.999999999999993"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="3du-Yl-93A" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-12.5" id="Bib-jN-rRE"/>
+                <constraint firstItem="3du-Yl-93A" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="Bib-jN-rRE"/>
                 <constraint firstItem="3du-Yl-93A" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="KVw-UT-hIq"/>
                 <constraint firstItem="3du-Yl-93A" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="N8O-nc-cjU"/>
                 <constraint firstItem="3du-Yl-93A" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="SJg-Uq-hxm"/>

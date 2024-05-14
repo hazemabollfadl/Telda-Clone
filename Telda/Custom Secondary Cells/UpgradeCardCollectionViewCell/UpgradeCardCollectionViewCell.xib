@@ -23,13 +23,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2L-Vc-waZ">
                         <rect key="frame" x="0.0" y="13" width="358" height="149"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oD8-xC-kTH">
-                                <rect key="frame" x="218.33333333333337" y="26.333333333333321" width="139.66666666666663" height="97.666666666666657"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="100"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k2n-5v-e5P">
-                                <rect key="frame" x="8" y="94.666666666666671" width="108" height="46.333333333333329"/>
+                                <rect key="frame" x="16" y="86.666666666666671" width="108" height="46.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Premuim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71x-sS-BOD">
                                         <rect key="frame" x="0.0" y="0.0" width="108" height="20.333333333333332"/>
@@ -45,13 +40,18 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oD8-xC-kTH">
+                                <rect key="frame" x="183" y="14.333333333333329" width="175" height="121.66666666666667"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="125"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="oD8-xC-kTH" firstAttribute="centerY" secondItem="h2L-Vc-waZ" secondAttribute="centerY" id="1FW-Ly-TvA"/>
-                            <constraint firstAttribute="trailing" secondItem="oD8-xC-kTH" secondAttribute="trailing" id="818-Y6-N0Q"/>
-                            <constraint firstAttribute="bottom" secondItem="k2n-5v-e5P" secondAttribute="bottom" constant="8" id="avS-D8-MGG"/>
-                            <constraint firstItem="k2n-5v-e5P" firstAttribute="leading" secondItem="h2L-Vc-waZ" secondAttribute="leading" constant="8" id="cle-Fr-Zx8"/>
+                            <constraint firstItem="oD8-xC-kTH" firstAttribute="centerY" secondItem="h2L-Vc-waZ" secondAttribute="centerY" id="2ET-Kb-ggM"/>
+                            <constraint firstAttribute="trailing" secondItem="oD8-xC-kTH" secondAttribute="trailing" id="US8-3m-VPq"/>
+                            <constraint firstAttribute="bottom" secondItem="k2n-5v-e5P" secondAttribute="bottom" constant="16" id="avS-D8-MGG"/>
+                            <constraint firstItem="k2n-5v-e5P" firstAttribute="leading" secondItem="h2L-Vc-waZ" secondAttribute="leading" constant="16" id="cle-Fr-Zx8"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -65,6 +65,7 @@
             </constraints>
             <connections>
                 <outlet property="BigLabel" destination="71x-sS-BOD" id="AqA-OD-gb7"/>
+                <outlet property="CellImage" destination="oD8-xC-kTH" id="wnV-4U-GbG"/>
                 <outlet property="SmallLabel" destination="hwH-0x-adi" id="ojj-M4-vpY"/>
                 <outlet property="SmallView" destination="h2L-Vc-waZ" id="uMA-PT-Wha"/>
             </connections>

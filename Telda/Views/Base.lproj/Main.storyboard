@@ -30,12 +30,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgd-FD-alc">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPH-47-97J">
                                                 <rect key="frame" x="335.66666666666669" y="0.0" width="34.333333333333314" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" image="person.crop.circle" catalog="system" cornerStyle="capsule"/>
                                                 <connections>
-                                                    <segue destination="Yhx-RK-85t" kind="popoverPresentation" popoverAnchorView="Cgd-FD-alc" id="VA5-Gp-Dzf">
+                                                    <segue destination="Yhx-RK-85t" kind="popoverPresentation" popoverAnchorView="iPH-47-97J" id="pnM-Jg-PkE">
                                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                                     </segue>
                                                 </connections>
@@ -772,6 +772,7 @@
                         <segue destination="jac-YS-p8q" kind="show" identifier="UserProfileToFees" id="L2H-bl-rtC"/>
                         <segue destination="4Eq-18-Nvt" kind="show" identifier="UserProfileToAppAppearance" id="Wut-2I-5rg"/>
                         <segue destination="QNR-BS-MPt" kind="show" identifier="UserProfileToInviteFriends" id="KfY-VT-lai"/>
+                        <segue destination="582-4E-VZN" kind="show" identifier="ProfileToStandard" id="RhZ-ZN-WwL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLI-ub-xCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -786,7 +787,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DU1-g2-DhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2228" y="1365"/>
+            <point key="canvasLocation" x="2265" y="1491"/>
+        </scene>
+        <!--StandardVC-->
+        <scene sceneID="fLy-50-u8r">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" referencedIdentifier="StandardVC" id="582-4E-VZN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ebW-zE-Egu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Aa-K5-CCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258" y="1268"/>
         </scene>
         <!--InviteFriendsVC-->
         <scene sceneID="lCJ-Cn-ILF">
@@ -796,7 +807,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhy-Uy-Rg6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2228" y="1185"/>
+            <point key="canvasLocation" x="2265" y="1311"/>
         </scene>
         <!--LimitsVC-->
         <scene sceneID="mas-c5-0WM">
@@ -806,7 +817,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrM-3Y-AcG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2228" y="1236"/>
+            <point key="canvasLocation" x="2265" y="1362"/>
         </scene>
         <!--FeesVC-->
         <scene sceneID="Hde-bY-VLw">
@@ -816,7 +827,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4uZ-PT-pxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2228" y="1282"/>
+            <point key="canvasLocation" x="2265" y="1408"/>
         </scene>
         <!--AppAppearanceVC-->
         <scene sceneID="uwh-d5-S3j">
@@ -826,7 +837,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7l-p0-WWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2228" y="1321"/>
+            <point key="canvasLocation" x="2265" y="1447"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cHN-16-0Om">
@@ -869,7 +880,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GZH-oc-YwE"/>
+        <segue reference="pnM-Jg-PkE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.arrow.right" catalog="system" width="120" height="128"/>
@@ -885,10 +896,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

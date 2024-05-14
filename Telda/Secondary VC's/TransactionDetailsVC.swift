@@ -144,7 +144,7 @@ extension TransactionDetailsVC:sendCellItems{
     func sendSwitch(_ mySwitch: UISwitch) {
         if mySwitch.isOn{
             let alert = UIAlertController(title: "", message: "Transaction execluded from insight", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
+            alert.addAction(UIAlertAction(title: "okay", style: .default, handler: { _ in
                 self.dismiss(animated: true)
             }) )
             self.present(alert, animated: true, completion: nil)

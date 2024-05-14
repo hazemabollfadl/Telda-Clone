@@ -23,10 +23,10 @@
                         <rect key="frame" x="0.0" y="12.666666666666671" width="390" height="180"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlB-ul-RA3">
-                                <rect key="frame" x="0.0" y="43.333333333333329" width="390" height="136.66666666666669"/>
+                                <rect key="frame" x="0.0" y="38.333333333333329" width="390" height="141.66666666666669"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Li4-qS-OmB">
-                                        <rect key="frame" x="8" y="24.999999999999993" width="305.66666666666669" height="86.333333333333314"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Li4-qS-OmB">
+                                        <rect key="frame" x="8" y="27.666666666666679" width="309.66666666666669" height="86.333333333333314"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archivebox.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yAN-d9-Bu7">
                                                 <rect key="frame" x="0.0" y="0.66666666666666785" width="31.666666666666668" height="31.000000000000004"/>
@@ -34,7 +34,7 @@
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="27"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="85A-sF-L7r">
-                                                <rect key="frame" x="37.666666666666657" y="0.0" width="268" height="86.333333333333329"/>
+                                                <rect key="frame" x="41.666666666666657" y="0.0" width="268" height="86.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Free withdrawals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSI-sd-mpr">
                                                         <rect key="frame" x="0.0" y="0.0" width="132.33333333333334" height="20.333333333333332"/>
@@ -55,7 +55,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="banks ATM." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bot-74-rjg">
-                                                        <rect key="frame" x="0.0" y="68.333333333333343" width="80" height="18"/>
+                                                        <rect key="frame" x="0.0" y="68.333333333333329" width="80" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -85,7 +85,7 @@
                             <constraint firstItem="yLW-3G-dWU" firstAttribute="leading" secondItem="ER6-8m-Od7" secondAttribute="leading" constant="8" id="Vpd-sG-ngp"/>
                             <constraint firstAttribute="trailing" secondItem="YlB-ul-RA3" secondAttribute="trailing" id="bXX-sy-ePR"/>
                             <constraint firstItem="yLW-3G-dWU" firstAttribute="top" secondItem="ER6-8m-Od7" secondAttribute="top" constant="8" id="cIM-J5-2uj"/>
-                            <constraint firstItem="YlB-ul-RA3" firstAttribute="top" secondItem="yLW-3G-dWU" secondAttribute="bottom" constant="15" id="zNf-Zq-6Nh"/>
+                            <constraint firstItem="YlB-ul-RA3" firstAttribute="top" secondItem="yLW-3G-dWU" secondAttribute="bottom" constant="10" id="zNf-Zq-6Nh"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -100,8 +100,11 @@
             <size key="customSize" width="390" height="180"/>
             <connections>
                 <outlet property="BigLabel" destination="lSI-sd-mpr" id="6EP-11-9qd"/>
+                <outlet property="CellButton" destination="yAN-d9-Bu7" id="a0L-c3-2eb"/>
                 <outlet property="CellHeader" destination="yLW-3G-dWU" id="Uje-1C-kU4"/>
                 <outlet property="SmallLabel" destination="Tuc-Kl-uVM" id="euG-j6-vbm"/>
+                <outlet property="SmallLabel1" destination="w8K-Sm-DUc" id="MWu-39-Ne4"/>
+                <outlet property="SmallLabel2" destination="bot-74-rjg" id="v0l-3N-aOt"/>
                 <outlet property="SmallView" destination="YlB-ul-RA3" id="H0l-Nt-vyb"/>
             </connections>
             <point key="canvasLocation" x="16.793893129770993" y="47.887323943661976"/>

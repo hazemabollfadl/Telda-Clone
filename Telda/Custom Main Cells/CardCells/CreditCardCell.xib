@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="358" height="200"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="elF-Pk-0sw">
-                                <rect key="frame" x="0.0" y="-8" width="358" height="209"/>
+                                <rect key="frame" x="0.0" y="0.0" width="358" height="190"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="200" scale="large"/>
                             </imageView>
                         </subviews>

@@ -41,7 +41,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To recieve EGP 5 payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4k-Ze-wy1">
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To recieve EGP 5 payment" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4k-Ze-wy1">
                                                 <rect key="frame" x="0.0" y="19.333333333333336" width="169" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
@@ -68,6 +68,11 @@
                 <constraint firstItem="pR8-zS-CKO" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1.03448" id="oAg-nD-O8q"/>
             </constraints>
             <size key="customSize" width="240" height="80"/>
+            <connections>
+                <outlet property="BigLabel" destination="szV-hF-tqP" id="6NY-fh-NlA"/>
+                <outlet property="CellButton" destination="Luq-jq-dhC" id="g8Q-i3-7Jc"/>
+                <outlet property="SmallLabel" destination="g4k-Ze-wy1" id="YZm-qa-Jfs"/>
+            </connections>
             <point key="canvasLocation" x="91.603053435114504" y="44.718309859154935"/>
         </collectionViewCell>
     </objects>

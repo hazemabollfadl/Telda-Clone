@@ -638,12 +638,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwF-Qj-WsY">
-                                <rect key="frame" x="142.66666666666666" y="411.66666666666669" width="105" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12u-JW-hRF">
                                 <rect key="frame" x="6" y="59" width="41.333333333333336" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -655,16 +649,55 @@
                                     <action selector="dismissButtonPressed:" destination="48L-Ye-Ayt" eventType="touchUpInside" id="cfe-JE-Yt3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fQ-4q-oAN">
+                                <rect key="frame" x="16" y="114" width="87" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uMC-aN-Fvz">
+                                <rect key="frame" x="16" y="167" width="229" height="32"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <segments>
+                                    <segment title="Plus"/>
+                                    <segment title="Premium"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="ajb-ol-5el" eventType="valueChanged" id="Ewk-NC-hAx"/>
+                                </connections>
+                            </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ge6-YQ-A7u">
+                                <rect key="frame" x="16" y="214" width="358" height="596"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PvU-zT-9cz">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cpW-3e-QO9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GwF-Qj-WsY" firstAttribute="centerX" secondItem="de3-ac-OW3" secondAttribute="centerX" id="RPm-cc-9Kf"/>
+                            <constraint firstItem="uMC-aN-Fvz" firstAttribute="leading" secondItem="cpW-3e-QO9" secondAttribute="leading" constant="16" id="3Fu-tx-reQ"/>
+                            <constraint firstItem="ge6-YQ-A7u" firstAttribute="leading" secondItem="cpW-3e-QO9" secondAttribute="leading" constant="16" id="ARG-9e-Ucf"/>
+                            <constraint firstItem="1fQ-4q-oAN" firstAttribute="top" secondItem="12u-JW-hRF" secondAttribute="bottom" constant="20" id="Gjv-qd-daz"/>
                             <constraint firstItem="12u-JW-hRF" firstAttribute="top" secondItem="cpW-3e-QO9" secondAttribute="top" constant="12" id="RkI-YV-QGy"/>
-                            <constraint firstItem="GwF-Qj-WsY" firstAttribute="centerY" secondItem="de3-ac-OW3" secondAttribute="centerY" id="ncH-wd-mha"/>
+                            <constraint firstItem="cpW-3e-QO9" firstAttribute="trailing" secondItem="ge6-YQ-A7u" secondAttribute="trailing" constant="16" id="V6S-4q-JYz"/>
+                            <constraint firstItem="uMC-aN-Fvz" firstAttribute="top" secondItem="1fQ-4q-oAN" secondAttribute="bottom" constant="26.670000000000002" id="c8q-wg-4Pt"/>
+                            <constraint firstItem="cpW-3e-QO9" firstAttribute="trailing" secondItem="uMC-aN-Fvz" secondAttribute="trailing" constant="145" id="nE5-zD-D8F"/>
+                            <constraint firstItem="1fQ-4q-oAN" firstAttribute="leading" secondItem="cpW-3e-QO9" secondAttribute="leading" constant="16" id="oCk-FY-dTb"/>
                             <constraint firstItem="12u-JW-hRF" firstAttribute="leading" secondItem="cpW-3e-QO9" secondAttribute="leading" constant="6" id="ojH-bi-dzy"/>
+                            <constraint firstItem="ge6-YQ-A7u" firstAttribute="top" secondItem="uMC-aN-Fvz" secondAttribute="bottom" constant="16" id="whl-n5-Vk3"/>
+                            <constraint firstItem="ge6-YQ-A7u" firstAttribute="bottom" secondItem="cpW-3e-QO9" secondAttribute="bottom" id="ybE-6F-UId"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SegmentedControl" destination="uMC-aN-Fvz" id="xKt-yE-dJd"/>
+                        <outlet property="UpgradeCardColletionView" destination="ge6-YQ-A7u" id="GbK-n9-JRY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zx-VF-D98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -728,7 +761,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="hU5-2M-5hE"/>
                                                 </constraints>
-                                                <color key="tintColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Lock my card" cornerStyle="large">
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
@@ -906,14 +939,26 @@
                             <constraint firstItem="kI8-n8-tCp" firstAttribute="centerX" secondItem="Tl7-pS-Gtk" secondAttribute="centerX" id="zsc-DJ-rRR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Avy-bx-RFg"/>
                     <connections>
                         <outlet property="GetNewCardCollectionView" destination="LYz-n9-XYn" id="bxf-mI-OdR"/>
                         <outlet property="PageIndicator" destination="zaZ-Z8-fTK" id="dLA-G2-C6a"/>
+                        <segue destination="zTl-ce-V1B" kind="show" identifier="GetNewCardToConfirmName" id="uI3-ZU-WNs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D74-Lr-Ips" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17884.615384615383" y="499.76303317535542"/>
+            <point key="canvasLocation" x="18878" y="500"/>
+        </scene>
+        <!--ConfirmCardHolderNameVC-->
+        <scene sceneID="Gk2-M5-zI5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" referencedIdentifier="ConfirmCardHolderNameVC" id="zTl-ce-V1B" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7mN-fT-igW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMN-kk-pzN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18678" y="926"/>
         </scene>
         <!--Gift DetailsVC-->
         <scene sceneID="akP-tV-dOB">
@@ -940,7 +985,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GTV-VD-ZBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19069.23076923077" y="499.76303317535542"/>
+            <point key="canvasLocation" x="19998.461538461539" y="499.76303317535542"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xFG-Go-hBA">
@@ -1051,6 +1096,23 @@
             </objects>
             <point key="canvasLocation" x="16123.076923076922" y="499.76303317535542"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pYL-3T-Sm0">
+            <objects>
+                <navigationController storyboardIdentifier="ChooseCardNavController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cVc-IC-TKq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XNZ-Uv-qdP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YWq-gG-kCU" kind="relationship" relationship="rootViewController" id="O0c-4X-ifC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUz-ej-QpT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18026" y="500"/>
+        </scene>
     </scenes>
     <resources>
         <image name="chevron.compact.down" catalog="system" width="128" height="42"/>
@@ -1058,7 +1120,7 @@
         <image name="lock.circle.fill" catalog="system" width="128" height="123"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000834465027" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.063000001013278961" green="0.2630000114440918" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1067,10 +1129,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

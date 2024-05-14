@@ -204,7 +204,7 @@ extension SendMoneyVC{
         let myAttrString = NSAttributedString(string: "Send", attributes: myAttribute)
         floatingButton.setAttributedTitle(myAttrString, for: .normal)
         
-        floatingButton.backgroundColor = .link
+        floatingButton.backgroundColor = .accent
         floatingButton.tintColor = .white
         floatingButton.layer.cornerRadius=15
         floatingButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)

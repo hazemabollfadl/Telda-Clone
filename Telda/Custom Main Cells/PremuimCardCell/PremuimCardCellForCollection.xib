@@ -58,7 +58,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tBU-Fr-ywe">
-                                <rect key="frame" x="218.33333333333337" y="26.333333333333321" width="139.66666666666663" height="97.666666666666686"/>
+                                <rect key="frame" x="218.33333333333337" y="26.333333333333321" width="139.66666666666663" height="97.666666666666657"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="100"/>
                             </imageView>
@@ -90,7 +90,7 @@
     <resources>
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.063000001013278961" green="0.2630000114440918" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

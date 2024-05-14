@@ -10,6 +10,34 @@ import UIKit
 class UserProfileVC: UIViewController {
     
     @IBOutlet var UserProfileCollectionView: UICollectionView!
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles=false
+
+    }
+    
+    override func viewIsAppearing(_ animated: Bool) {
+        
+        if UpgradeCardVC.isPressedInUpgrade==true{
+            
+//            GetNewCardVC.NewCardCurrentPage=1
+            
+            GetNewCardVC.NonAutomatedRouteDismiss=false
+            
+            UpgradeCardVC.isPressedInUpgrade=false
+            
+            let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
+            let vc  = storyboard.instantiateViewController(withIdentifier: "ChooseCardNavController") as! UINavigationController
+            vc.modalPresentationStyle = .fullScreen
+            
+            CardVC.AutomatedNavigation=true
+            
+            self.present(vc, animated: true)
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -138,12 +166,10 @@ extension UserProfileVC:UICollectionViewDelegate{
         
         if indexPath.section==0{
             if indexPath.row==1{
-                DispatchQueue.main.async {
-                    let storyboard = UIStoryboard(name: "Third", bundle: nil)
-                    let vc  = storyboard.instantiateViewController(withIdentifier: "StandardVC") as! StandardVC
-                    vc.modalPresentationStyle = .fullScreen
-                    self.present(vc, animated: true)
-                }
+                
+                performSegue(withIdentifier: "ProfileToStandard", sender: self)
+                navigationController?.navigationBar.prefersLargeTitles=true
+                
             }else if indexPath.row==2{
                 performSegue(withIdentifier: "UserProfileToInviteFriends", sender: self)
             }
@@ -222,7 +248,7 @@ extension UserProfileVC:upgradeButtonPressed1{
         DispatchQueue.main.async {
             let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "UpgradeCardVC") as! UpgradeCardVC
-            vc.modalPresentationStyle = .popover
+            vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
         }
     }

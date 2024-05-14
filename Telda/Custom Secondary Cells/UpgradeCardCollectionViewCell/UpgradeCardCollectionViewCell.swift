@@ -9,6 +9,7 @@ import UIKit
 
 class UpgradeCardCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet var CellImage: UIImageView!
     @IBOutlet var BigLabel: UILabel!
     @IBOutlet var SmallLabel: UILabel!
     @IBOutlet var SmallView: UIView!

@@ -15,7 +15,11 @@ class UpgradeCardPlusDetails: UICollectionViewCell {
     
     @IBOutlet var SmallLabel: UILabel!
     
-    @IBOutlet var CellButton: UIButton!
+    @IBOutlet var SmallLabel1: UILabel!
+    
+    @IBOutlet var SmallLabel2: UILabel!
+    
+    @IBOutlet var CellButton: UIImageView!
     
     @IBOutlet var SmallView: UIView!
     

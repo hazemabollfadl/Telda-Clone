@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,34 +39,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuQ-rh-Cf1">
-                                <rect key="frame" x="0.0" y="140" width="390" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="kvE-SD-4ih"/>
-                                </constraints>
-                                <color key="tintColor" name="AccentColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Get Started" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="cellButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="3oM-VH-eeK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MuQ-rh-Cf1" firstAttribute="centerX" secondItem="S8B-eb-TPT" secondAttribute="centerX" id="6J0-bN-O50"/>
-                            <constraint firstAttribute="bottom" secondItem="MuQ-rh-Cf1" secondAttribute="bottom" constant="16" id="Lfk-uw-vlO"/>
                             <constraint firstItem="Zxh-gi-ezn" firstAttribute="centerX" secondItem="S8B-eb-TPT" secondAttribute="centerX" id="N5z-s1-I1G"/>
-                            <constraint firstAttribute="trailing" secondItem="MuQ-rh-Cf1" secondAttribute="trailing" id="R0M-Kk-Hpu"/>
                             <constraint firstItem="Zxh-gi-ezn" firstAttribute="leading" secondItem="S8B-eb-TPT" secondAttribute="leading" constant="16" id="UWA-Of-xPV"/>
                             <constraint firstItem="iDV-w9-wnI" firstAttribute="top" secondItem="Zxh-gi-ezn" secondAttribute="bottom" id="WgI-ud-Adj"/>
                             <constraint firstItem="AGg-YS-9T1" firstAttribute="centerX" secondItem="S8B-eb-TPT" secondAttribute="centerX" id="X1O-Uj-6yK"/>
                             <constraint firstItem="Zxh-gi-ezn" firstAttribute="top" secondItem="AGg-YS-9T1" secondAttribute="bottom" constant="8" id="bYz-Mn-Uag"/>
                             <constraint firstItem="iDV-w9-wnI" firstAttribute="centerX" secondItem="S8B-eb-TPT" secondAttribute="centerX" id="c2K-BZ-kaL"/>
                             <constraint firstAttribute="trailing" secondItem="Zxh-gi-ezn" secondAttribute="trailing" constant="16" id="iDF-9O-qqp"/>
-                            <constraint firstItem="MuQ-rh-Cf1" firstAttribute="leading" secondItem="S8B-eb-TPT" secondAttribute="leading" id="mWN-GY-ZhJ"/>
                             <constraint firstItem="AGg-YS-9T1" firstAttribute="top" secondItem="S8B-eb-TPT" secondAttribute="top" constant="16" id="xn5-kC-STV"/>
                         </constraints>
                     </view>
@@ -82,7 +63,6 @@
             </constraints>
             <connections>
                 <outlet property="BigLabel" destination="AGg-YS-9T1" id="FJ8-H4-f0Q"/>
-                <outlet property="CellButton" destination="MuQ-rh-Cf1" id="V7N-jW-QTt"/>
                 <outlet property="SmallLabel" destination="Zxh-gi-ezn" id="rrP-Xc-Y4f"/>
                 <outlet property="SmallLabel2" destination="iDV-w9-wnI" id="1eh-2b-w9h"/>
             </connections>
@@ -90,9 +70,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000834465027" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

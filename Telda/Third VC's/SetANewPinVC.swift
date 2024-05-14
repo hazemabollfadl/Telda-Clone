@@ -37,7 +37,7 @@ class SetANewPinVC: UIViewController {
 extension SetANewPinVC:AEOTPTextFieldDelegate{
     func didUserFinishEnter(the code: String) {
         let alert = UIAlertController(title: "Warning", message: "Card pin have been reseted", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
+        alert.addAction(UIAlertAction(title: "okay", style: .default, handler: { _ in
             self.dismiss(animated: true)
         }))
         

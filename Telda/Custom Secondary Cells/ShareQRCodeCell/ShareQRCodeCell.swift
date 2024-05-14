@@ -9,6 +9,10 @@ import UIKit
 
 class ShareQRCodeCell: UICollectionViewCell {
 
+    @IBOutlet var CellButton: UIButton!
+    @IBOutlet var BigLabel: UILabel!
+    @IBOutlet var SmallLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
