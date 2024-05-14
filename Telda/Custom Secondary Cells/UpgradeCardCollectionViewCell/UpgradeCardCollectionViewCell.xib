@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UpgradeCardCollectionViewCell" id="gTV-IL-0wX" customClass="UpgradeCardCollectionViewCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2L-Vc-waZ">
+                        <rect key="frame" x="0.0" y="13" width="358" height="149"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oD8-xC-kTH">
+                                <rect key="frame" x="218.33333333333337" y="26.333333333333321" width="139.66666666666663" height="97.666666666666657"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="100"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k2n-5v-e5P">
+                                <rect key="frame" x="8" y="94.666666666666671" width="108" height="46.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Premuim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71x-sS-BOD">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGP 49 / month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwH-0x-adi">
+                                        <rect key="frame" x="0.0" y="28.333333333333329" width="108" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="oD8-xC-kTH" firstAttribute="centerY" secondItem="h2L-Vc-waZ" secondAttribute="centerY" id="1FW-Ly-TvA"/>
+                            <constraint firstAttribute="trailing" secondItem="oD8-xC-kTH" secondAttribute="trailing" id="818-Y6-N0Q"/>
+                            <constraint firstAttribute="bottom" secondItem="k2n-5v-e5P" secondAttribute="bottom" constant="8" id="avS-D8-MGG"/>
+                            <constraint firstItem="k2n-5v-e5P" firstAttribute="leading" secondItem="h2L-Vc-waZ" secondAttribute="leading" constant="8" id="cle-Fr-Zx8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="h2L-Vc-waZ" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.993333" id="T1n-5r-kIA"/>
+                <constraint firstItem="h2L-Vc-waZ" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="W3L-8E-CG1"/>
+                <constraint firstItem="h2L-Vc-waZ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="qaQ-e1-sE2"/>
+                <constraint firstItem="h2L-Vc-waZ" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="yLB-3y-b9I"/>
+            </constraints>
+            <connections>
+                <outlet property="BigLabel" destination="71x-sS-BOD" id="AqA-OD-gb7"/>
+                <outlet property="SmallLabel" destination="hwH-0x-adi" id="ojj-M4-vpY"/>
+                <outlet property="SmallView" destination="h2L-Vc-waZ" id="uMA-PT-Wha"/>
+            </connections>
+            <point key="canvasLocation" x="42.748091603053432" y="20.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <namedColor name="AccentColor">
+            <color red="0.063000001013278961" green="0.2630000114440918" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

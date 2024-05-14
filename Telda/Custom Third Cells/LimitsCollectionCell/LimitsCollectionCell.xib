@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LimitsCollectionCell" id="gTV-IL-0wX" customClass="LimitsCollectionCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="179"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="179"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3du-Yl-93A">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="179"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Transactions Limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACE-hF-I6D">
+                                <rect key="frame" x="0.0" y="8" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7q-1t-Bha">
+                                <rect key="frame" x="0.0" y="45" width="390" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGP 60,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdv-tM-haE">
+                                        <rect key="frame" x="8" y="8" width="172" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left to spend, send and withdraw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3f-Ko-Nvy">
+                                        <rect key="frame" x="8" y="52" width="228.33333333333334" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="m5h-Fz-1LE">
+                                        <rect key="frame" x="8" y="86" width="374" height="4"/>
+                                        <color key="progressTintColor" name="AccentColor"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily spending limits is EGP 60,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlJ-nM-Y5Z">
+                                        <rect key="frame" x="8.0000000000000142" y="106" width="242.33333333333337" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstItem="m5h-Fz-1LE" firstAttribute="top" secondItem="r3f-Ko-Nvy" secondAttribute="bottom" constant="16" id="2D4-8t-ojN"/>
+                                    <constraint firstItem="r3f-Ko-Nvy" firstAttribute="leading" secondItem="J7q-1t-Bha" secondAttribute="leading" constant="8" id="9a5-s6-krY"/>
+                                    <constraint firstItem="HlJ-nM-Y5Z" firstAttribute="top" secondItem="m5h-Fz-1LE" secondAttribute="bottom" constant="16" id="G7c-ed-lon"/>
+                                    <constraint firstAttribute="trailing" secondItem="m5h-Fz-1LE" secondAttribute="trailing" constant="8" id="UGJ-bw-aom"/>
+                                    <constraint firstItem="r3f-Ko-Nvy" firstAttribute="top" secondItem="Sdv-tM-haE" secondAttribute="bottom" constant="8" id="bNz-gg-eqg"/>
+                                    <constraint firstItem="HlJ-nM-Y5Z" firstAttribute="leading" secondItem="J7q-1t-Bha" secondAttribute="leading" constant="8" id="cde-8G-Zlm"/>
+                                    <constraint firstItem="Sdv-tM-haE" firstAttribute="top" secondItem="J7q-1t-Bha" secondAttribute="top" constant="8" id="eHv-Do-yuz"/>
+                                    <constraint firstItem="Sdv-tM-haE" firstAttribute="leading" secondItem="J7q-1t-Bha" secondAttribute="leading" constant="8" id="eJk-X2-zKL"/>
+                                    <constraint firstItem="m5h-Fz-1LE" firstAttribute="leading" secondItem="J7q-1t-Bha" secondAttribute="leading" constant="8" id="yQO-JV-Tab"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ACE-hF-I6D" firstAttribute="leading" secondItem="3du-Yl-93A" secondAttribute="leading" id="A7R-hn-bU9"/>
+                            <constraint firstAttribute="trailing" secondItem="J7q-1t-Bha" secondAttribute="trailing" id="RFP-c5-rXw"/>
+                            <constraint firstAttribute="bottom" secondItem="J7q-1t-Bha" secondAttribute="bottom" id="WDO-zA-VuP"/>
+                            <constraint firstItem="J7q-1t-Bha" firstAttribute="leading" secondItem="3du-Yl-93A" secondAttribute="leading" id="Xd2-Kz-XAp"/>
+                            <constraint firstItem="J7q-1t-Bha" firstAttribute="top" secondItem="ACE-hF-I6D" secondAttribute="bottom" constant="16" id="rHS-CZ-FiF"/>
+                            <constraint firstItem="ACE-hF-I6D" firstAttribute="top" secondItem="3du-Yl-93A" secondAttribute="top" constant="8" id="tLS-ST-LpN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="3du-Yl-93A" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-12.5" id="Bib-jN-rRE"/>
+                <constraint firstItem="3du-Yl-93A" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="KVw-UT-hIq"/>
+                <constraint firstItem="3du-Yl-93A" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="N8O-nc-cjU"/>
+                <constraint firstItem="3du-Yl-93A" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="SJg-Uq-hxm"/>
+            </constraints>
+            <size key="customSize" width="390" height="179"/>
+            <connections>
+                <outlet property="BigLabel" destination="Sdv-tM-haE" id="dpE-bo-5D2"/>
+                <outlet property="HeadLabel" destination="ACE-hF-I6D" id="0du-TE-Zk6"/>
+                <outlet property="ProgressBar" destination="m5h-Fz-1LE" id="8hn-7s-cok"/>
+                <outlet property="SmallLabel1" destination="r3f-Ko-Nvy" id="rqB-rb-cFD"/>
+                <outlet property="SmallLabel2" destination="HlJ-nM-Y5Z" id="yq7-bV-rd0"/>
+                <outlet property="SmallView" destination="J7q-1t-Bha" id="428-1i-prg"/>
+            </connections>
+            <point key="canvasLocation" x="30.534351145038165" y="12.323943661971832"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.063000001013278961" green="0.2630000114440918" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

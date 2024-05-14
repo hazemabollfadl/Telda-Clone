@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeesCollectionCell" id="gTV-IL-0wX" customClass="FeesCollectionCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAg-rT-tXg">
+                        <rect key="frame" x="0.0" y="12.666666666666671" width="390" height="130"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="I76-73-99O">
+                                <rect key="frame" x="16" y="43.666666666666671" width="250" height="42.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Telda card" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovO-6c-URS">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="20.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="l9O-Tj-x8u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banque Du Caire ATM withdrawls" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUV-a3-9Gc">
+                                        <rect key="frame" x="0.0" y="24.333333333333336" width="250" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="8iU-a6-9L2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGP 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvD-di-Nux">
+                                <rect key="frame" x="316.33333333333331" y="54.666666666666664" width="57.666666666666686" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MvD-di-Nux" secondAttribute="trailing" constant="16" id="4AY-Pn-NXa"/>
+                            <constraint firstItem="I76-73-99O" firstAttribute="centerY" secondItem="pAg-rT-tXg" secondAttribute="centerY" id="HHv-dA-uGv"/>
+                            <constraint firstItem="MvD-di-Nux" firstAttribute="centerY" secondItem="pAg-rT-tXg" secondAttribute="centerY" id="HY5-TO-jkG"/>
+                            <constraint firstItem="I76-73-99O" firstAttribute="leading" secondItem="pAg-rT-tXg" secondAttribute="leading" constant="16" id="LVK-yy-vp4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="pAg-rT-tXg" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="2yx-DJ-uTe"/>
+                <constraint firstItem="pAg-rT-tXg" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="5HF-q6-yre"/>
+                <constraint firstItem="pAg-rT-tXg" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="75r-Zl-vNs"/>
+                <constraint firstItem="pAg-rT-tXg" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="M95-bA-zAB"/>
+            </constraints>
+            <size key="customSize" width="390" height="130"/>
+            <connections>
+                <outlet property="LeftLabel" destination="ovO-6c-URS" id="Do0-F7-5ED"/>
+                <outlet property="RightLabel" destination="MvD-di-Nux" id="dRB-4d-Pw1"/>
+                <outlet property="SmallLabel" destination="yUV-a3-9Gc" id="qlM-r3-80o"/>
+                <outlet property="SmallView" destination="pAg-rT-tXg" id="c1d-Yj-bft"/>
+            </connections>
+            <point key="canvasLocation" x="30.534351145038165" y="29.577464788732396"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
