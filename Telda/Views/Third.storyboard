@@ -3,7 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -860,7 +860,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite a friend and you'll get EGP 200" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTk-yX-O0Q">
-                                <rect key="frame" x="41" y="478" width="308" height="52.666666666666629"/>
+                                <rect key="frame" x="41" y="343" width="308" height="52.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -895,17 +895,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nja-4T-9tV">
-                                <rect key="frame" x="28" y="538.66666666666663" width="334" height="81.333333333333371"/>
+                                <rect key="frame" x="28" y="403.66666666666669" width="334" height="81.333333333333314"/>
                                 <string key="text">Invite your friends to join Telda and earn EGP 200 for every friend when they Spend EGP 300 with their Telda card. Start inviting now and earn money with Telda!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="9qH-fi-aWd">
-                                <rect key="frame" x="0.0" y="-46" width="390" height="516"/>
+                                <rect key="frame" x="0.0" y="47" width="390" height="280"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="516" id="snv-Wv-VM1"/>
-                                    <constraint firstAttribute="width" constant="390" id="xIF-5j-qK2"/>
+                                    <constraint firstAttribute="height" constant="280" id="UtR-Bu-xXm"/>
+                                    <constraint firstAttribute="width" constant="390" id="eiR-eV-BPe"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -913,12 +913,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nja-4T-9tV" firstAttribute="leading" secondItem="Klq-Oj-Ygd" secondAttribute="leading" constant="28" id="Ejo-rt-DoR"/>
-                            <constraint firstItem="9qH-fi-aWd" firstAttribute="top" secondItem="hon-ha-s2c" secondAttribute="top" constant="-46" id="IWd-1E-gpj"/>
-                            <constraint firstItem="YTk-yX-O0Q" firstAttribute="top" secondItem="9qH-fi-aWd" secondAttribute="bottom" constant="8" id="Myk-cO-kMO"/>
+                            <constraint firstItem="YTk-yX-O0Q" firstAttribute="top" secondItem="9qH-fi-aWd" secondAttribute="bottom" constant="16" id="Myk-cO-kMO"/>
                             <constraint firstItem="YTk-yX-O0Q" firstAttribute="leading" secondItem="Klq-Oj-Ygd" secondAttribute="leading" constant="41" id="Rk6-JT-jgN"/>
                             <constraint firstItem="Klq-Oj-Ygd" firstAttribute="trailing" secondItem="YTk-yX-O0Q" secondAttribute="trailing" constant="41" id="Rnm-PZ-Mod"/>
                             <constraint firstItem="9qH-fi-aWd" firstAttribute="trailing" secondItem="Klq-Oj-Ygd" secondAttribute="trailing" id="Ruu-wX-W4l"/>
                             <constraint firstItem="TWf-M0-ahX" firstAttribute="top" secondItem="FE5-lD-iVi" secondAttribute="bottom" constant="8" id="SDY-Ox-c1z"/>
+                            <constraint firstItem="9qH-fi-aWd" firstAttribute="top" secondItem="Klq-Oj-Ygd" secondAttribute="top" id="TUS-xs-0ny"/>
                             <constraint firstItem="Klq-Oj-Ygd" firstAttribute="trailing" secondItem="nja-4T-9tV" secondAttribute="trailing" constant="28" id="X0J-4d-RDd"/>
                             <constraint firstItem="Klq-Oj-Ygd" firstAttribute="bottom" secondItem="TWf-M0-ahX" secondAttribute="bottom" constant="12" id="Zzj-SE-i3n"/>
                             <constraint firstItem="Klq-Oj-Ygd" firstAttribute="trailing" secondItem="TWf-M0-ahX" secondAttribute="trailing" constant="16" id="lb1-on-Y7W"/>
@@ -1077,25 +1077,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtV-N8-5GZ">
-                                <rect key="frame" x="163.66666666666666" y="411.66666666666669" width="63" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM2-dc-mcn">
+                                <rect key="frame" x="16" y="55" width="84" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wMd-Cv-Ch2">
+                                <rect key="frame" x="16" y="90" width="358" height="720"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aaj-OU-jNY">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dtV-N8-5GZ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="365-Ox-62t"/>
-                            <constraint firstItem="dtV-N8-5GZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nOo-hM-0JA"/>
+                            <constraint firstItem="wMd-Cv-Ch2" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="1oH-El-eJM"/>
+                            <constraint firstItem="wMd-Cv-Ch2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="7cp-EL-GBp"/>
+                            <constraint firstItem="wMd-Cv-Ch2" firstAttribute="top" secondItem="IM2-dc-mcn" secondAttribute="bottom" constant="8" id="EWf-kL-PSy"/>
+                            <constraint firstItem="IM2-dc-mcn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="JSn-Pc-arQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wMd-Cv-Ch2" secondAttribute="trailing" constant="16" id="Jl5-nt-chj"/>
+                            <constraint firstItem="IM2-dc-mcn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="RcM-s4-8Wd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6pG-pG-ROe"/>
+                    <connections>
+                        <outlet property="SettingsCollectionView" destination="wMd-Cv-Ch2" id="VYT-3v-Sdt"/>
+                        <segue destination="iDq-P5-b9R" kind="show" identifier="SettingsToPersonalDetails" id="4qa-Vt-zIv"/>
+                        <segue destination="Jtq-Id-B6m" kind="show" identifier="SettingsToCurrentPassCode" id="pCy-im-cCd"/>
+                        <segue destination="BO6-Ls-lnp" kind="showDetail" identifier="SettingsToConnectedApps" id="yTI-02-qQw"/>
+                        <segue destination="MhD-Ni-bbC" kind="show" identifier="SettingsToCloseAccount" id="6OM-Fd-vs8"/>
+                        <segue destination="o1G-BK-iQK" kind="show" identifier="SettingsToBlockedUsers" id="uxX-E1-VP1"/>
+                        <segue destination="nAM-jn-boI" kind="show" identifier="SettingsToWhereDoYouLive" id="uJb-29-f1W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755" y="4"/>
+            <point key="canvasLocation" x="753.84615384615381" y="3.5545023696682461"/>
+        </scene>
+        <!--PersonalDetailsVC-->
+        <scene sceneID="FOR-nB-aD6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fourth" referencedIdentifier="PersonalDetailsVC" id="iDq-P5-b9R" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xYW-cI-oa3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IY5-Ac-VR0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395" y="444"/>
+        </scene>
+        <!--WhereDoYouLiveVC-->
+        <scene sceneID="0Ih-5t-HhZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fourth" referencedIdentifier="WhereDoYouLiveVC" id="nAM-jn-boI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uDj-W9-SiJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYz-s3-EJF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="502"/>
+        </scene>
+        <!--ConnectedAppsVC-->
+        <scene sceneID="iRv-Uy-vR3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fourth" referencedIdentifier="ConnectedAppsVC" id="BO6-Ls-lnp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="l6Y-Ae-jt3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbN-2E-FaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032" y="465"/>
+        </scene>
+        <!--BlockedUsersVC-->
+        <scene sceneID="a87-cV-Z2f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fourth" referencedIdentifier="BlockedUsersVC" id="o1G-BK-iQK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7cP-Kf-Yiv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N0H-E2-COh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="525"/>
+        </scene>
+        <!--CloseAccountVC-->
+        <scene sceneID="tGL-PC-QBL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fourth" referencedIdentifier="CloseAccountVC" id="MhD-Ni-bbC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9IR-UB-C3N"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBm-b0-V9M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="444"/>
         </scene>
         <!--Chat With UsVC-->
         <scene sceneID="xDc-4m-kPz">
@@ -1251,6 +1325,16 @@
             </objects>
             <point key="canvasLocation" x="-718" y="699"/>
         </scene>
+        <!--CurrentPassCodeVC-->
+        <scene sceneID="Uq6-kQ-9Ss">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fourth" referencedIdentifier="CurrentPassCodeVC" id="Jtq-Id-B6m" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rR5-2E-b35"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFU-Mf-ICq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="444"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.left.arrow.right" catalog="system" width="120" height="128"/>
@@ -1258,7 +1342,7 @@
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <image name="doc.on.doc.fill" catalog="system" width="112" height="128"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
-        <image name="image2" width="2633" height="3491"/>
+        <image name="image2" width="1430" height="2837"/>
         <image name="lock.fill" catalog="system" width="125" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
@@ -1269,7 +1353,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -3,13 +3,188 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Personal DetailsVC-->
+        <scene sceneID="tst-ZJ-SQY">
+            <objects>
+                <viewController storyboardIdentifier="PersonalDetailsVC" id="MZ1-dE-NX0" customClass="PersonalDetailsVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V3p-0X-VI0">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Php-1e-sdA">
+                                <rect key="frame" x="133.66666666666666" y="412" width="122.99999999999997" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YL3-ck-ZxJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Php-1e-sdA" firstAttribute="centerY" secondItem="V3p-0X-VI0" secondAttribute="centerY" id="4Ea-uc-gGe"/>
+                            <constraint firstItem="Php-1e-sdA" firstAttribute="centerX" secondItem="V3p-0X-VI0" secondAttribute="centerX" id="aYq-TD-dye"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0d-oY-Q6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155.38461538461539" y="736.49289099526061"/>
+        </scene>
+        <!--Where Do You LiveVC-->
+        <scene sceneID="q2O-R2-elc">
+            <objects>
+                <viewController storyboardIdentifier="WhereDoYouLiveVC" id="TnS-yX-s3u" customClass="WhereDoYouLiveVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4wZ-g6-T69">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where do you live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOC-Mv-ezq">
+                                <rect key="frame" x="127" y="411.66666666666669" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Px-5m-TYE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wOC-Mv-ezq" firstAttribute="centerY" secondItem="4wZ-g6-T69" secondAttribute="centerY" id="WKI-gY-t5m"/>
+                            <constraint firstItem="wOC-Mv-ezq" firstAttribute="centerX" secondItem="4wZ-g6-T69" secondAttribute="centerX" id="wbx-zQ-Jfi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WY3-Je-edD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604.61538461538464" y="735.78199052132697"/>
+        </scene>
+        <!--Current Pass CodeVC-->
+        <scene sceneID="ptf-G7-a4F">
+            <objects>
+                <viewController storyboardIdentifier="CurrentPassCodeVC" id="SOn-ef-MSN" customClass="CurrentPassCodeVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wat-i2-Ki2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nob-25-hK5">
+                                <rect key="frame" x="127" y="411.66666666666669" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EwA-Hd-eeR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nob-25-hK5" firstAttribute="centerX" secondItem="Wat-i2-Ki2" secondAttribute="centerX" id="K9Z-dd-hgF"/>
+                            <constraint firstItem="nob-25-hK5" firstAttribute="centerY" secondItem="Wat-i2-Ki2" secondAttribute="centerY" id="g94-Kk-Xrk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgI-GJ-O82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328" y="736"/>
+        </scene>
+        <!--Blocked UsersVC-->
+        <scene sceneID="tF2-UC-9Lc">
+            <objects>
+                <viewController storyboardIdentifier="BlockedUsersVC" id="QN7-nh-JXY" customClass="BlockedUsersVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WHw-pd-X4j">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blocked Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYs-4w-qdX">
+                                <rect key="frame" x="140" y="411.66666666666669" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xgs-BW-gJL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DYs-4w-qdX" firstAttribute="centerY" secondItem="WHw-pd-X4j" secondAttribute="centerY" id="Ejn-3q-Dhg"/>
+                            <constraint firstItem="DYs-4w-qdX" firstAttribute="centerX" secondItem="WHw-pd-X4j" secondAttribute="centerX" id="HuO-4y-Fbd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dui-7e-PNG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048" y="736"/>
+        </scene>
+        <!--Connected AppsVC-->
+        <scene sceneID="SJU-Tv-Kpd">
+            <objects>
+                <viewController storyboardIdentifier="ConnectedAppsVC" id="zPn-N7-Gt9" customClass="ConnectedAppsVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z8T-Uk-CwN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJF-Fd-44P">
+                                <rect key="frame" x="131" y="411.66666666666669" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQu-JC-vfj">
+                                <rect key="frame" x="6" y="59" width="41.333333333333343" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismissButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KpJ-LN-the"/>
+                                    <action selector="dismissButtonPressed:" destination="zPn-N7-Gt9" eventType="touchUpInside" id="w96-na-K1N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VMo-Le-zE3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OJF-Fd-44P" firstAttribute="centerX" secondItem="Z8T-Uk-CwN" secondAttribute="centerX" id="1xv-XZ-mxx"/>
+                            <constraint firstItem="HQu-JC-vfj" firstAttribute="leading" secondItem="VMo-Le-zE3" secondAttribute="leading" constant="6" id="Rz1-Pb-Uew"/>
+                            <constraint firstItem="OJF-Fd-44P" firstAttribute="centerY" secondItem="Z8T-Uk-CwN" secondAttribute="centerY" id="Yzi-sL-euE"/>
+                            <constraint firstItem="HQu-JC-vfj" firstAttribute="top" secondItem="VMo-Le-zE3" secondAttribute="top" constant="12" id="n1M-2P-tqg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqf-zg-rlW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2782" y="736"/>
+        </scene>
+        <!--Close AccountVC-->
+        <scene sceneID="4Aa-hP-lQL">
+            <objects>
+                <viewController storyboardIdentifier="CloseAccountVC" id="jDr-6Q-xQy" customClass="CloseAccountVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I47-ia-gYG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwP-7f-gJw">
+                                <rect key="frame" x="140.66666666666666" y="411.66666666666669" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ld3-RL-O2l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vwP-7f-gJw" firstAttribute="centerY" secondItem="I47-ia-gYG" secondAttribute="centerY" id="cnn-Xq-6EQ"/>
+                            <constraint firstItem="vwP-7f-gJw" firstAttribute="centerX" secondItem="I47-ia-gYG" secondAttribute="centerX" id="yYO-I2-V1q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M35-UC-Euw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3532" y="736"/>
+        </scene>
         <!--Manage PlanVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>

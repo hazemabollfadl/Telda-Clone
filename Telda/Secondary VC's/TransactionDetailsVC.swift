@@ -143,8 +143,8 @@ extension TransactionDetailsVC:SplitAndPayLaterButtonsPressed{
 extension TransactionDetailsVC:sendCellItems{
     func sendSwitch(_ mySwitch: UISwitch) {
         if mySwitch.isOn{
-            let alert = UIAlertController(title: "", message: "Transaction execluded from insight", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "okay", style: .default, handler: { _ in
+            let alert = UIAlertController(title: "Transaction execluded from insight", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "okay", style: .cancel, handler: { _ in
                 self.dismiss(animated: true)
             }) )
             self.present(alert, animated: true, completion: nil)

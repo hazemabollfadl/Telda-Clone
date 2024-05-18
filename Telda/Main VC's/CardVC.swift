@@ -199,7 +199,7 @@ extension CardVC:upgradeButtonPressed, CardCellsButtonPressed{
             self.present(vc, animated: true)
         }else{
             let alert = UIAlertController(title: "Warning", message: "Card is unlocked", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "okay", style: .default))
+            alert.addAction(UIAlertAction(title: "okay", style: .cancel))
             
             self.present(alert, animated: true, completion: nil)
         }

@@ -3,7 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -655,7 +655,7 @@
         <!--More-->
         <scene sceneID="bmB-u4-CmG">
             <objects>
-                <viewController id="c7d-lw-ef7" customClass="MoreVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoreVC" id="c7d-lw-ef7" customClass="MoreVC" customModule="Telda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bvn-Wd-ozf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -695,7 +695,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5kJ-gQ-2TI">
-                                <rect key="frame" x="16" y="100" width="358" height="661"/>
+                                <rect key="frame" x="16" y="100" width="358" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qwx-B6-Lac">
                                     <size key="itemSize" width="128" height="128"/>
@@ -853,7 +853,6 @@
                         <segue destination="GUA-yp-d1m" kind="relationship" relationship="viewControllers" id="c0q-jx-hV6"/>
                         <segue destination="klj-Vr-fYy" kind="relationship" relationship="viewControllers" id="rQW-4I-uEk"/>
                         <segue destination="BXI-WE-g6M" kind="relationship" relationship="viewControllers" id="d3V-Pc-VYt"/>
-                        <segue destination="c7d-lw-ef7" kind="relationship" relationship="viewControllers" id="z4j-La-6zr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouV-9D-qG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -880,7 +879,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pnM-Jg-PkE"/>
+        <segue reference="rnD-MF-cS3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.arrow.right" catalog="system" width="120" height="128"/>
@@ -896,10 +895,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

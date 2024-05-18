@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SettingsHideBalanceCell" id="gTV-IL-0wX" customClass="SettingsHideBalanceCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwX-7Z-Yfw">
+                        <rect key="frame" x="0.0" y="9" width="390" height="157"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s83-FA-h1K">
+                                <rect key="frame" x="8" y="63.666666666666671" width="38.333333333333336" height="29"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wFg-8X-OWh">
+                                <rect key="frame" x="333" y="63" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchButtonHideBalancePressed:" destination="gTV-IL-0wX" eventType="valueChanged" id="YrP-cC-V2a"/>
+                                </connections>
+                            </switch>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JVO-2g-bIs">
+                                <rect key="frame" x="56.333333333333343" y="68.333333333333329" width="108" height="20.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide balances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ET-Ol-CxU">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="wFg-8X-OWh" firstAttribute="centerY" secondItem="cwX-7Z-Yfw" secondAttribute="centerY" id="3SE-aU-1dF"/>
+                            <constraint firstItem="JVO-2g-bIs" firstAttribute="leading" secondItem="s83-FA-h1K" secondAttribute="trailing" constant="10" id="6Ux-Ws-llj"/>
+                            <constraint firstItem="JVO-2g-bIs" firstAttribute="centerY" secondItem="cwX-7Z-Yfw" secondAttribute="centerY" id="Lcb-4K-mKV"/>
+                            <constraint firstItem="s83-FA-h1K" firstAttribute="centerY" secondItem="cwX-7Z-Yfw" secondAttribute="centerY" id="OnR-3t-26U"/>
+                            <constraint firstItem="s83-FA-h1K" firstAttribute="leading" secondItem="cwX-7Z-Yfw" secondAttribute="leading" constant="8" id="g9e-G0-HUb"/>
+                            <constraint firstAttribute="trailing" secondItem="wFg-8X-OWh" secondAttribute="trailing" constant="8" id="kBR-L6-TK8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="cwX-7Z-Yfw" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="7Ns-8x-YXW"/>
+                <constraint firstItem="cwX-7Z-Yfw" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1.04667" id="No0-31-PS0"/>
+                <constraint firstItem="cwX-7Z-Yfw" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Rqa-U0-bMH"/>
+                <constraint firstItem="cwX-7Z-Yfw" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="i9C-St-OyS"/>
+            </constraints>
+            <connections>
+                <outlet property="CellSwitch" destination="wFg-8X-OWh" id="sAb-H4-vIH"/>
+                <outlet property="SmallView" destination="cwX-7Z-Yfw" id="Wqx-F0-fMz"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="eye.slash" catalog="system" width="128" height="95"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

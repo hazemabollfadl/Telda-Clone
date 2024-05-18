@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,8 +21,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-fL-6ht">
                         <rect key="frame" x="-0.66666666666665719" y="12.666666666666664" width="345.33333333333326" height="90"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="504-c0-dBX">
-                                <rect key="frame" x="9.9999999999999929" y="25.999999999999996" width="126.33333333333331" height="37.666666666666657"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="504-c0-dBX">
+                                <rect key="frame" x="7.9999999999999929" y="25.999999999999996" width="125.33333333333331" height="37.666666666666657"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFk-HN-Bvb">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="37.666666666666664"/>
@@ -34,7 +34,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ke7-cb-qEg">
-                                        <rect key="frame" x="48.999999999999993" y="8.6666666666666696" width="77.333333333333314" height="20.333333333333329"/>
+                                        <rect key="frame" x="47.999999999999993" y="8.6666666666666696" width="77.333333333333314" height="20.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Groceries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVR-8s-Fpg">
                                                 <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="20.333333333333332"/>
@@ -60,7 +60,7 @@
                             <constraint firstItem="qSl-v9-PRd" firstAttribute="centerY" secondItem="aJG-fL-6ht" secondAttribute="centerY" id="1ef-lO-PNJ"/>
                             <constraint firstItem="504-c0-dBX" firstAttribute="centerY" secondItem="aJG-fL-6ht" secondAttribute="centerY" id="C7p-YU-KBD"/>
                             <constraint firstAttribute="trailing" secondItem="qSl-v9-PRd" secondAttribute="trailing" constant="10" id="DnN-pa-MFP"/>
-                            <constraint firstItem="504-c0-dBX" firstAttribute="leading" secondItem="aJG-fL-6ht" secondAttribute="leading" constant="10" id="RPH-br-gLW"/>
+                            <constraint firstItem="504-c0-dBX" firstAttribute="leading" secondItem="aJG-fL-6ht" secondAttribute="leading" constant="8" id="RPH-br-gLW"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,28 +22,29 @@
                         <rect key="frame" x="0.0" y="11" width="390" height="90"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ntM-M2-3C5">
-                                <rect key="frame" x="13" y="27.000000000000004" width="214.33333333333334" height="36.333333333333343"/>
+                                <rect key="frame" x="8" y="26.000000000000004" width="228" height="38.333333333333343"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luq-jq-dhC">
-                                        <rect key="frame" x="0.0" y="0.0" width="34.333333333333336" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="37.666666666666664" height="37.666666666666664"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="qrcode.viewfinder" catalog="system" cornerStyle="capsule">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                             <color key="baseBackgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         </buttonConfiguration>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="8S2-xA-nyz">
-                                        <rect key="frame" x="45.333333333333343" y="0.0" width="169" height="36.333333333333336"/>
+                                        <rect key="frame" x="48.666666666666671" y="0.0" width="179.33333333333331" height="38.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Share QR code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szV-hF-tqP">
-                                                <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="19.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="116.33333333333333" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To recieve EGP 5 payment" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4k-Ze-wy1">
-                                                <rect key="frame" x="0.0" y="19.333333333333336" width="169" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="0.0" y="20.333333333333336" width="179.33333333333334" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -54,7 +55,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ntM-M2-3C5" firstAttribute="leading" secondItem="pR8-zS-CKO" secondAttribute="leading" constant="13" id="5yR-WF-sFr"/>
+                            <constraint firstItem="ntM-M2-3C5" firstAttribute="leading" secondItem="pR8-zS-CKO" secondAttribute="leading" constant="8" id="5yR-WF-sFr"/>
                             <constraint firstItem="ntM-M2-3C5" firstAttribute="centerY" secondItem="pR8-zS-CKO" secondAttribute="centerY" id="F8f-6E-V7j"/>
                         </constraints>
                     </view>
@@ -72,6 +73,7 @@
                 <outlet property="BigLabel" destination="szV-hF-tqP" id="6NY-fh-NlA"/>
                 <outlet property="CellButton" destination="Luq-jq-dhC" id="g8Q-i3-7Jc"/>
                 <outlet property="SmallLabel" destination="g4k-Ze-wy1" id="YZm-qa-Jfs"/>
+                <outlet property="SmallView" destination="pR8-zS-CKO" id="OJV-EM-yCo"/>
             </connections>
             <point key="canvasLocation" x="91.603053435114504" y="44.718309859154935"/>
         </collectionViewCell>
@@ -82,7 +84,7 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
