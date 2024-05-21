@@ -13,7 +13,7 @@ class FeesVC: UIViewController {
     @IBOutlet var FeesCollectionView: UICollectionView!
     
     let refreshControl = UIRefreshControl()
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,11 +77,11 @@ extension FeesVC:UICollectionViewDataSource{
             }
         }else if indexPath.section==1{
             FeesCollectionCell.SmallLabel.isHidden=true
-                FeesCollectionCell.LeftLabel.text="Instant transfers to Telda users"
-                FeesCollectionCell.RightLabel.text="Free"
+            FeesCollectionCell.LeftLabel.text="Instant transfers to Telda users"
+            FeesCollectionCell.RightLabel.text="Free"
             
         }else if indexPath.section==2{
-             if indexPath.row==0{
+            if indexPath.row==0{
                 FeesCollectionCell.LeftLabel.text="Local card purchases"
                 FeesCollectionCell.RightLabel.text="Free"
                 FeesCollectionCell.SmallLabel.isHidden=true
@@ -90,22 +90,22 @@ extension FeesVC:UICollectionViewDataSource{
                 FeesCollectionCell.RightLabel.text="EGP 5"
                 FeesCollectionCell.SmallLabel.text="Banque De Caire ATM withdrawls"
                 FeesCollectionCell.SmallLabel.isHidden=false
-
-
+                
+                
             }else if indexPath.row==2{
                 FeesCollectionCell.LeftLabel.text="Other local ATM withdrawls"
                 FeesCollectionCell.RightLabel.text="EGP 5"
                 FeesCollectionCell.SmallLabel.text="A flat fee applies when you withdraw cash from any other local ATM"
                 FeesCollectionCell.SmallLabel.isHidden=false
-
-
+                
+                
             }else{
                 FeesCollectionCell.LeftLabel.text="International card purchases"
                 FeesCollectionCell.RightLabel.text="10%"
                 FeesCollectionCell.SmallLabel.text="A foreign currency exchange markup on spending with your card in any foreign currency"
                 FeesCollectionCell.SmallLabel.isHidden=false
-
-
+                
+                
             }
         }else{
             if indexPath.row==0{
@@ -113,23 +113,23 @@ extension FeesVC:UICollectionViewDataSource{
                 FeesCollectionCell.RightLabel.text="Free"
                 FeesCollectionCell.SmallLabel.text="Deposit money into your account through any Banque Du Caire ATM"
                 FeesCollectionCell.SmallLabel.isHidden=false
-
-
+                
+                
                 
             }else if indexPath.row==1{
                 FeesCollectionCell.LeftLabel.text="Bank transfer"
                 FeesCollectionCell.RightLabel.text="Free"
                 FeesCollectionCell.SmallLabel.text="Transfer money to your account from any local bank"
                 FeesCollectionCell.SmallLabel.isHidden=false
-
-
+                
+                
             }else if indexPath.row==2{
                 FeesCollectionCell.LeftLabel.text="Fawry"
                 FeesCollectionCell.RightLabel.text="-1%"
                 FeesCollectionCell.SmallLabel.text="Fawry administrative fees"
                 FeesCollectionCell.SmallLabel.isHidden=false
-
-
+                
+                
             }else if indexPath.row==3{
                 FeesCollectionCell.SmallLabel.isHidden=true
                 FeesCollectionCell.LeftLabel.text="Request from Telda users"
@@ -139,11 +139,11 @@ extension FeesVC:UICollectionViewDataSource{
                 FeesCollectionCell.RightLabel.text="Free"
                 FeesCollectionCell.SmallLabel.text="Transfer money to your account through InstaPay"
                 FeesCollectionCell.SmallLabel.isHidden=false
-
-
+                
+                
             }
         }
-       
+        
         return FeesCollectionCell
     }
     
@@ -188,9 +188,22 @@ extension FeesVC:UICollectionViewDelegateFlowLayout{
         flowLayout.minimumLineSpacing=5
         flowLayout.sectionInset=UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         
-        return CGSize(width: (collectionView.bounds.width), height: collectionView.bounds.width/5+25)
+        if indexPath.section==2{
+            if indexPath.row==2{
+                return CGSize(width: (collectionView.bounds.width), height: collectionView.bounds.width/5+10)
+            }
+            if indexPath.row==3{
+                return CGSize(width: (collectionView.bounds.width), height: collectionView.bounds.width/5+20)
+            }
+        }else if indexPath.section==3{
+            if indexPath.row==0 || indexPath.row==1 || indexPath.row==4{
+                return CGSize(width: (collectionView.bounds.width), height: collectionView.bounds.width/5+10)
+            }
+        }
+        return CGSize(width: (collectionView.bounds.width), height: collectionView.bounds.width/5-5)
         
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
@@ -208,5 +221,5 @@ extension FeesVC{
             self.refreshControl.endRefreshing()
         }
     }
-  
+    
 }

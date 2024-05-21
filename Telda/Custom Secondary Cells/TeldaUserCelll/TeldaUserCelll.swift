@@ -11,6 +11,10 @@ class TeldaUserCelll: UICollectionViewCell {
 
     @IBOutlet var UserName: UILabel!
     @IBOutlet var CheckMark: UIImageView!
+    @IBOutlet var SmallLabel: UILabel!
+    @IBOutlet var CellButton: UIButton!
+    @IBOutlet var SmallView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

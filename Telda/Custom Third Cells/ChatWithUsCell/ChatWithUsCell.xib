@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatWithUsCell" rowHeight="62" id="KGk-i7-Jjw" customClass="ChatWithUsCell" customModule="Telda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1P-r8-Qd9">
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="60"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZkT-wV-jvm">
+                                <rect key="frame" x="10" y="10" width="324" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolt.horizontal.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oEG-nz-av2">
+                                        <rect key="frame" x="0.0" y="1" width="40" height="38.666666666666671"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="19D-My-cJm"/>
+                                            <constraint firstAttribute="width" constant="40" id="Sze-PK-q0o"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgU-Nn-aud">
+                                        <rect key="frame" x="55" y="0.0" width="214" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabel LabelLabel Label Label Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hA-mC-Cg1">
+                                                <rect key="frame" x="10" y="10" width="194" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="0.14903249169999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="5hA-mC-Cg1" firstAttribute="top" secondItem="MgU-Nn-aud" secondAttribute="top" constant="10" id="HX0-1D-f7L"/>
+                                            <constraint firstAttribute="bottom" secondItem="5hA-mC-Cg1" secondAttribute="bottom" constant="10" id="SM8-yb-RXj"/>
+                                            <constraint firstAttribute="trailing" secondItem="5hA-mC-Cg1" secondAttribute="trailing" constant="10" id="XFy-nQ-JtB"/>
+                                            <constraint firstItem="5hA-mC-Cg1" firstAttribute="leading" secondItem="MgU-Nn-aud" secondAttribute="leading" constant="10" id="izl-vQ-zub"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zjj-VY-Z5E">
+                                        <rect key="frame" x="284" y="1" width="40" height="38.666666666666671"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="37Y-rO-WiO"/>
+                                            <constraint firstAttribute="width" constant="40" id="4p1-Rh-skU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZkT-wV-jvm" secondAttribute="bottom" constant="10" id="Agp-R4-rcG"/>
+                            <constraint firstAttribute="trailing" secondItem="ZkT-wV-jvm" secondAttribute="trailing" constant="10" id="Cg0-Me-1Pe"/>
+                            <constraint firstItem="ZkT-wV-jvm" firstAttribute="top" secondItem="g1P-r8-Qd9" secondAttribute="top" constant="10" id="F1Z-l9-n13"/>
+                            <constraint firstItem="ZkT-wV-jvm" firstAttribute="leading" secondItem="g1P-r8-Qd9" secondAttribute="leading" constant="10" id="HZd-mN-WZt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="g1P-r8-Qd9" secondAttribute="trailing" id="PqV-CD-4nu"/>
+                    <constraint firstItem="g1P-r8-Qd9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="odJ-Tg-P2W"/>
+                    <constraint firstItem="g1P-r8-Qd9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yhA-XT-HSQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="BigLabel" destination="5hA-mC-Cg1" id="10W-JF-dFh"/>
+                <outlet property="LeftImage" destination="oEG-nz-av2" id="0dT-kh-WrA"/>
+                <outlet property="MessageBubble" destination="MgU-Nn-aud" id="8vd-YH-7fh"/>
+                <outlet property="RightImage" destination="zjj-VY-Z5E" id="0pj-sQ-eMf"/>
+            </connections>
+            <point key="canvasLocation" x="-3.0534351145038165" y="26.056338028169016"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bolt.horizontal.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.063000001013278961" green="0.2630000114440918" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

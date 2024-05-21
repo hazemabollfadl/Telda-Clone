@@ -76,21 +76,18 @@ extension SettingsVC:UICollectionViewDataSource{
         SecondCategoriesCollectionCell.LeftButton.configuration?.baseForegroundColor = UIColor(named: "AccentColor")
         SecondCategoriesCollectionCell.CellLabel.textColor = .label
         
+        SecondCategoriesCollectionCell.LeftButton.setPreferredSymbolConfiguration(.init(pointSize: 17), forImageIn: .normal)
+        
         
         if indexPath.section==0{
             if indexPath.row==0{
                 SecondCategoriesCollectionCell.LeftButton.setImage(UIImage(systemName: "person"), for: .normal)
-                
-                SecondCategoriesCollectionCell.LeftButton.setPreferredSymbolConfiguration(.init(pointSize: 20), forImageIn: .normal)
-                
+
                 SecondCategoriesCollectionCell.CellLabel.text="Personal Details"
-                
                 SecondCategoriesCollectionCell.RightButton.isHidden=false
                 
             }else{
                 SecondCategoriesCollectionCell.LeftButton.setImage(UIImage(systemName: "location"), for: .normal)
-                
-                SecondCategoriesCollectionCell.LeftButton.setPreferredSymbolConfiguration(.init(pointSize: 20), forImageIn: .normal)
                 
                 SecondCategoriesCollectionCell.CellLabel.text="Delivery Address"
                 SecondCategoriesCollectionCell.RightButton.isHidden=false
@@ -122,7 +119,7 @@ extension SettingsVC:UICollectionViewDataSource{
                 SecondCategoriesCollectionCell.RightButton.isHidden=false
                 
             }else{
-                SecondCategoriesCollectionCell.LeftButton.setImage(UIImage(systemName: "iphone.gen2"), for: .normal)
+                SecondCategoriesCollectionCell.LeftButton.setImage(UIImage(systemName: "square.grid.3x3"), for: .normal)
                 SecondCategoriesCollectionCell.CellLabel.text="Connected Apps"
                 SecondCategoriesCollectionCell.RightButton.isHidden=false
                 
@@ -264,7 +261,7 @@ extension SettingsVC:settingsHideBalanceSwitchButtonPressed{
     func settingsHideBalanceSwitchButtonPressed(_ mySwitch: UISwitch) {
         if mySwitch.isOn{
             SharedData.shared.select=true
-            let alert = UIAlertController(title: "Hide balances on", message: "", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Hide balance is on", message: "", preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
                 self.dismiss(animated: true)

@@ -7,5 +7,6 @@ target 'Telda' do
 
   # Pods for Telda
 pod 'AEOTPTextField'
+pod 'IQKeyboardManagerSwift'
 
 end

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ales-nesetril-ex_p4AaBxbs-unsplash.jpg",
+      "filename" : "MeAvatar.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "MeAvatar@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "MeAvatar@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
@@ -17,8 +19,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }

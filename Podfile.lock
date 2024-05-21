@@ -1,16 +1,20 @@
 PODS:
   - AEOTPTextField (1.2.6)
+  - IQKeyboardManagerSwift (7.0.3)
 
 DEPENDENCIES:
   - AEOTPTextField
+  - IQKeyboardManagerSwift
 
 SPEC REPOS:
   trunk:
     - AEOTPTextField
+    - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
   AEOTPTextField: a275823fde05601c5da7f8fb66aaecb41289b370
+  IQKeyboardManagerSwift: f9c5dc36cba16ddd2e51fa7d51c34a2e083029b5
 
-PODFILE CHECKSUM: 7a112dc52ee6de1055480a3127391ef1ec61618b
+PODFILE CHECKSUM: bbc440bc88f4372bd6f9ceed8246a5b8b04c95f6
 
 COCOAPODS: 1.14.3

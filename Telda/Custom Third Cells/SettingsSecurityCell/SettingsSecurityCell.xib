@@ -22,8 +22,8 @@
                         <rect key="frame" x="0.0" y="12.666666666666671" width="390" height="157"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceid" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XPr-6E-YKV">
-                                <rect key="frame" x="8" y="62" width="36.333333333333336" height="33"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                <rect key="frame" x="8" y="65" width="30" height="27.333333333333343"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tof-ow-iPn">
                                 <rect key="frame" x="333" y="63" width="51" height="31"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </switch>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RnB-a9-ZhX">
-                                <rect key="frame" x="54.333333333333329" y="68.333333333333329" width="148.33333333333337" height="20.333333333333329"/>
+                                <rect key="frame" x="48" y="68.333333333333329" width="148.33333333333337" height="20.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Face ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-p4-zBk">
                                         <rect key="frame" x="0.0" y="0.0" width="148.33333333333334" height="20.333333333333332"/>

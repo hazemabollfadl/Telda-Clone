@@ -22,8 +22,8 @@
                         <rect key="frame" x="0.0" y="9" width="390" height="157"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s83-FA-h1K">
-                                <rect key="frame" x="8" y="63.666666666666671" width="38.333333333333336" height="29"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                <rect key="frame" x="8" y="66.666666666666671" width="31" height="23.333333333333329"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wFg-8X-OWh">
                                 <rect key="frame" x="333" y="63" width="51" height="31"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </switch>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JVO-2g-bIs">
-                                <rect key="frame" x="56.333333333333343" y="68.333333333333329" width="108" height="20.333333333333329"/>
+                                <rect key="frame" x="49" y="68.333333333333329" width="108" height="20.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide balances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ET-Ol-CxU">
                                         <rect key="frame" x="0.0" y="0.0" width="108" height="20.333333333333332"/>

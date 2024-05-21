@@ -77,6 +77,7 @@
 		6F5589192BD92557003BB660 /* CategoriesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5589162BD92557003BB660 /* CategoriesCollectionCell.swift */; };
 		6F55891D2BD941BD003BB660 /* SecondCategoriesCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F55891C2BD941BD003BB660 /* SecondCategoriesCollectionCell.xib */; };
 		6F55891E2BD941BD003BB660 /* SecondCategoriesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F55891B2BD941BD003BB660 /* SecondCategoriesCollectionCell.swift */; };
+		6F6CEE582BFBADC7005F51E1 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CEE572BFBADC7005F51E1 /* Messages.swift */; };
 		6F79ED402BF3AB7200CA7A4E /* Fourth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F79ED3F2BF3AB7200CA7A4E /* Fourth.storyboard */; };
 		6F79ED422BF3ABAC00CA7A4E /* ManagePlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F79ED412BF3ABAC00CA7A4E /* ManagePlanVC.swift */; };
 		6F79ED472BF3AEDF00CA7A4E /* ManagePlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F79ED462BF3AEDF00CA7A4E /* ManagePlanCell.xib */; };
@@ -148,6 +149,10 @@
 		6FF97EC72BF8FB740086A5D0 /* CloseAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF97EC62BF8FB740086A5D0 /* CloseAccountVC.swift */; };
 		6FF97ECB2BF90EE80086A5D0 /* SettingsHideBalanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF97ECA2BF90EE80086A5D0 /* SettingsHideBalanceCell.xib */; };
 		6FF97ECC2BF90EE80086A5D0 /* SettingsHideBalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF97EC92BF90EE80086A5D0 /* SettingsHideBalanceCell.swift */; };
+		6FF97ED52BF9190E0086A5D0 /* AppAppearanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF97ED42BF9190E0086A5D0 /* AppAppearanceCell.xib */; };
+		6FF97ED62BF9190E0086A5D0 /* AppAppearanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF97ED32BF9190E0086A5D0 /* AppAppearanceCell.swift */; };
+		6FF97EDC2BFA41310086A5D0 /* ChatWithUsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF97EDB2BFA41310086A5D0 /* ChatWithUsCell.xib */; };
+		6FF97EDD2BFA41310086A5D0 /* ChatWithUsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF97EDA2BFA41310086A5D0 /* ChatWithUsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -223,6 +228,7 @@
 		6F5589172BD92557003BB660 /* CategoriesCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionCell.xib; sourceTree = "<group>"; };
 		6F55891B2BD941BD003BB660 /* SecondCategoriesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCategoriesCollectionCell.swift; sourceTree = "<group>"; };
 		6F55891C2BD941BD003BB660 /* SecondCategoriesCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCategoriesCollectionCell.xib; sourceTree = "<group>"; };
+		6F6CEE572BFBADC7005F51E1 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		6F79ED3F2BF3AB7200CA7A4E /* Fourth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fourth.storyboard; sourceTree = "<group>"; };
 		6F79ED412BF3ABAC00CA7A4E /* ManagePlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePlanVC.swift; sourceTree = "<group>"; };
 		6F79ED452BF3AEDF00CA7A4E /* ManagePlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePlanCell.swift; sourceTree = "<group>"; };
@@ -295,6 +301,10 @@
 		6FF97EC62BF8FB740086A5D0 /* CloseAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseAccountVC.swift; sourceTree = "<group>"; };
 		6FF97EC92BF90EE80086A5D0 /* SettingsHideBalanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHideBalanceCell.swift; sourceTree = "<group>"; };
 		6FF97ECA2BF90EE80086A5D0 /* SettingsHideBalanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsHideBalanceCell.xib; sourceTree = "<group>"; };
+		6FF97ED32BF9190E0086A5D0 /* AppAppearanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearanceCell.swift; sourceTree = "<group>"; };
+		6FF97ED42BF9190E0086A5D0 /* AppAppearanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppAppearanceCell.xib; sourceTree = "<group>"; };
+		6FF97EDA2BFA41310086A5D0 /* ChatWithUsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWithUsCell.swift; sourceTree = "<group>"; };
+		6FF97EDB2BFA41310086A5D0 /* ChatWithUsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatWithUsCell.xib; sourceTree = "<group>"; };
 		9CC6BE3ABF892FAE0F133C5D /* Pods-Telda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telda.debug.xcconfig"; path = "Target Support Files/Pods-Telda/Pods-Telda.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -557,6 +567,23 @@
 			path = CategoriesCollectionCell;
 			sourceTree = "<group>";
 		};
+		6F6CEE592BFBADE0005F51E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F6CEE572BFBADC7005F51E1 /* Messages.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F6CEE5A2BFCE8F1005F51E1 /* ChatWithUsCell */ = {
+			isa = PBXGroup;
+			children = (
+				6FF97EDA2BFA41310086A5D0 /* ChatWithUsCell.swift */,
+				6FF97EDB2BFA41310086A5D0 /* ChatWithUsCell.xib */,
+			);
+			path = ChatWithUsCell;
+			sourceTree = "<group>";
+		};
 		6F6F22212BD95B450077D067 /* SecondCategoriesCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -706,6 +733,8 @@
 				6F9AB34C2BF23F7700040620 /* LimitsCollectionCell */,
 				6F9AB3522BF3846E00040620 /* FeesCollectionCell */,
 				6FF97EC82BF905040086A5D0 /* SettingsSecurityCell */,
+				6FF97ED92BFA41000086A5D0 /* AppAppearanceCell */,
+				6F6CEE5A2BFCE8F1005F51E1 /* ChatWithUsCell */,
 			);
 			path = "Custom Third Cells";
 			sourceTree = "<group>";
@@ -832,6 +861,7 @@
 				6FD1C63C2BD223FB009B9FED /* Third VC's */,
 				6F79ED3E2BF3AAC500CA7A4E /* Fourth VC's */,
 				6F23B2C72BC4445F00BD3458 /* Views */,
+				6F6CEE592BFBADE0005F51E1 /* Models */,
 				6FE120432BC022B4009C6EE4 /* Assets.xcassets */,
 				6FE120452BC022B4009C6EE4 /* LaunchScreen.storyboard */,
 				6FE120482BC022B4009C6EE4 /* Info.plist */,
@@ -858,6 +888,15 @@
 				6FF97ECA2BF90EE80086A5D0 /* SettingsHideBalanceCell.xib */,
 			);
 			path = SettingsSecurityCell;
+			sourceTree = "<group>";
+		};
+		6FF97ED92BFA41000086A5D0 /* AppAppearanceCell */ = {
+			isa = PBXGroup;
+			children = (
+				6FF97ED32BF9190E0086A5D0 /* AppAppearanceCell.swift */,
+				6FF97ED42BF9190E0086A5D0 /* AppAppearanceCell.xib */,
+			);
+			path = AppAppearanceCell;
 			sourceTree = "<group>";
 		};
 		7DB81C254DFE331C55F266E7 /* Pods */ = {
@@ -945,6 +984,7 @@
 				6F23B2D12BC4478500BD3458 /* Secondary.storyboard in Resources */,
 				6F227C2B2BD0478500FF6C37 /* MoreHeader.xib in Resources */,
 				6F13BDD42BCE967400FDB311 /* GetNewCard.xib in Resources */,
+				6FF97ED52BF9190E0086A5D0 /* AppAppearanceCell.xib in Resources */,
 				6F8EB2B72BD186F1002D108A /* ProfilePlanAndEarnCollectionCell.xib in Resources */,
 				6F79ED402BF3AB7200CA7A4E /* Fourth.storyboard in Resources */,
 				6F450A612BEFC6080026BD93 /* CardLabelCell.xib in Resources */,
@@ -969,6 +1009,7 @@
 				6FE120422BC022B2009C6EE4 /* Base in Resources */,
 				6F8EB2C62BD19E8C002D108A /* ProfileUsageAndManageCell.xib in Resources */,
 				6FBA02382BD0258200E7409D /* MoreCollectionViewCells.xib in Resources */,
+				6FF97EDC2BFA41310086A5D0 /* ChatWithUsCell.xib in Resources */,
 				6F2BB6552BECD251004BDB81 /* TransactionDetailsButtonCell.xib in Resources */,
 				6F8EB2BB2BD192EA002D108A /* PremuimCardCellForCollection.xib in Resources */,
 				6F32E8872BD58FB800768D76 /* InsightDataCell.xib in Resources */,
@@ -1086,6 +1127,7 @@
 				6F08A2152BC03F1E00CFC08A /* AddSendInsightCell.swift in Sources */,
 				6F5589192BD92557003BB660 /* CategoriesCollectionCell.swift in Sources */,
 				6F2BB66E2BECF5C2004BDB81 /* TransactionDetailsReportIssueCell.swift in Sources */,
+				6F6CEE582BFBADC7005F51E1 /* Messages.swift in Sources */,
 				6FD1C64E2BD23502009B9FED /* StandardVC.swift in Sources */,
 				6F97768C2BEE562700D5D53D /* TransactionTextFieldTableViewCell.swift in Sources */,
 				6F9776912BEE5D0900D5D53D /* ShareQRCodeCell.swift in Sources */,
@@ -1096,8 +1138,10 @@
 				6F13BDCF2BCE8A5800FDB311 /* CardCells.swift in Sources */,
 				6F2BB6522BECC998004BDB81 /* TransactionDetailsTopCell.swift in Sources */,
 				6F13BDD82BCE9CDA00FDB311 /* UpgradeCardVC.swift in Sources */,
+				6FF97EDD2BFA41310086A5D0 /* ChatWithUsCell.swift in Sources */,
 				6F391FF52BEF78190044B145 /* ShareQRCodeVC.swift in Sources */,
 				6F79ED482BF3AEDF00CA7A4E /* ManagePlanCell.swift in Sources */,
+				6FF97ED62BF9190E0086A5D0 /* AppAppearanceCell.swift in Sources */,
 				6F33414D2BF0C27D00CFBC05 /* UpgradeCardPlusDetails.swift in Sources */,
 				6F3F06CD2BC83E9B00AAC6C7 /* SpacesCollectionCell.swift in Sources */,
 				6FF97EBB2BF8F9EE0086A5D0 /* PersonalDetailsVC.swift in Sources */,
